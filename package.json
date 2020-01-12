@@ -1,0 +1,28 @@
+{
+  "name": "cefai",
+  "version": "0.0.1",
+  "description": "aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "CEFAI",
+    "node",
+    "REST",
+    "node-cefai",
+    "js"
+  ],
+  "author": "pan32",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
