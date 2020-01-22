@@ -1,48 +1,102 @@
---creamos las tablas
---carrera
-CREATE TABLE 'correlativas'.'carrera' (
-  'idCarrera' int(250) NOT NULL,
-  'nombre' varchar(250) NOT NULL,
-  'plan' varchar(250) NOT NULL,
-  'duracion' int(10) NOT NULL
+-- phpMyAdmin SQL Dump
+-- version 4.9.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Jan 18, 2020 at 01:03 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.2.26
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `correlativas`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `carrera`
+--
+
+CREATE TABLE `carrera` (
+  `idCarrera` int(250) NOT NULL,
+  `nombre` varchar(250) NOT NULL,
+  `plan` varchar(250) NOT NULL,
+  `duracion` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---correlativas
-CREATE TABLE 'correlativas'.'correlativa' (
-  'necesaria' int(250) NOT NULL,
-  'disponible' int(250) NOT NULL
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `correlativa`
+--
+
+CREATE TABLE `correlativa` (
+  `necesaria` int(250) NOT NULL,
+  `disponible` int(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---imparte
-CREATE TABLE 'correlativas'.'imparte' (
-  'idCarrera' int(250) NOT NULL,
-  'idMateria' int(250) NOT NULL
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dicta`
+--
+
+CREATE TABLE `dicta` (
+  `idMateria` int(250) NOT NULL,
+  `aula` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
+  `dia` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
+  `modulo` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
+  `hora` time NOT NULL,
+  `cuatrimestre` int(250) NOT NULL,
+  `estado` varchar(250) COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `final`
+--
+
+CREATE TABLE `final` (
+  `necesaria` int(250) NOT NULL,
+  `disponible` int(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `imparte`
+--
+
+CREATE TABLE `imparte` (
+  `idCarrera` int(250) NOT NULL,
+  `idMateria` int(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---materia
-CREATE TABLE 'correlativas'.'materia' (
-  'idMateria' int(250) NOT NULL,
-  'nombre' varchar(250) NOT NULL,
-  'ano' int(250) NOT NULL,
-  'cuatrimestre' int(2) NOT NULL
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `materia`
+--
+
+CREATE TABLE `materia` (
+  `idMateria` int(250) NOT NULL,
+  `nombre` varchar(250) NOT NULL,
+  `ano` int(250) NOT NULL,
+  `cuatrimestre` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---finales
-CREATE TABLE `correlativas`.`final` (
- `necesaria` INT(250) NOT NULL , 
-    `disponible` INT(250) NOT NULL 
-) ENGINE = InnoDB;
-
---dicta
-CREATE TABLE 'correlativas'.'dicta' (
- 'idMateria' INT(250) NOT NULL , 
- 'aula' VARCHAR(250) NOT NULL ,
- 'dia' VARCHAR(250) NOT NULL ,
- 'modulo' VARCHAR(250) NOT NULL ,
- 'hora' TIME NOT NULL,
- 'cuatrimestre' INT(250) NOT NULL,
- 'estado' VARCHAR(250) NOT NULL
-) ENGINE = InnoDB;
 
 -- carga de datos
 
@@ -58,7 +112,7 @@ INSERT INTO 'carrera' ('idCarrera', 'nombre', 'plan', 'duracion') VALUES
 -- materias 
 
 -- materias TUASySL
-INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL, 'Introduccion a la Computacion','1','1'),
 (NULL, 'Matematica General','1','1'),
 (NULL, 'Ingles Tecnico','1','1'),
@@ -77,7 +131,7 @@ INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
 ;
 
 -- materias del titulo intermedio
-INSERT INTO `materia`  (`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'  ('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL,'Elementos de Algebra','1','1'),
 (NULL,'Resolucion de Problemas y Algoritmos','1','1'),
 (NULL,'Modelos y Sistemas de Informacion','1','1'),
@@ -112,14 +166,14 @@ INSERT INTO `materia`  (`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
 ;
 
 -- materias en comun 4 y 5 año
-INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL,'Sistemas Paralelos','4','1'),
 (NULL,'Inteligencia Artificial LicCien ','4','2'),
 (NULL,'Sistemas Inteligentes',5,'1'),
 (NULL,'Laboratorio de Programacion Distribuida',5,'1');
 
 -- materias de carrera licenciatura en ciencias de la computacion
-INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL,'Lenguajes Declarativos','4','1'),
 (NULL,'Complejidad Computacional','4','1'),
 (NULL,'Especificacion de Software','4','1'),
@@ -138,7 +192,7 @@ INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
 (NULL,'Trabajo de Tesis',5,'2'); 
 
 -- materias de carrera licenciatura en sistemas
-INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL, 'Matematica General','1','1'),
 (NULL, 'Introduccion a la Programacion','1','1'),
 (NULL, 'Ingles Tecnico','1','1'),
@@ -172,7 +226,7 @@ INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
 (NULL, 'Trabajo Tesis II LicSis', 5,'2');
 
 -- materias TUDW
-INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL, 'Matematica General','1','1'),
 (NULL, 'Introduccion a la Programacion','1','1'),
 (NULL, 'Ingles Tecnico','1','1'),
@@ -189,7 +243,7 @@ INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
 
 
 -- profesorado en ciencias
-INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
+INSERT INTO 'materia'('idMateria', 'nombre', 'ano', 'cuatrimestre') VALUES
 (NULL, 'Pedagogía','1','1'),
 (NULL, 'Psicología I','1','2'),
 (NULL, 'Didáctica General','2','2'),
@@ -207,7 +261,7 @@ INSERT INTO `materia`(`idMateria`, `nombre`, `ano`, `cuatrimestre`) VALUES
 -- carrera asociadas a materias
 
 -- carrera TUASySL
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES
 ('5','1'),
 ('5','2'),
@@ -225,7 +279,7 @@ VALUES
 ('5','14'),
 ('5','15');
 --materias en comun 4, 5 año
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES
 ('2', '51'),
 ('2', '52'),
@@ -237,7 +291,7 @@ VALUES
 ('3', '54');
 
 --materias de título intermedio con las licenciaturas
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES 
 ('2', '16'),
 ('2', '17'),
@@ -302,7 +356,7 @@ VALUES
 
 
 --materias licenciatura en ciencias de computacion
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES 
 ('2','55'),
 ('2','56'),
@@ -322,7 +376,7 @@ VALUES
 ('2','70');
 
 --materias sistemas de informacion
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES
 ('3','71'),
 ('3','72'),
@@ -344,7 +398,7 @@ VALUES
 ('3','88');
 
 --materias TUDW
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES
 ('4','89'),
 ('4','90'),
@@ -361,7 +415,7 @@ VALUES
 ('4','101');
 
 --profesorado
-INSERT INTO 'imparte' ('idCarrera', 'idMateria')
+INSERT INTO `imparte` (`idCarrera`, `idMateria`) VALUES
 VALUES
 ('1','102'),
 ('1','103'),
@@ -401,7 +455,7 @@ VALUES
 -- correlativas
 
 --materias TASySL
-INSERT INTO 'correlativa' ('necesaria', 'disponible') VALUES
+INSERT INTO `correlativa` (`necesaria`, `disponible`) VALUES
 ('1', '5'),
 ('1', '6'),
 ('2', '6'),
@@ -433,7 +487,7 @@ INSERT INTO 'correlativa' ('necesaria', 'disponible') VALUES
 --titulo intermedio
 --Primer año
 
-INSERT INTO 'correlativa' ('necesaria', 'disponible') VALUES
+INSERT INTO `correlativa` (`necesaria`, `disponible`) VALUES
 ('0','16'),
 ('0','17'),
 ('0','18'),
@@ -675,11 +729,11 @@ ALTER TABLE 'materia'
 -- indexes for table ‘final’
 --
 
-ALTER TABLE `final` 
-ADD INDEX(`necesaria`);
+ALTER TABLE 'final' 
+ADD INDEX('necesaria');
 
-ALTER TABLE `final` 
-ADD INDEX(`disponible`);
+ALTER TABLE 'final' 
+ADD INDEX('disponible');
 
 --
 -- AUTO_INCREMENT for dumped tables
