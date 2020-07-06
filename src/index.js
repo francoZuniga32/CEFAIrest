@@ -5,6 +5,9 @@ const mysql = require('mysql');
 const myconnection = require('express-myconnection');
 const bodyParser = require('body-parser');
 const url=require('url');
+const jwt = require('jsonwebtoken');
+
+const config = require('./config.json');
 
 const app = express();
 
@@ -23,7 +26,7 @@ app.use((req, res, next)=>{
 
 //configuraciones
 app.set('port',process.env.port || 3000);
-
+app.set('key', config.clave);
 
 //midelwares
 app.use(morgan('dev'));
@@ -34,7 +37,10 @@ app.use(myconnection(mysql, {
     port: '3306',
     database: 'correlativas'
 }, 'single'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(require('./midelwares/token').validar);
+
 
 //rutas
 
