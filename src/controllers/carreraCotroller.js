@@ -1,4 +1,5 @@
 const carreraCotroller = {};
+const pool = require('../database');
 
 carreraCotroller.all = (req, res)=>{
     req.getConnection((err, conn)=>{

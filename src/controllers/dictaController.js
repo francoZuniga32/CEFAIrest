@@ -1,4 +1,5 @@
 const dictaController = {};
+const pool = require('../database');
 
 dictaController.all = (req, res)=>{
     req.getConnection((err, conn)=>{

@@ -1,4 +1,5 @@
 const finalController = {};
+const pool = require('../database');
 
 finalController.all = (req, res)=>{
     req.getConnection((err, conn)=>{

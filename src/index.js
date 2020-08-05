@@ -11,10 +11,6 @@ const config = require('./config.json');
 
 const app = express();
 
-//exportamos rutas
-
-const materiaRoute = require('./routes/materiasRoute');
-
 //cabezeras cors
 app.use((req, res, next)=>{
     res.header('Access-Control-Allow-Origin', '*');
@@ -30,25 +26,27 @@ app.set('key', config.clave);
 
 //midelwares
 app.use(morgan('dev'));
-app.use(myconnection(mysql, {
+const mysqlConnecion = myconnection(mysql, {
     host: 'localhost',
     user: 'root',
     password: '',
     port: '3306',
     database: 'correlativas'
-}, 'single'));
+}, 'single');
+app.use(mysqlConnecion);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(require('./midelwares/token').validar);
-
+app.use('/api',require('./middleware/token').validar);
 
 //rutas
 
-app.use(require('./routes/materiasRoute'));
-app.use(require('./routes/carreraRoute'));
-app.use(require('./routes/dictaRoute'));
-app.use(require('./routes/correlativaRoute'));
-app.use(require('./routes/finalRoute'));
+app.use('/api',require('./routes/materiasRoute'));
+app.use('/api',require('./routes/carreraRoute'));
+app.use('/api',require('./routes/dictaRoute'));
+app.use('/api',require('./routes/correlativaRoute'));
+app.use('/api',require('./routes/finalRoute'));
+app.use('/apilogin',require('./routes/usuarioRoute'));
+app.use('*', require('./middleware/httpsstatus').http404);
 
 //ejecutamos el servidor
 app.listen(app.get('port'), ()=>{
