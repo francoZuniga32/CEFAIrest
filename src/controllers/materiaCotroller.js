@@ -32,9 +32,9 @@ materiaController.nombre = (req, res) => {
     });
 }
 
-materiaController.ano = (req, res) => {
+materiaController.anio = (req, res) => {
     req.getConnection((err, conn) => {
-        conn.query("SELECT * FROM materia WHERE ano = ? ", [req.params.ano], (err, materias) => {
+        conn.query("SELECT * FROM materia WHERE ano = ? ", [req.params.anio], (err, materias) => {
             if (err) {
                 res.json(err);
             }
@@ -54,9 +54,9 @@ materiaController.cuatrimestre = (req, res) => {
     });
 };
 
-materiaController.cuatrimestreano = (req, res) => {
+materiaController.cuatrimestreanio = (req, res) => {
     req.getConnection((err, conn) => {
-        conn.query("SELECT * FROM materia WHERE cuatrimestre = ? AND ano = ?", [req.params.cuatrimestre, req.params.ano], (err, materias) => {
+        conn.query("SELECT * FROM materia WHERE cuatrimestre = ? AND ano = ?", [req.params.cuatrimestre, req.params.anio], (err, materias) => {
             if (err) {
                 res.json(err);
             }

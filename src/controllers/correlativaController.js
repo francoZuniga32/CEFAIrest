@@ -36,7 +36,7 @@ correlativaController.disponible = (req, res)=>{
 
 correlativaController.carrera = (req, res)=>{
     req.getConnection((err, conn)=>{
-        conn.query("SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = ? ", [req.params.idcarrera],(err, materias)=>{
+        pool.query("SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ? ", [req.params.idcarrera],(err, materias)=>{
             if(err){
                 res.json(err);
             }
@@ -47,7 +47,7 @@ correlativaController.carrera = (req, res)=>{
 
 correlativaController.carreranecesaria = (req, res)=>{
     req.getConnection((err, conn)=>{
-        conn.query("SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = ? AND correlativa.necesaria = ?", [req.params.idcarrera, req.params.necesaria],(err, materias)=>{
+        conn.query("SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ?  AND correlativa.necesaria = ?", [req.params.idcarrera, req.params.necesaria],(err, materias)=>{
             if(err){
                 res.json(err);
             }
@@ -78,7 +78,7 @@ correlativaController.correlativamateria = async (req, res) => {
     const necesarias = await pool.query(consultaNecesarias, [idcarrera, idmateria]);
     for (let i = 0; i < necesarias.length; i++) {
         const element = necesarias[i];
-        var finales = await pool.query(consultaFinales, [element.idMateria]);
+        var finales =  await pool.query(consultaFinales, [element.idMateria]);
         element.finales = finales;
     }
 

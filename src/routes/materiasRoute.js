@@ -9,10 +9,10 @@ materiaRoute.get('/materia/id/:id', materiaController.id);
 
 materiaRoute.get('/materia/nombre/:nombre', materiaController.nombre);
 
-materiaRoute.get('/materia/ano/:ano', materiaController.ano);
+materiaRoute.get('/materia/anio/:anio', materiaController.anio);
 
 materiaRoute.get('/materia/cuatrimestre/:cuatrimestre', materiaController.cuatrimestre);
 
-materiaRoute.get('/materia/cuatrimestreano/:cuatrimestre/:ano', materiaController.cuatrimestreano);
+materiaRoute.get('/materia/cuatrimestreanio/:cuatrimestre/:anio', materiaController.cuatrimestreanio);
 
 module.exports = materiaRoute;
