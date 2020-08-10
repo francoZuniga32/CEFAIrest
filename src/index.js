@@ -23,6 +23,12 @@ app.use((req, res, next)=>{
 //configuraciones
 app.set('port',process.env.port || 3000);
 app.set('key', config.clave);
+path.basename(__dirname);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.set('public', path.join(__dirname, 'public'));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 //midelwares
 app.use(morgan('dev'));
@@ -40,6 +46,9 @@ app.use('/api',require('./middleware/token').validar);
 
 //rutas
 
+app.use('/', require('./routes/indexrender'));
+
+//rutas api
 app.use('/api',require('./routes/materiasRoute'));
 app.use('/api',require('./routes/carreraRoute'));
 app.use('/api',require('./routes/dictaRoute'));

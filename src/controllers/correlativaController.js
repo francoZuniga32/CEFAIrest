@@ -2,75 +2,65 @@ const correlativaController = {};
 const pool = require('../database');
 
 correlativaController.all = (req, res)=>{
-    req.getConnection((err, conn)=>{
-        conn.query("SELECT * FROM correlativa ",(err, materias)=>{
-            if(err){
-                res.json(err);
-            }
-            res.json(materias);
-        });
+    pool.query("SELECT * FROM correlativa ",(err, correlativa)=>{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
     });
 };
 
 correlativaController.necesaria = (req, res)=>{
     req.getConnection((err, conn)=>{
-        conn.query("SELECT * FROM correlativa WHERE correlativa.necesaria = ? ",[req.params.necesaria], (err, materias)=>{
+        conn.query("SELECT * FROM correlativa WHERE correlativa.necesaria = ? ",[req.params.necesaria], (err, correlativa)=>{
             if(err){
                 res.json(err);
             }
-            res.json(materias);
+            res.json(correlativa);
         });
-    });
+    })
 };
 
 correlativaController.disponible = (req, res)=>{
-    req.getConnection((err, conn)=>{
-        conn.query("SELECT * FROM correlativa WHERE correlativa.disponible = ? ", [req.params.disponible],(err, materias)=>{
-            if(err){
-                res.json(err);
-            }
-            res.json(materias);
-        });
+    pool.query("SELECT * FROM correlativa WHERE correlativa.disponible = ? ", [req.params.disponible],(err, correlativa)=>{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
     });
 };
 
 correlativaController.carrera = (req, res)=>{
-    req.getConnection((err, conn)=>{
-        pool.query("SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ? ", [req.params.idcarrera],(err, materias)=>{
-            if(err){
-                res.json(err);
-            }
-            res.json(materias);
-        });
+    pool.query("SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ? ", [req.params.idcarrera],(err, correlativa)=>{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
     });
 };
 
 correlativaController.carreranecesaria = (req, res)=>{
-    req.getConnection((err, conn)=>{
-        conn.query("SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ?  AND correlativa.necesaria = ?", [req.params.idcarrera, req.params.necesaria],(err, materias)=>{
-            if(err){
-                res.json(err);
-            }
-            res.json(materias);
-        });
+    pool.query("SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ?  AND correlativa.necesaria = ?", [req.params.idcarrera, req.params.necesaria],(err, correlativa)=>{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
     });
 };
 
 correlativaController.carreradisponible = (req, res)=>{
-    req.getConnection((err, conn)=>{
-        conn.query("SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = ? AND correlativa.disponible = ?", [req.params.idcarrera, req.params.disponible],(err, materias)=>{
-            if(err){
-                res.json(err);
-            }
-            res.json(materias);
-        });
+    pool.query("SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = ? AND correlativa.disponible = ?", [req.params.idcarrera, req.params.disponible],(err, correlativa)=>{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
     });
 };
 
 correlativaController.correlativamateria = async (req, res) => {
-    var consultaNecesarias = "SELECT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.necesaria AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.disponible = ?"
-    var consultaDisponibles = "SELECT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.disponible AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.necesaria = ?";
-    var consultaFinales = "SELECT materia.nombre FROM materia, final WHERE materia.idMateria = final.necesaria AND final.disponible = ?";
+    var consultaNecesarias = "SELECT DISTINCT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.necesaria AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.disponible = ?"
+    var consultaDisponibles = "SELECT DISTINCT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.disponible AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.necesaria = ?";
+    var consultaFinales = "SELECT DISTINCT materia.nombre FROM materia, final WHERE materia.idMateria = final.necesaria AND final.disponible = ?";
     var idcarrera = req.params.idcarrera;
     var idmateria = req.params.idmateria;
     var retorno = {};

@@ -65,4 +65,17 @@ materiaController.cuatrimestreanio = (req, res) => {
     });
 };
 
+materiaController.carreraAnio = (req, res)=>{
+    var consulta = "SELECT DISTINCT materia.* FROM materia, imparte WHERE imparte.idMateria = materia.idMateria AND imparte.idCarrera = ? AND materia.ano = ?";
+    var idcarrera = req.params.idcarrera;
+    var anio = req.params.anio;
+
+    pool.query(consulta, [idcarrera,anio], (err, materias)=>{
+        if(err){
+            console.log(err);
+        }
+        res.json(materias);
+    });
+};
+
 module.exports = materiaController;

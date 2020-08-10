@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('component/util/header') %> 
+</head>
+<body>
+    <%- include('component/util/nav-bar') %>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <form id="app">
+                <div class="form-group">
+                    <select class="form-control" name="" class="d-block" ref="carreras" v-on:change="cargarAnios()">
+                        <option value="-">-</option>
+                        <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" name="" v-if="anios" ref="anios" v-on:change="cargarMaterias()">
+                        <option value="-">-</option>
+                        <option v-for="i in duracion" v-bind:value="i">{{ i }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="consultar()">
+                        <option value="-">-</option>
+                        <option v-for="materia in materias" v-bind:value="materia.idMateria">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div id="app2" v-if="display" class="col">
+            <div class="container">
+                <div class="row" >
+                    <div class="col">
+                        <h2>Necesarias</h2>
+                        
+                        <div v-if="necesarias.length == 0" class="alert alert-info" role="alert">
+                            No require cursados previos
+                        </div>
+
+                        <div v-for="necesaria in necesarias" class="card" style="margin-bottom: 1%;">
+                            <div class="card-body">
+                                <p>{{ necesaria.nombre }}</p>
+                                <p>Año: {{ necesaria.ano }}° / Cuatrimestre: {{ necesaria.cuatrimestre }}°</p>
+                                <p class="text-secondary">
+    
+                                </p>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>Disponibles</h2>
+
+                        <div v-if="disponibles.length == 0" class="alert alert-info" role="alert">
+                            No dispone cursados posteriores
+                        </div>
+
+                        <div v-for="disponible in disponibles" class="card" style="margin-bottom: 1%;">
+                            <div class="card-body">
+                                <p>{{ disponible.nombre }}</p>
+                                <p>Año: {{ disponible.ano }}° / Cuatrimestre: {{ disponible.cuatrimestre }}°</p>
+                                <p class="text-secondary">
+                                    
+                                </p>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/data.js"></script>
+    <script>
+        var datos = data;
+
+        var app2 = new Vue({
+            el: '#app2',
+            data:{
+                necesarias : null,
+                disponibles : null,
+                display : false
+            }
+        });
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                datos: datos,
+                carreras: datos.carreras,
+                duracion : 0,
+                materias : {},
+                anios: false,
+                materias: false,
+                info : null
+            },
+            methods: {
+                cargarAnios: function() {
+                    this.materias = false;
+                    this.anios = false;
+                    this.duracion = 0;
+
+                    var idcarrera = this.$refs.carreras.value;
+                    this.duracion = this.carreras[parseInt(idcarrera)-1].duracion;
+                    this.anios = true;
+                },
+                cargarMaterias: function(){
+                    var idcarrera = this.$refs.carreras.value;
+                    var anio = this.$refs.anios.value;
+
+                    this.materias = datos.materias[parseInt(idcarrera)-1][parseInt(anio)-1];
+                },
+                consultar : function(){
+                    var idcarrera = this.$refs.carreras.value;
+                    var idmateria = this.$refs.materias.value;
+                    //llamada a la funcion para poder trar los datos
+                    app2.display = false;
+                    app2.necesarias = null;
+                    app2.disponibles = null;
+                    axios.get(`/correlativas/consulta/${idcarrera}/${idmateria}`).then((response ) => {
+                        app2.necesarias = response.data.necesarias;
+                        app2.disponibles = response.data.disponibles;
+                    });
+                    app2.display = true;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
