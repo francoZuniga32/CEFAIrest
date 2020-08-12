@@ -92,7 +92,7 @@ dictaController.horamayor = (req, res)=>{
 dictaController.diaHora = async (req, res)=>{
     var dia = req.params.dia;
     var horainicio = req.params.hora;
-    var consulta = "SELECT dicta.*, materia.nombre as nombremateria FROM dicta, materia, imparte, carrera WHERE materia.idMateria = dicta.idMateria AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = carrera.idCarrera AND dicta.dia = ? AND dicta.horafin > ? ORDER BY horainicio ASC";
+    var consulta = "SELECT dicta.*, materia.nombre as nombremateria FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.dia = ? AND dicta.horafin > ? ORDER BY horainicio ASC";
     var consultaFinales = "SELECT DISTINCT imparte.idCarrera FROM imparte WHERE imparte.idMateria = ? ";
 
     var horario = await pool.query(consulta, [dia, horainicio]);
