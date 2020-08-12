@@ -10,6 +10,6 @@ indexControler.horarios = (req, res)=>{
 
 indexControler.correlativas = (req, res)=>{
     res.render('correlativas');
-}
+};
 
 module.exports = indexControler;

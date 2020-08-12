@@ -1,6 +1,8 @@
 # CEFAI app
 
-descripcion del repositorio
+La aplicacion del cefai es una iniciativa para poder ofrecer herramientas para los estudiantes. Mostrar cosas de interes y generar lazos entre los estudiantes y la univercidad. 
+
+---
 
 ## API
 
@@ -69,3 +71,20 @@ Datos sobre los horarios de dictado de las materias
 | /correlativa/graf/                                     |                                                              |
 
 ### Finales
+
+Estas rutas retornan algo similar al anterior. El formato de los finales son :necesarias y :disponibles, donde :necesaria es el id de la materia cuyo final es necesario para cursar la materia cuyo id es :disponible
+
+| Ruta                          | Descripcion                                                  |
+| ----------------------------- | ------------------------------------------------------------ |
+| /final                        | Retorna todos los finales en el formato necesario y disponible |
+| /final/necesaria/:necesaria   | Retorna los finales de las materias que necesiten el final de la materia cuyo id coincide con :necesaria. |
+| /final/disponible/:disponible | Retorna los finales de las materias cuyo id coincide con :diponible |
+
+### Usuario
+
+Estas turas sirven para poder registrar el acceso a los usuario.
+
+| Ruta                           | Descripcion                                                  |
+| ------------------------------ | ------------------------------------------------------------ |
+| /usuario/:usuario/:contrasenia | se identifica al usuario con :usuario y :contrasenia, si el usuario esta en la base de datos, vamos a generarles un token para poder usar la aplicacion rest. |
+
