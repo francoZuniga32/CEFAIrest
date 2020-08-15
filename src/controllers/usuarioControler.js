@@ -24,4 +24,26 @@ usuarioControler.validar = (req, res) => {
     });
 };
 
+usuarioControler.validarLogin = (req, res) => {
+    var usuario = req.body.usuario;
+    var contrasenia = req.body.contrasenia;
+    var consulta = "SELECT * FROM `usuario` WHERE usuario = ? AND pass = ?";
+
+    pool.query(consulta, [usuario, contrasenia], (err, usuario)=>{
+        if(err){
+            console.log(err);
+        }
+        if(usuario.length > 0){
+            req.session.user = {
+                "nombre" : usuario[0].usuario,
+                "tipo" : usuario[0].tipo
+            };
+            console.log(req.session.user);
+            res.redirect("/administrar/");
+        }else{
+            res.redirect("/login");
+        }
+    });
+}
+
 module.exports = usuarioControler;

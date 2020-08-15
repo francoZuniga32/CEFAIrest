@@ -1,6 +1,20 @@
 const materiaController = {};
 const pool = require('../database');
 
+materiaController.complete = async (req, res)=>{
+    var consultaMaterias = "SELECT DISTINCT * FROM materia";
+    var consultaCarreras = "SELECT DISTINCT carrera.idCarrera FROM imparte, carrera WHERE imparte.idCarrera = carrera.idCarrera AND imparte.idMateria = ?";
+    
+    var materias = await pool.query(consultaMaterias);
+
+    for (let i = 0; i < materias.length; i++) {
+        const element = materias[i];
+        element.carreras = await pool.query(consultaCarreras, [element.idMateria]);
+    }
+
+    res.json(materias);
+};
+
 materiaController.all = (req, res) => {
     pool.query("SELECT * FROM materia ", (err, materias) => {
         if (err) {

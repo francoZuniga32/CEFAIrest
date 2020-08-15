@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('component/util/header') %> 
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-body" id="form">
+                <form action="/loginvalidate" method="post" v-on:submit="validar">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuario</label>
+                        <input v-model="usuario" type="email" class="form-control" ref="usuario" name="usuario" id="usuario" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contrasenia" class="form-label">Contrasenia</label>
+                        <input v-model="contrasenia" class="form-control" type="password" class="form-control" name="contrasenia" ref="contrasenia" id="contrasenia">
+                    </div>
+                    <div class="mb-3">
+                        <p v-if="error.length">
+                            <b>Por favor, corrija el(los) siguiente(s) error(es):</b>
+                            <ul>
+                              <li v-for="err in error">{{ err }}</li>
+                            </ul>
+                          </p>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-success" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var form = new Vue({
+            el: '#form',
+            data: {
+                error: [],
+                usuario: null,
+                contrasenia: null
+            },
+            methods:{
+                validar: function(e){
+                    if (this.usuario && this.contrasenia) {
+                        this.contrasenia = $.md5(this.contrasenia);
+                        console.log(this.contrasenia)
+                        return true;
+                    }
+
+                    this.error = [];
+
+                    if (!this.usuario) {
+                        this.error.push('El usuario es obligatorio.');
+                    }else if (!this.validEmail(this.usuario)) {
+                        this.error.push('El correo electrónico debe ser válido.');
+                    }
+
+
+                    if (!this.contrasenia) {
+                        this.error.push('La contrasenia es obligatoria.');
+                    }
+
+                    e.preventDefault();
+                },
+                validEmail: function (email) {
+                    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(email);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

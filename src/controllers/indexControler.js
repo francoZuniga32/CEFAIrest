@@ -12,4 +12,8 @@ indexControler.correlativas = (req, res)=>{
     res.render('correlativas');
 };
 
+indexControler.login = (req, res)=>{
+    res.render('login');
+}
+
 module.exports = indexControler;

@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const mysql = require('mysql');
 const myconnection = require('express-myconnection');
 const bodyParser = require('body-parser');
+const session = require('express-session');
 const url=require('url');
 const jwt = require('jsonwebtoken');
 
@@ -32,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //midelwares
 app.use(morgan('dev'));
+
 const mysqlConnecion = myconnection(mysql, {
     host: 'localhost',
     user: 'root',
@@ -43,6 +45,9 @@ app.use(mysqlConnecion);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api',require('./middleware/token').validar);
+app.use(session({
+    secret: 'asdasdasdasdasd'
+}));
 
 //rutas
 
@@ -54,6 +59,7 @@ app.use('/api',require('./routes/carreraRoute'));
 app.use('/api',require('./routes/dictaRoute'));
 app.use('/api',require('./routes/correlativaRoute'));
 app.use('/api',require('./routes/finalRoute'));
+app.use('/administrar', require('./routes/administrarRoute'));
 app.use('/apilogin',require('./routes/usuarioRoute'));
 app.use('*', require('./middleware/httpsstatus').http404);
 
