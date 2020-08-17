@@ -14,8 +14,14 @@
 <body>
     <%- include('component/util/nav-bar') %>
     <div class="container-fluid">
-        <div class="row d-flex justify-content-center" id="reloj">
-            <h1>{{ hora }}</h1>
+        <div class="row" id="reloj">
+            <h1 class="d-flex justify-content-center">{{ dia }}</h1>
+            <h1 class="d-flex justify-content-center">{{ hora }}</h1>
+        </div>
+        <div class="row">
+            <div class="d-flex justify-content-end col-sm">
+                <a href="/horarios/misemana" type="button" class="btn btn-primary">Mi Semana</a>
+            </div>
         </div>
         <div class="row table-responsive">
             <table class="table" id="app">
@@ -152,12 +158,13 @@
             var reloj = new Vue({
                 el: '#reloj',
                 data:{
-                    hora: "00:00:00"
+                    hora: "00:00:00",
+                    dia: ''
                 }, 
                 mounted: function() {
                     this.hora = app.timeParse(new Date);
                     console.log(this.hora);
-
+                    this.dia = app.numberToDate(new Date().getDay());
                     setInterval(this.load(), 1000);
                 },
                 methods:{

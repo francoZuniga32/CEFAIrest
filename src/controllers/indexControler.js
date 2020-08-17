@@ -16,4 +16,8 @@ indexControler.login = (req, res)=>{
     res.render('login');
 }
 
+indexControler.misemana = (req, res)=>{
+    res.render('misemana');
+}
+
 module.exports = indexControler;

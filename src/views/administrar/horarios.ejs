@@ -8,6 +8,131 @@
 </head>
 <body>
     <%- include('../component/util/nav-bar-admin') %>
-    <h1>HORARIOS</h1>
+    <div id="root"class="root">
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="filtro">
+                <span class="material-icons">
+                    filter_list
+                </span>
+            </button>
+        </p>
+        <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="filtro">
+                <div class="card card-body">
+                    <div class="row">
+                        <div class="mb-3 col-sm">
+                            <select class="form-select" v-model="carrerasSelect" aria-label="Default select example">
+                                <option selected>-</option>
+                                <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
+                            </select>
+                        </div>
+                        <div class="col-sm">
+                            <select class="form-select" v-model="diaSelect" name="" id="">
+                                <option value="">-</option>
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miercoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sabado</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="ro">
+                    <button v-on:click="filtrar" class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="filtro">
+                        Filtrar
+                    </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Aula</th>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Modulo</th>
+                        <th scope="col">Hora Inicio</th>
+                        <th scope="col">Hora Fin</th>
+                        <th scope="col">Cuatrimestre</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Carreras</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="horario in horarios">
+                        <td>{{horario.nombre}}</td>
+                        <td>{{horario.aula}}</td>
+                        <td>{{horario.dia}}</td>
+                        <td>{{horario.modulo}}</td>
+                        <td>{{horario.horainicio}}</td>
+                        <td>{{horario.horafin}}</td>
+                        <td>{{horario.cuatrimestre}}</td>
+                        <td>{{horario.estado}}</td>
+                        <td>
+                            <span v-for="carrera in horario.carreras" class="badge bg-secondary">
+                                <i v-if="carrera.idCarrera == 1">Prof</i>
+                                <i v-else-if="carrera.idCarrera == 2">LCC</i>
+                                <i v-else-if="carrera.idCarrera == 3">LSI</i>
+                                <i v-else-if="carrera.idCarrera == 4">TUDW</i>
+                                <i v-else>TUASySL</i>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        var root = new Vue({
+            el: '#root',
+            data: {
+                horarios: [],
+                carreras: [],
+                carrerasSelect: null,
+                diaSelect: null
+            },
+            mounted: function(){
+                this.load();
+            },
+            methods:{
+                load: function(){
+                    axios.get(`/administrar/horarios/horarios`).then((response) => {
+                        this.horarios = response.data;
+                    });
+
+                    axios.get(`/administrar/carreras/carreras`).then((response) => {
+                        this.carreras = response.data;
+                    })
+                },
+                filtrar: function(){
+                    if(this.carrerasSelect && this.diaSelect){
+                        //consultamos por dia y carrera
+                        axios.get(`/administrar/horarios/horarios/carreradia/${this.carrerasSelect}/${this.diaSelect}`).then((response) => {
+                            this.horarios = response.data;
+                        });
+                    }else if(this.carrerasSelect){
+                        //consultamos por carrera solamente
+                        axios.get(`/administrar/horarios/horarios/carrera/${this.diaSelect}`).then((response) => {
+                            this.horarios = response.data;
+                        });
+                    }else if(this.diaSelect){
+                        //consultamos por el dia solamente
+                        axios.get(`/administrar/horarios/horarios/dia/${this.diaSelect}`).then((response) => {
+                            this.horarios = response.data;
+                        });
+                    }else{
+                        axios.get(`/administrar/horarios/horarios`).then((response) => {
+                            this.horarios = response.data;
+                        });
+                    }
+                }
+            }
+        })
+    </script>
 </body>
 </html>

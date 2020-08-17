@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('component/util/header') %> 
+</head>
+<body>
+    <%- include('component/util/nav-bar') %>
+    <div class="container-fluid" id="app">
+        <div class="row">
+            <div class="card card-body">
+                <form>
+                    <div class="mb-3">
+                        <select class="form-control" name="" class="d-block" ref="carreras" v-on:change="cargarAnios()">
+                            <option value="-">-</option>
+                            <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" name="" v-if="anios" ref="anios" v-on:change="cargarMaterias()">
+                            <option value="-">-</option>
+                            <option v-for="i in duracion" v-bind:value="i">{{ i }}</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="consultar()">
+                            <option value="-">-</option>
+                            <option v-for="materia in materias" v-bind:value="materia.idMateria">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <h5>Lunes</h5>
+                <p v-if="lunes.length > 0" v-for="materia in lunes">
+                    <materiacard v-bind:materia="materia"></materiacard>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Martes</h5>
+                <p v-if="martes.length > 0" v-for="materia in martes">
+                    <materiacard v-bind:materia="materia"></materiacard>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Miercoles</h5>
+                <p v-if="miercoles.length > 0" v-for="materia in miercoles">
+                    <materiacard v-bind:materia="materia"></materiacard>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Jueves</h5>
+                <p v-if="jueves.length > 0" v-for="materia in jueves">
+                    <materiacard v-bind:materia="materia"></materiacard>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Viernes</h5>
+                <p v-if="viernes.length > 0" v-for="materia in viernes">
+                    <materiacard v-bind:materia="materia"></materiacard>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Sabado</h5>
+                <p v-if="sabado.length > 0" for="materia in sabado">
+                    <materiacard v-bind:materia="materia"></materiacard>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/data.js"></script>
+    <script src="/js/misemana.js"></script>
+</body>
+</html>

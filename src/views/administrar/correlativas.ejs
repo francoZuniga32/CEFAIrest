@@ -8,6 +8,61 @@
 </head>
 <body>
     <%- include('../component/util/nav-bar-admin') %>
-    <h1>CORRELATIVAS</h1>
+    <div id="root"class="root">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Dispobiles</th>
+                        <th scope="col">Carreras</th>
+                        <th scope="col">Editar</th>
+                        <th scope="col">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(materia, i) in correlativas">
+                        <td>{{ materia.necesaria }}</td>
+                        <td>{{ materia.nombreNecesaria }}</td>
+                        <td>
+                            <ul>
+                                <li v-for="disponible in materia.nombreDisponible">{{ disponible.nombreDisponible }}</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span v-for="carrera in materia.carreras" class="badge bg-secondary">
+                                <i v-if="carrera.idCarrera == 1">Prof</i>
+                                <i v-else-if="carrera.idCarrera == 2">LCC</i>
+                                <i v-else-if="carrera.idCarrera == 3">LSI</i>
+                                <i v-else-if="carrera.idCarrera == 4">TUDW</i>
+                                <i v-else>TUASySL</i>
+                            </span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        var root = new Vue({
+            el: '#root',
+            data: {
+                correlativas: []
+            },
+            mounted: function() {
+                this.load();
+            },
+            methods:{
+                load: function(){
+                    axios.get(`/administrar/correlativas/correlativas`).then((response) => {
+                        this.correlativas = response.data;
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 </html>

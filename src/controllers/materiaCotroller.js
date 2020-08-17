@@ -79,6 +79,21 @@ materiaController.cuatrimestreanio = (req, res) => {
     });
 };
 
+materiaController.carrera = async (req, res) => {
+    var consulta = "SELECT DISTINCT materia.* FROM materia, imparte WHERE materia.idMateria = imparte.idMateria AND imparte.idCarrera = ?";
+    var idcarrera = req.params.idcarrera;
+    var consultaCarreras = "SELECT DISTINCT carrera.idCarrera FROM imparte, carrera WHERE imparte.idCarrera = carrera.idCarrera AND imparte.idMateria = ?";
+    
+    var materias = await pool.query(consulta, [idcarrera]);
+
+    for (let i = 0; i < materias.length; i++) {
+        const element = materias[i];
+        element.carreras = await pool.query(consultaCarreras, [element.idMateria]);
+    }
+
+    res.json(materias);
+}
+
 materiaController.carreraAnio = (req, res)=>{
     var consulta = "SELECT DISTINCT materia.* FROM materia, imparte WHERE imparte.idMateria = materia.idMateria AND imparte.idCarrera = ? AND materia.ano = ?";
     var idcarrera = req.params.idcarrera;

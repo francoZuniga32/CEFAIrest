@@ -1,5 +1,6 @@
 const correlativaController = {};
 const pool = require('../database');
+const { json } = require('body-parser');
 
 correlativaController.all = (req, res)=>{
     pool.query("SELECT * FROM correlativa ",(err, correlativa)=>{
@@ -9,6 +10,22 @@ correlativaController.all = (req, res)=>{
         res.json(correlativa);
     });
 };
+
+correlativaController.complete = async (req, res) => {
+    var consultaNecesaria = "SELECT DISTINCT materia.nombre as nombreNecesaria, correlativa.necesaria FROM correlativa, materia WHERE materia.idMateria = correlativa.necesaria"
+    var consultaDisponibles = "SELECT DISTINCT materia.nombre as nombreDisponible FROM correlativa, materia WHERE materia.idMateria = correlativa.disponible AND correlativa.necesaria = ?";
+    var consultaFinales = "SELECT DISTINCT carrera.idCarrera FROM carrera ,imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?";
+
+    var correlativas = await pool.query(consultaNecesaria);
+
+    for (let i = 0; i < correlativas.length; i++) {
+        var element = correlativas[i];
+        element.nombreDisponible = await pool.query(consultaDisponibles, [element.necesaria]);
+        element.carreras = await pool.query(consultaFinales, [element.necesaria]);
+    }
+
+    res.json(correlativas);
+}
 
 correlativaController.necesaria = (req, res)=>{
     req.getConnection((err, conn)=>{

@@ -3,7 +3,7 @@ const pool = require('../database');
 
 dictaController.all = (req, res)=>{
     req.getConnection((err, conn)=>{
-        conn.query("SELECT * FROM dicta",(err, materias)=>{
+        conn.query("SELECT * FROM dicta, materia WHERE materia.idMateria = dicta.idMateria",(err, materias)=>{
             if(err){
                 res.json(err);
             }
@@ -14,7 +14,7 @@ dictaController.all = (req, res)=>{
 
 dictaController.idmateria = (req, res)=>{
     req.getConnection((err, conn)=>{
-        conn.query("SELECT * FROM dicta WHERE idMateria = ?",[req.params.idmateria], (err, materias)=>{
+        conn.query("SELECT * FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.idMateria = ?",[req.params.idmateria], (err, materias)=>{
             if(err){
                 res.json(err);
             }
@@ -105,5 +105,51 @@ dictaController.diaHora = async (req, res)=>{
     console.log(horario);
     res.json(horario);
 }
+
+dictaController.administrar = async (req, res)=>{
+    var consultaDicta = "SELECT DISTINCT * FROM dicta, materia WHERE dicta.idMateria = materia.idMateria";
+    var consultaFinales = "SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?";
+
+    var dicta = await pool.query(consultaDicta);
+
+    for (let i = 0; i < dicta.length; i++) {
+        var element = dicta[i];
+        element.carreras = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(dicta);
+}
+
+dictaController.carrera = async (req, res) => {
+    var consulta = "SELECT DISTINCT dicta.*  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ?";
+    var consultaFinales = "SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?";
+    var idcarrera = req.params.idcarrera;
+    
+    var dicta = await pool.query(consulta, [idcarrera] );
+
+    for (let i = 0; i < dicta.length; i++) {
+        var element = dicta[i];
+        element.carreras = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    console.log(dicta);
+
+    res.json(dicta);
+};
+
+dictaController.diaCarrera = async (req, res)=>{
+    var consulta = "SELECT DISTINCT dicta.*  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ? AND dicta.dia = ?";
+    var consultaFinales = "SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?";
+    var idcarrera = req.params.idcarrera;
+    var dia = req.params.dia;
+
+    var dicta = await pool.query(consulta, [idcarrera, dia]);
+    for (let i = 0; i < dicta.length; i++) {
+        var element = dicta[i];
+        element.carrera = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(dicta);
+};
 
 module.exports = dictaController;
