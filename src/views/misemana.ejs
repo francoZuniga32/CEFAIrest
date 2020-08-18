@@ -27,51 +27,58 @@
                     <div class="mb-3">
                         <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="consultar()">
                             <option value="-">-</option>
-                            <option v-for="materia in materias" v-bind:value="materia.idMateria">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
+                            <option v-for="materia in materias"  v-bind:value="materia.idMateria">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
                         </select>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="row">
+        <div class="row h-100">
             <div class="col-sm-2">
                 <h5>Lunes</h5>
+                <hr>
                 <p v-if="lunes.length > 0" v-for="materia in lunes">
                     <materiacard v-bind:materia="materia"></materiacard>
                 </p>
             </div>
             <div class="col-sm-2">
                 <h5>Martes</h5>
+                <hr>
                 <p v-if="martes.length > 0" v-for="materia in martes">
                     <materiacard v-bind:materia="materia"></materiacard>
                 </p>
             </div>
             <div class="col-sm-2">
                 <h5>Miercoles</h5>
+                <hr>
                 <p v-if="miercoles.length > 0" v-for="materia in miercoles">
                     <materiacard v-bind:materia="materia"></materiacard>
                 </p>
             </div>
             <div class="col-sm-2">
                 <h5>Jueves</h5>
+                <hr>
                 <p v-if="jueves.length > 0" v-for="materia in jueves">
                     <materiacard v-bind:materia="materia"></materiacard>
                 </p>
             </div>
             <div class="col-sm-2">
                 <h5>Viernes</h5>
+                <hr>
                 <p v-if="viernes.length > 0" v-for="materia in viernes">
                     <materiacard v-bind:materia="materia"></materiacard>
                 </p>
             </div>
             <div class="col-sm-2">
                 <h5>Sabado</h5>
+                <hr>
                 <p v-if="sabado.length > 0" for="materia in sabado">
                     <materiacard v-bind:materia="materia"></materiacard>
                 </p>
             </div>
         </div>
     </div>
+    <script src="/js/component.js"></script>
     <script src="/js/data.js"></script>
     <script src="/js/misemana.js"></script>
 </body>

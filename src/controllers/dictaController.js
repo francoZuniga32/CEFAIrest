@@ -102,7 +102,6 @@ dictaController.diaHora = async (req, res)=>{
         element.carreras = await pool.query(consultaFinales, [element.idMateria]);
     }
 
-    console.log(horario);
     res.json(horario);
 }
 
@@ -131,9 +130,7 @@ dictaController.carrera = async (req, res) => {
         var element = dicta[i];
         element.carreras = await pool.query(consultaFinales, [element.idMateria]);
     }
-
-    console.log(dicta);
-
+    
     res.json(dicta);
 };
 

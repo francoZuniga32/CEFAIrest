@@ -1,17 +1,4 @@
 
-Vue.component('materiacard',{
-    props: ['materia'],
-    template: `<div class="card">
-                <h5 class="card-header">{{ materia.nombre }}</h5>
-                <div class="card-body">
-                    <p class="card-text">{{ materia.horainicio.substring(0,5) }} - {{ materia.horafin.substring(0,5) }}</p>
-                </div>
-                <div class="card-footer text-muted">
-                    {{ materia.modulo }}
-                </div>
-            </div>`
-})
-
 var app = new Vue({
     el: '#app',
     data: {
@@ -50,35 +37,54 @@ var app = new Vue({
                 response.data.forEach(element => {
                     this.horario.push(element);
                 })
-                this.clasificar();
+                this.clasificar(response.data);
             });
         },
-        clasificar: function () {
-            this.horario.forEach(element => {
+        clasificar: function (array) {
+            array.forEach(element => {
                 switch (element.dia) {
                     case 'Lunes':
                         this.lunes.push(element);
+                        this.lunes.sort(this.compareDate);
                         break;
                     case 'Martes':
                         this.martes.push(element);
+                        this.martes.sort(this.compareDate);
                         break;
                     case 'Miercoles':
                         this.miercoles.push(element);
+                        this.miercoles.sort(this.compareDate);
                         break;
                     case 'Jueves':
                         this.jueves.push(element);
+                        this.jueves.sort(this.compareDate);
                         break;
                     case 'Viernes':
                         this.viernes.push(element);
+                        this.viernes.sort(this.compareDate);
                         break;
                     case 'Savado':
                         this.savado.push(element);
+                        this.savado.sort(this.compareDate);
                         break;
                     default:
 
                         break;
                 }
             })
+        },
+        compareDate: function(a, b) {
+            var retorno;
+            a = a.horainicio;
+            b = b.horainicio;
+            if(a > b){
+                retorno = 1;
+            }else if(a == b){
+                retorno = 0;
+            }else{
+                retorno = -1;
+            }
+            return retorno;
         }
     }
 });
