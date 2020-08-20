@@ -375,6 +375,10 @@ INSERT INTO `dicta` (`idMateria`, `aula`, `dia`, `modulo`, `horainicio`, `horafi
 (11, '40', 'Jueves', 'Unico', '15:00:00', '18:00:00', 1, 'normal'),
 (12, 'Laboratorio II', 'Viernes', 'Unico', '16:00:00', '18:00:00', 1, 'normal');
 
+
+
+
+
 -- --------------------------------------------------------
 
 --

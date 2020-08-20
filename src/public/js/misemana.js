@@ -8,6 +8,8 @@ var app = new Vue({
         materias: {},
         anios: false,
         materias: false,
+        add: false,
+        desabilitado: [],
         info: null,
         horario: [],
         lunes: [], martes: [], miercoles: [], jueves: [], viernes: [], sabado: []
@@ -28,17 +30,21 @@ var app = new Vue({
 
             this.materias = data.materias[parseInt(idcarrera) - 1][parseInt(anio) - 1];
         },
+        addDisplay: function (){
+            this.add = true;
+        },
         consultar: function () {
-            var idcarrera = this.$refs.carreras.value;
             var idmateria = this.$refs.materias.value;
             //llamada a la funcion para poder trar los datos
-
-            axios.get(`/horarios/horarios/materia/${idmateria}`).then((response) => {
-                response.data.forEach(element => {
-                    this.horario.push(element);
-                })
-                this.clasificar(response.data);
-            });
+            if(!this.desabilitado.includes(idmateria)){
+                this.desabilitado.push(idmateria);
+                axios.get(`/horarios/horarios/materia/${idmateria}`).then((response) => {
+                    response.data.forEach(element => {
+                        this.horario.push(element);
+                    })
+                    this.clasificar(response.data);
+                });
+            }
         },
         clasificar: function (array) {
             array.forEach(element => {

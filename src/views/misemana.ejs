@@ -25,10 +25,17 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="consultar()">
+                        <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="addDisplay()">
                             <option value="-">-</option>
-                            <option v-for="materia in materias"  v-bind:value="materia.idMateria">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
+                            <option v-for="materia in materias"  v-bind:value="materia.idMateria" :disabled="desabilitado.includes(materia.idMateria)">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
                         </select>
+                    </div>
+                    <div class="mb-3">
+                        <a class="btn btn-outline-info rounded" v-if="add" v-on:click="consultar()">
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </a>
                     </div>
                 </form>
             </div>

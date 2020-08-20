@@ -22,4 +22,6 @@ administrarRoute.get('/materias/materias/carrera/:idcarrera', materiaController.
 administrarRoute.get('/horarios/horarios/carrera/:idcarrera', dictaController.carrera);
 administrarRoute.get('/horarios/horarios/dia/:dia', dictaController.dia);
 administrarRoute.get('/horarios/horarios/carreradia/:carrera/:dia', dictaController.diaCarrera);
+
+administrarRoute
 module.exports = administrarRoute;
