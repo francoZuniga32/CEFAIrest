@@ -3,7 +3,8 @@ var app = new Vue({
     data:{
         horarios: [],
         dia: "",
-        hora: "00:00:00"
+        hora: "00:00:00",
+        cuatrimestre: 2
     },
     mounted: function() {
         this.load();
@@ -13,7 +14,7 @@ var app = new Vue({
         this.dia = this.numberToDate(new Date().getDay());
         this.hora = this.timeParse(new Date);
         console.log(this.dia+" "+this.hora);
-        axios.get(`/horarios/consulta/${this.dia}/${this.hora}`).then((response) => {
+        axios.get(`/horarios/consulta/${this.dia}/${this.hora}/${this.cuatrimestre}`).then((response) => {
             this.horarios = response.data;
             this.horarios.forEach(element => {
                     var date2 = this.timeParse(new Date);

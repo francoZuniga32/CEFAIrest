@@ -1,5 +1,6 @@
 const dictaController = {};
 const pool = require('../database');
+const { id } = require('./materiaCotroller');
 
 dictaController.all = (req, res)=>{
     req.getConnection((err, conn)=>{
@@ -89,13 +90,28 @@ dictaController.horamayor = (req, res)=>{
     });
 };
 
+dictaController.materiaCuatrimestre = (req, res)=>{
+    var idmateria = req.params.idmateria;
+    var cuatrimestre = req.params.cuatrimestre;
+    var consulta = "SELECT * FROM dicta, materia WHERE dicta.idMateria = materia.idMateria AND dicta.idMateria = ? AND dicta.cuatrimestre = ? ";
+
+    pool.query(consulta, [idmateria, cuatrimestre], (err, materias)=>{
+        if(err){
+            console.log(err);
+        }
+        res.json(materias);
+    });
+};
+
 dictaController.diaHora = async (req, res)=>{
     var dia = req.params.dia;
     var horainicio = req.params.hora;
-    var consulta = "SELECT dicta.*, materia.nombre as nombremateria FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.dia = ? AND dicta.horafin > ? ORDER BY horainicio ASC";
+    var cuatrimestre = req.params.cuatrimestre;
+
+    var consulta = "SELECT dicta.*, materia.nombre as nombremateria FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.dia = ? AND dicta.horafin > ? AND dicta.cuatrimestre = ? ORDER BY horainicio ASC";
     var consultaFinales = "SELECT DISTINCT imparte.idCarrera FROM imparte WHERE imparte.idMateria = ? ";
 
-    var horario = await pool.query(consulta, [dia, horainicio]);
+    var horario = await pool.query(consulta, [dia, horainicio, cuatrimestre]);
 
     for (let i = 0; i < horario.length; i++) {
         const element = horario[i];

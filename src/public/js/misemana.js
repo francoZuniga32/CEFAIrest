@@ -12,7 +12,9 @@ var app = new Vue({
         desabilitado: [],
         info: null,
         horario: [],
-        lunes: [], martes: [], miercoles: [], jueves: [], viernes: [], sabado: []
+        cuatrimestre: 2,
+        lunes: [], martes: [], miercoles: [], jueves: [], viernes: [], sabado: [],
+        errors: []
     },
     methods: {
         cargarAnios: function () {
@@ -38,11 +40,17 @@ var app = new Vue({
             //llamada a la funcion para poder trar los datos
             if(!this.desabilitado.includes(idmateria)){
                 this.desabilitado.push(idmateria);
-                axios.get(`/horarios/horarios/materia/${idmateria}`).then((response) => {
-                    response.data.forEach(element => {
-                        this.horario.push(element);
-                    })
-                    this.clasificar(response.data);
+                axios.get(`/horarios/horarios/materia/${idmateria}/${this.cuatrimestre}`).then((response) => {
+                    if(response.data.length > 0) {
+                        response.data.forEach(element => {
+                            this.horario.push(element);
+                        })
+                        this.errors = [];
+                        this.clasificar(response.data);
+                    }else{
+                        this.errors = [];
+                        this.errors.push(`La materia seleccionada no tiene recursados para el ${this.cuatrimestre}° cuatrimestre`);
+                    }
                 });
             }
         },

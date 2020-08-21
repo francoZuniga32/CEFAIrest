@@ -40,6 +40,11 @@
                 </form>
             </div>
         </div>
+        <div class="row" v-if="errors.length > 0">
+            <div v-for="error in errors" class="alert alert-danger" role="alert">
+                {{error}}
+            </div>
+        </div>
         <div class="row h-100">
             <div class="col-sm-2">
                 <h5>Lunes</h5>

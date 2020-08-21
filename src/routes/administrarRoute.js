@@ -15,7 +15,7 @@ administrarRoute.get('/horarios', administrarControler.horarios);
 administrarRoute.get('/carreras/carreras', carrerasControler.all);
 administrarRoute.get('/materias/materias', materiaController.complete);
 administrarRoute.get('/correlativas/correlativas', correlativaController.complete);
-administrarRoute.get('/horarios/horarios', dictaController.administrar);
+administrarRoute.get('/horarios/horarios/:cuatrimestre', dictaController.administrar);
 //rutas filtros
 administrarRoute.get('/materias/materias/carrera/:idcarrera', materiaController.carrera);
 
