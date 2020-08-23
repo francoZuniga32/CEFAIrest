@@ -107,4 +107,18 @@ materiaController.carreraAnio = (req, res)=>{
     });
 };
 
+materiaController.json = (req, res)=>{
+    var consulta = "SELECT materia.idMateria, materia.nombre, materia.cuatrimestre FROM `materia`, imparte WHERE materia.idMateria = imparte.idMateria AND imparte.idCarrera = '3' AND materia.ano = '5'";
+    var idcarrera = req.params.idcarrera;
+    var anio = req.body.anio;
+
+    pool.query(consulta, [idcarrera, anio], (err, materias)=>{
+        if(err){
+            console.log(err);
+        }
+        console.log(materias);
+        res.json(materias);
+    });
+}
+
 module.exports = materiaController;

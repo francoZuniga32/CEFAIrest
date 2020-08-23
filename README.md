@@ -1,18 +1,28 @@
 # CEFAI app
 
-La aplicacion del cefai es una iniciativa para poder ofrecer herramientas para los estudiantes. Mostrar cosas de interes y generar lazos entre los estudiantes y la univercidad. 
+La aplicacion del cefai es una iniciativa para poder ofrecer herramientas para los estudiantes. Mostrar cosas de interes , utilidad y generar lazos entre los estudiantes y la univercidad. 
 
 ---
 
-## API
+## API REST
 
 la api rest del cefai ofrece una forma de acceder a datos sobre materias, horarios, correlativas, finales, y demas. Para que se pueden usar en las distintas aplicaciones del cefai, como gestion de horarios, correlativas, etc'.
 
-se listaran las siguientes rutas y que datos retornan.
+### Autenticación
+
+Primero deberá solicitar un usuario, informando el por que lo solicita y con qué objetivo lo requiere (aplicación, investigación, etc). una vez hecho esto podrá consultar su token usando la siguiente ruta:
+
+| Ruta                                    | Descripcion                                                  |
+| --------------------------------------- | ------------------------------------------------------------ |
+| /apilogin/usuario/:usuario/:contrasenia | se identifica al usuario con :usuario y :contrasenia, si el usuario esta en la base de datos, vamos a generarles un token para poder usar la aplicacion rest. |
+
+Las rutas a continuación tendrán que hacer uso del token suministrado mediante un header de una consulta http, el cual se tendrá que llamar “access-token”. Una vez verificado el token usted podrá obtener los datos de su consulta.
+
+### Consultas
 
 las siguientes rutas se encuentran bajo la ruta inicial /api 
 
-### Carreras
+#### Carreras  
 
 Datos sobre las carreras que se dictan.
 
@@ -27,7 +37,7 @@ Datos sobre las carreras que se dictan.
 | /carrera/duracionmayor/:duracion | Lista los datos de las carreras con mayor duracion que :duracion |
 | /carrera/buscar/:buscar          | Lista los datos de las carraras cuyo nombre o plan concidan con :buscar |
 
-### Materias
+#### Materias
 
 Datos sobre las materias.
 
@@ -40,7 +50,7 @@ Datos sobre las materias.
 | /materia/cuatrimestre/:cuatrimestre           | Lista las materias cuyo cuatrimestre concida con :cuatrimestre |
 | /materia/cuatrimestreanio/:cuatrimestre/:anio | Lista las materias cuyo cuatrimestre conincida con :cuatrimestre y año concida con :anio |
 
-### Dicta
+#### Dicta
 
 Datos sobre los horarios de dictado de las materias
 
@@ -55,7 +65,7 @@ Datos sobre los horarios de dictado de las materias
 | /dicta/horamenor/:hora            | Lista todos los horarios de dictado cuya hora es menor a :hora |
 | /dicta/horamayor/:hora            | Lista todos los horarios de dictado cuya hora es mayor a :hora |
 
-### Correlativas
+#### Correlativas
 
 `Actualmente en mantenimiento` lista la informacion sobre las correlativas de las materias.
 
@@ -70,7 +80,7 @@ Datos sobre los horarios de dictado de las materias
 | /correlativa/carrera/necesaria/:necesaria/:idcarrera   |                                                              |
 | /correlativa/graf/                                     |                                                              |
 
-### Finales
+#### Finales
 
 Estas rutas retornan algo similar al anterior. El formato de los finales son :necesarias y :disponibles, donde :necesaria es el id de la materia cuyo final es necesario para cursar la materia cuyo id es :disponible
 
@@ -79,12 +89,3 @@ Estas rutas retornan algo similar al anterior. El formato de los finales son :ne
 | /final                        | Retorna todos los finales en el formato necesario y disponible |
 | /final/necesaria/:necesaria   | Retorna los finales de las materias que necesiten el final de la materia cuyo id coincide con :necesaria. |
 | /final/disponible/:disponible | Retorna los finales de las materias cuyo id coincide con :diponible |
-
-### Usuario
-
-Estas turas sirven para poder registrar el acceso a los usuario.
-
-| Ruta                           | Descripcion                                                  |
-| ------------------------------ | ------------------------------------------------------------ |
-| /usuario/:usuario/:contrasenia | se identifica al usuario con :usuario y :contrasenia, si el usuario esta en la base de datos, vamos a generarles un token para poder usar la aplicacion rest. |
-

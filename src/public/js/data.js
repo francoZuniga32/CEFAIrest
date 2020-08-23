@@ -412,6 +412,298 @@ var data =
                     "cuatrimestre": 1
                 },
                 {
+                    "idMateria": 55,
+                    "nombre": "Lenguajes Declarativos",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 56,
+                    "nombre": "Complejidad Computacional",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 57,
+                    "nombre": "Especificacion de Software",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 52,
+                    "nombre": "Inteligencia Artificial LicCien ",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 58,
+                    "nombre": "Diseño de Algoritmos",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 59,
+                    "nombre": "Conceptos Avanzados de Lenguajes de Programacion",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 60,
+                    "nombre": "Especificación con Métodos Formales",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 61,
+                    "nombre": "Aspectos Profesionales y Sociales",
+                    "cuatrimestre": 2
+                }
+            ],
+            [
+                {
+                    "idMateria": 53,
+                    "nombre": "Sistemas Inteligentes",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 54,
+                    "nombre": "Laboratorio de Programacion Distribuida",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 62,
+                    "nombre": "Agentes Inteligentes para la Web",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 63,
+                    "nombre": "Diseño de Compiladores e Interpretes",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 64,
+                    "nombre": "Electiva I",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 65,
+                    "nombre": "Trabajo de Tesis",
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 66,
+                    "nombre": "Laboratorio de Compiladores e Intérpretes",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 67,
+                    "nombre": "Laboratorio de Inteligencia Artificial",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 68,
+                    "nombre": "Tecnicas para Minería de Datos",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 69,
+                    "nombre": "Electiva II Según Electiva",
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 70,
+                    "nombre": "Trabajo de Tesis",
+                    "cuatrimestre": 2
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "idMateria": 16,
+                    "nombre": "Elementos de Algebra",
+                    "ano": 1,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 17,
+                    "nombre": "Resolucion de Problemas y Algoritmos",
+                    "ano": 1,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 18,
+                    "nombre": "Modelos y Sistemas de Informacion",
+                    "ano": 1,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 19,
+                    "nombre": "Introduccion a la Computacion",
+                    "ano": 1,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 20,
+                    "nombre": "Desarrollo de Algoritmos",
+                    "ano": 1,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 21,
+                    "nombre": "Elementos de Algebra Lineal",
+                    "ano": 1,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 22,
+                    "nombre": "Elementos de Teoria de la Computacion",
+                    "ano": 1,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 23,
+                    "nombre": "Modelado de Datos",
+                    "ano": 1,
+                    "cuatrimestre": 2
+                }
+            ],
+            [
+                {
+                    "idMateria": 24,
+                    "nombre": "Cálculo Diferencial e Integral",
+                    "ano": 2,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 25,
+                    "nombre": "Programacion Orientada a Objetos",
+                    "ano": 2,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 26,
+                    "nombre": "Estructuras de Datos",
+                    "ano": 2,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 27,
+                    "nombre": "Teoria de la Computacion I",
+                    "ano": 2,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 28,
+                    "nombre": "Inglés Técnico I",
+                    "ano": 2,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 29,
+                    "nombre": "Métodos Computacionales para el Cálculo",
+                    "ano": 2,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 30,
+                    "nombre": "Programacion Concurrente",
+                    "ano": 2,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 31,
+                    "nombre": "Teoria de la Computacion II",
+                    "ano": 2,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 32,
+                    "nombre": "Arquitecturas y Organizacion de Computadoras I",
+                    "ano": 2,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 33,
+                    "nombre": "Ingenieria de Requerimientos",
+                    "ano": 2,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 34,
+                    "nombre": "Inglés Técnico II",
+                    "ano": 2,
+                    "cuatrimestre": 2
+                }
+            ],
+            [
+                {
+                    "idMateria": 35,
+                    "nombre": "Probabilidad y Estadistica",
+                    "ano": 3,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 36,
+                    "nombre": "Principios de Lenguajes de Programacion",
+                    "ano": 3,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 37,
+                    "nombre": "Sistemas Operativos I",
+                    "ano": 3,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 38,
+                    "nombre": "Diseño de Bases de Datos",
+                    "ano": 3,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 39,
+                    "nombre": "Arquitecturas de Software",
+                    "ano": 3,
+                    "cuatrimestre": 1
+                },
+                {
+                    "idMateria": 40,
+                    "nombre": "Análisis de Algoritmos",
+                    "ano": 3,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 41,
+                    "nombre": "Laboratorio de Programacion",
+                    "ano": 3,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 42,
+                    "nombre": "Lógica para Ciencias de la Computacion",
+                    "ano": 3,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 43,
+                    "nombre": "Redes de Computadoras I",
+                    "ano": 3,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 44,
+                    "nombre": "Gestion de Proyectos de Desarrollo Software",
+                    "ano": 3,
+                    "cuatrimestre": 2
+                },
+                {
+                    "idMateria": 45,
+                    "nombre": "Gestion de Bases de Datos",
+                    "ano": 3,
+                    "cuatrimestre": 2
+                }
+            ],
+            [
+                {
+                    "idMateria": 51,
+                    "nombre": "Sistemas Paralelos",
+                    "cuatrimestre": 1
+                },
+                {
                     "idMateria": 52,
                     "nombre": "Inteligencia Artificial LicCien ",
                     "cuatrimestre": 2
@@ -517,330 +809,6 @@ var data =
                     "idMateria": 88,
                     "nombre": "Trabajo Tesis II LicSis",
                     "cuatrimestre": 2
-                }
-            ]
-        ],
-        [
-            [
-                {
-                  "idMateria": 16,
-                  "nombre": "Elementos de Algebra",
-                  "ano": 1,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 17,
-                  "nombre": "Resolucion de Problemas y Algoritmos",
-                  "ano": 1,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 18,
-                  "nombre": "Modelos y Sistemas de Informacion",
-                  "ano": 1,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 19,
-                  "nombre": "Introduccion a la Computacion",
-                  "ano": 1,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 20,
-                  "nombre": "Desarrollo de Algoritmos",
-                  "ano": 1,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 21,
-                  "nombre": "Elementos de Algebra Lineal",
-                  "ano": 1,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 22,
-                  "nombre": "Elementos de Teoria de la Computacion",
-                  "ano": 1,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 23,
-                  "nombre": "Modelado de Datos",
-                  "ano": 1,
-                  "cuatrimestre": 2
-                }
-            ],
-            [
-                {
-                  "idMateria": 24,
-                  "nombre": "Cálculo Diferencial e Integral",
-                  "ano": 2,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 25,
-                  "nombre": "Programacion Orientada a Objetos",
-                  "ano": 2,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 26,
-                  "nombre": "Estructuras de Datos",
-                  "ano": 2,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 27,
-                  "nombre": "Teoria de la Computacion I",
-                  "ano": 2,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 28,
-                  "nombre": "Inglés Técnico I",
-                  "ano": 2,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 29,
-                  "nombre": "Métodos Computacionales para el Cálculo",
-                  "ano": 2,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 30,
-                  "nombre": "Programacion Concurrente",
-                  "ano": 2,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 31,
-                  "nombre": "Teoria de la Computacion II",
-                  "ano": 2,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 32,
-                  "nombre": "Arquitecturas y Organizacion de Computadoras I",
-                  "ano": 2,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 33,
-                  "nombre": "Ingenieria de Requerimientos",
-                  "ano": 2,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 34,
-                  "nombre": "Inglés Técnico II",
-                  "ano": 2,
-                  "cuatrimestre": 2
-                }
-            ],
-            [
-                {
-                  "idMateria": 35,
-                  "nombre": "Probabilidad y Estadistica",
-                  "ano": 3,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 36,
-                  "nombre": "Principios de Lenguajes de Programacion",
-                  "ano": 3,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 37,
-                  "nombre": "Sistemas Operativos I",
-                  "ano": 3,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 38,
-                  "nombre": "Diseño de Bases de Datos",
-                  "ano": 3,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 39,
-                  "nombre": "Arquitecturas de Software",
-                  "ano": 3,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 40,
-                  "nombre": "Análisis de Algoritmos",
-                  "ano": 3,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 41,
-                  "nombre": "Laboratorio de Programacion",
-                  "ano": 3,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 42,
-                  "nombre": "Lógica para Ciencias de la Computacion",
-                  "ano": 3,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 43,
-                  "nombre": "Redes de Computadoras I",
-                  "ano": 3,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 44,
-                  "nombre": "Gestion de Proyectos de Desarrollo Software",
-                  "ano": 3,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 45,
-                  "nombre": "Gestion de Bases de Datos",
-                  "ano": 3,
-                  "cuatrimestre": 2
-                }
-            ],
-            [
-                {
-                  "idMateria": 51,
-                  "nombre": "Sistemas Paralelos",
-                  "ano": 4,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 52,
-                  "nombre": "Inteligencia Artificial LicCien ",
-                  "ano": 4,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 71,
-                  "nombre": "Planificacion y Control de Proyectos",
-                  "ano": 4,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 72,
-                  "nombre": "Sistemas de Informacion I",
-                  "ano": 4,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 73,
-                  "nombre": "Modelado de Procesos de Negocios",
-                  "ano": 4,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 74,
-                  "nombre": "Especificacion de Requerimientos",
-                  "ano": 4,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 75,
-                  "nombre": "Especificacion de Diseño de Software",
-                  "ano": 4,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 76,
-                  "nombre": "Deposito y Mineria de Datos",
-                  "ano": 4,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 77,
-                  "nombre": "Sistema de Informacion II",
-                  "ano": 4,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 78,
-                  "nombre": "Laboratorio de Bases de Datos",
-                  "ano": 4,
-                  "cuatrimestre": 2
-                }
-            ],
-            [
-                {
-                  "idMateria": 53,
-                  "nombre": "Sistemas Inteligentes",
-                  "ano": 5,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 54,
-                  "nombre": "Laboratorio de Programacion Distribuida",
-                  "ano": 5,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 79,
-                  "nombre": "Auditoria de Sistemas de Informacion",
-                  "ano": 5,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 80,
-                  "nombre": "Verificacion y Validacion de Software",
-                  "ano": 5,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 81,
-                  "nombre": "Electiva I",
-                  "ano": 5,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 82,
-                  "nombre": "Trabajo Tesis I LicSis",
-                  "ano": 5,
-                  "cuatrimestre": 1
-                },
-                {
-                  "idMateria": 83,
-                  "nombre": "Sistemas de Informacion para la Web",
-                  "ano": 5,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 84,
-                  "nombre": "Aspectos Profecionales y Sociales",
-                  "ano": 5,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 85,
-                  "nombre": "Reingenieria de Software y Procesos",
-                  "ano": 5,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 86,
-                  "nombre": "Construccion y Validacion de Software",
-                  "ano": 5,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 87,
-                  "nombre": "Electiva II",
-                  "ano": 5,
-                  "cuatrimestre": 2
-                },
-                {
-                  "idMateria": 88,
-                  "nombre": "Trabajo Tesis II LicSis",
-                  "ano": 5,
-                  "cuatrimestre": 2
                 }
             ]
         ],

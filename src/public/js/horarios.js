@@ -3,7 +3,7 @@ var app = new Vue({
     data:{
         horarios: [],
         dia: "",
-        hora: "00:00:00",
+        hora: "",
         cuatrimestre: 2
     },
     mounted: function() {
@@ -91,7 +91,7 @@ var app = new Vue({
 var reloj = new Vue({
     el: '#reloj',
     data:{
-        hora: "00:00:00",
+        hora: "",
         dia: ''
     }, 
     mounted: function() {

@@ -1,7 +1,7 @@
 Vue.component('materiacard',{
     props: ['materia'],
     template: `<div class="card">
-                <h5 class="card-header">{{ materia.nombre }}</h5>
+                <h6 class="card-header">{{ materia.nombre }}</h6>
                 <div class="card-body">
                     <p class="card-text">{{ materia.horainicio.substring(0,5) }} - {{ materia.horafin.substring(0,5) }}</p>
                 </div>

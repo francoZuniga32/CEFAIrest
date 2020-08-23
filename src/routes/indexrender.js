@@ -3,6 +3,7 @@ const indexControler = require('../controllers/indexControler');
 const correlativasControler = require('../controllers/correlativaController');
 const dictaControler = require('../controllers/dictaController');
 const usuarioControler = require('../controllers/usuarioControler');
+const materiaController = require('../controllers/materiaCotroller');
 
 indexRouter.get('/', indexControler.render);
 indexRouter.get('/horarios', indexControler.horarios);
@@ -13,5 +14,7 @@ indexRouter.get('/correlativas/consulta/:idcarrera/:idmateria', correlativasCont
 indexRouter.get('/horarios/consulta/:dia/:hora/:cuatrimestre', dictaControler.diaHora);
 indexRouter.get('/login', indexControler.login);
 indexRouter.post('/loginvalidate', usuarioControler.validarLogin);
+
+indexRouter.get('/json/materias/:idcarrera/:anio', materiaController.json);
 
 module.exports = indexRouter;

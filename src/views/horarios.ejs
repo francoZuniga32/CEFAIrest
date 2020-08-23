@@ -15,8 +15,8 @@
     <%- include('component/util/nav-bar') %>
     <div class="container-fluid">
         <div class="row" id="reloj">
-            <h1 class="d-flex justify-content-center">{{ dia }}</h1>
-            <h1 class="d-flex justify-content-center">{{ hora }}</h1>
+            <h1 class="d-flex justify-content-center" v-if="dia">{{ dia }}</h1>
+            <h1 class="d-flex justify-content-center" v-if="hora">{{ hora }}</h1>
         </div>
         <div class="row">
             <div class="d-flex justify-content-end col-sm">
