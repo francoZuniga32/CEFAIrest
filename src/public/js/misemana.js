@@ -44,19 +44,23 @@ var app = new Vue({
             var idmateria = this.materiasValue;
             //llamada a la funcion para poder trar los datos
             if(!this.desabilitado.includes(idmateria)){
-                this.desabilitado.push(idmateria);
-                axios.get(`/horarios/horarios/materia/${idmateria}/${this.cuatrimestre}`).then((response) => {
-                    if(response.data.length > 0) {
-                        response.data.forEach(element => {
-                            this.horario.push(element);
-                        })
-                        this.errors = [];
-                        this.clasificar(response.data);
-                    }else{
-                        this.errors = [];
-                        this.errors.push(`La materia seleccionada no tiene recursados para el ${this.cuatrimestre}° cuatrimestre`);
-                    }
-                });
+                if(idmateria != "-"){
+                    this.desabilitado.push(idmateria);
+                    axios.get(`/horarios/horarios/materia/${idmateria}/${this.cuatrimestre}`).then((response) => {
+                        if(response.data.length > 0) {
+                            response.data.forEach(element => {
+                                this.horario.push(element);
+                            })
+                            this.errors = [];
+                            this.clasificar(response.data);
+                        }else{
+                            this.errors = [];
+                            this.errors.push(`La materia seleccionada no tiene recursados para el ${this.cuatrimestre}° cuatrimestre`);
+                        }
+                    });
+                }else{
+                    this.errors.push(`la materia seleccionada no es una materia valida, intente con otra opcion`);
+                }
             }
         },
         clasificar: function (array) {
