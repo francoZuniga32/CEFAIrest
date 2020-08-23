@@ -9,6 +9,9 @@ var app = new Vue({
         anios: false,
         materias: false,
         add: false,
+        carrerasValue: "-",
+        aniosValue: "-",
+        materiasValue: "-",
         desabilitado: [],
         info: null,
         horario: [],
@@ -21,14 +24,16 @@ var app = new Vue({
             this.materias = false;
             this.anios = false;
             this.duracion = 0;
+            this.aniosValue = "-";
 
-            var idcarrera = this.$refs.carreras.value;
+            var idcarrera = this.carrerasValue;
             this.duracion = this.carreras[parseInt(idcarrera) - 1].duracion;
             this.anios = true;
         },
         cargarMaterias: function () {
-            var idcarrera = this.$refs.carreras.value;
-            var anio = this.$refs.anios.value;
+            var idcarrera = this.carrerasValue;
+            var anio = this.aniosValue;
+            this.materiasValue = "-";
 
             this.materias = data.materias[parseInt(idcarrera) - 1][parseInt(anio) - 1];
         },
@@ -36,7 +41,7 @@ var app = new Vue({
             this.add = true;
         },
         consultar: function () {
-            var idmateria = this.$refs.materias.value;
+            var idmateria = this.materiasValue;
             //llamada a la funcion para poder trar los datos
             if(!this.desabilitado.includes(idmateria)){
                 this.desabilitado.push(idmateria);

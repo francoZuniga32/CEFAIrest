@@ -21,19 +21,19 @@
             <div class="col d-flex justify-content-center">
                 <form id="app">
                     <div class="mb-3">
-                        <select class="form-control" name="" class="d-block" ref="carreras" v-on:change="cargarAnios()">
+                        <select class="form-control" v-model="carrerasValue" class="d-block" v-on:change="cargarAnios()">
                             <option value="-">-</option>
                             <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <select class="form-control" name="" v-if="anios" ref="anios" v-on:change="cargarMaterias()">
+                        <select class="form-control" v-model="aniosValue" v-if="anios" id="anios" v-on:change="cargarMaterias()">
                             <option value="-">-</option>
                             <option v-for="i in duracion" v-bind:value="i">{{ i }}</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <select class="form-control" name="" v-if="materias" ref="materias" v-on:change="consultar()">
+                        <select class="form-control" v-model="materiasValue" v-if="materias"  v-on:change="consultar()">
                             <option value="-">-</option>
                             <option v-for="materia in materias" v-bind:value="materia.idMateria">{{ materia.nombre }}-{{ materia.cuatrimestre }}</option>
                         </select>
