@@ -9,130 +9,183 @@
 <body>
     <%- include('../component/util/nav-bar-admin') %>
     <div id="root"class="root">
-        <p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="filtro">
-                <span class="material-icons">
-                    filter_list
-                </span>
-            </button>
-        </p>
-        <div class="row">
-            <div class="col">
-              <div class="collapse multi-collapse" id="filtro">
-                <div class="card card-body">
-                    <div class="row">
-                        <div class="mb-3 col-sm">
-                            <select class="form-select" v-model="carrerasSelect" aria-label="Default select example">
-                                <option selected>-</option>
-                                <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
-                            </select>
-                        </div>
-                        <div class="col-sm">
-                            <select class="form-select" v-model="diaSelect" name="" id="">
-                                <option value="">-</option>
-                                <option value="lunes">Lunes</option>
-                                <option value="martes">Martes</option>
-                                <option value="miercoles">Miercoles</option>
-                                <option value="jueves">Jueves</option>
-                                <option value="viernes">Viernes</option>
-                                <option value="sabado">Sabado</option>
-                            </select>
-                        </div>
+        <div class="card card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mb-3 col-sm">
+                        <select class="form-select" v-on:change="cargarAnios()" v-model="carrera" aria-label="Default select example">
+                            <option selected>-</option>
+                            <option v-for="carrera in carreras" v-bind:value="carrera.idCarrera">{{ carrera.nombre }}</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select v-on:change="cargarCuatrimestre()" class="form-control" v-model="anios" v-if="d_anios" >
+                            <option value="-">-</option>
+                            <option v-for="i in duracion" v-bind:value="i">{{ i }}</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" v-model="cuatrimestre" v-if="d_cuatrimestre">
+                            <option value="-">-</option>
+                            <option value="1">1°</option>
+                            <option value="2">2°</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button v-on:click="consultar()" class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="filtro">
+                            Filtrar
+                        </button>
                     </div>
                 </div>
-                <div class="ro">
-                    <button v-on:click="filtrar" class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="filtro">
-                        Filtrar
-                    </button>
-                </div>
-              </div>
             </div>
         </div>
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Aula</th>
-                        <th scope="col">Dia</th>
-                        <th scope="col">Modulo</th>
-                        <th scope="col">Hora Inicio</th>
-                        <th scope="col">Hora Fin</th>
-                        <th scope="col">Cuatrimestre</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Carreras</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="horario in horarios">
-                        <td>{{horario.nombre}}</td>
-                        <td>{{horario.aula}}</td>
-                        <td>{{horario.dia}}</td>
-                        <td>{{horario.modulo}}</td>
-                        <td>{{horario.horainicio}}</td>
-                        <td>{{horario.horafin}}</td>
-                        <td>{{horario.cuatrimestre}}</td>
-                        <td>{{horario.estado}}</td>
-                        <td>
-                            <span v-for="carrera in horario.carreras" class="badge bg-secondary">
-                                <i v-if="carrera.idCarrera == 1">Prof</i>
-                                <i v-else-if="carrera.idCarrera == 2">LCC</i>
-                                <i v-else-if="carrera.idCarrera == 3">LSI</i>
-                                <i v-else-if="carrera.idCarrera == 4">TUDW</i>
-                                <i v-else>TUASySL</i>
-                            </span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row h-100">
+            <div class="col-sm-2">
+                <h5>Lunes</h5>
+                <hr>
+                <p v-if="lunes.length > 0" v-for="materia in lunes">
+                    <materiacardadmin v-bind:url="`/administrar/horarios/horario/edit/${materia.idMateria}/${materia.dia}/${materia.modulo}/${materia.horainicio}`" v-bind:materia="materia"></materiacardadmin>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Martes</h5>
+                <hr>
+                <p v-if="martes.length > 0" v-for="materia in martes">
+                    <materiacardadmin v-bind:materia="materia"></materiacardadmin>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Miercoles</h5>
+                <hr>
+                <p v-if="miercoles.length > 0" v-for="materia in miercoles">
+                    <materiacardadmin v-bind:materia="materia"></materiacardadmin>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Jueves</h5>
+                <hr>
+                <p v-if="jueves.length > 0" v-for="materia in jueves">
+                    <materiacardadmin v-bind:materia="materia"></materiacardadmin>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Viernes</h5>
+                <hr>
+                <p v-if="viernes.length > 0" v-for="materia in viernes">
+                    <materiacardadmin v-bind:materia="materia"></materiacardadmin>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <h5>Sabado</h5>
+                <hr>
+                <p v-if="sabado.length > 0" for="materia in sabado">
+                    <materiacardadmin v-bind:materia="materia"></materiacardadmin>
+                </p>
+            </div>
         </div>
     </div>
+    <script src="/js/componentadmin.js"></script>
+    <script src="/js/data.js"></script>
     <script>
-        var root = new Vue({
+
+        var app = new Vue({
             el: '#root',
             data: {
-                horarios: [],
-                carreras: [],
-                carrerasSelect: null,
-                diaSelect: null
+                datos: data,
+                carreras: data.carreras,
+                duracion: 0,
+                d_anios: false,
+                d_cuatrimestre: false,
+                d_add: false,
+                carrera: "-",
+                cuatrimestre: "-",
+                anios: "-",
+                info: null,
+                horario: [],
+                lunes: [], martes: [], miercoles: [], jueves: [], viernes: [], sabado: [],
+                errors: []
             },
-            mounted: function(){
-                this.load();
-            },
-            methods:{
-                load: function(){
-                    axios.get(`/administrar/horarios/horarios`).then((response) => {
-                        this.horarios = response.data;
-                    });
+            methods: {
+                cargarAnios: function () {
+                    this.duracion = 0;
+                    this.anios = "-";
 
-                    axios.get(`/administrar/carreras/carreras`).then((response) => {
-                        this.carreras = response.data;
-                    })
+                    var idcarrera = this.carrera;
+                    this.duracion = this.carreras[parseInt(idcarrera) - 1].duracion;
+                    this.d_anios = true;
                 },
-                filtrar: function(){
-                    if(this.carrerasSelect && this.diaSelect){
-                        //consultamos por dia y carrera
-                        axios.get(`/administrar/horarios/horarios/carreradia/${this.carrerasSelect}/${this.diaSelect}`).then((response) => {
-                            this.horarios = response.data;
-                        });
-                    }else if(this.carrerasSelect){
-                        //consultamos por carrera solamente
-                        axios.get(`/administrar/horarios/horarios/carrera/${this.diaSelect}`).then((response) => {
-                            this.horarios = response.data;
-                        });
-                    }else if(this.diaSelect){
-                        //consultamos por el dia solamente
-                        axios.get(`/administrar/horarios/horarios/dia/${this.diaSelect}`).then((response) => {
-                            this.horarios = response.data;
-                        });
-                    }else{
-                        axios.get(`/administrar/horarios/horarios`).then((response) => {
-                            this.horarios = response.data;
+                cargarCuatrimestre : function (){
+                    this.d_cuatrimestre = true;
+                },
+                addDisplay: function (){
+                    this.d_add = true;
+                },
+                consultar: function () {
+                    if(this.carrera != "-" && this.cuatrimestre != "-" && this.anios != "-"){
+                        //llamada a la funcion para poder trar los datos
+                        axios.get(`/administrar/horarios/horarios/carreraaniocuatrimestre/${this.carrera}/${this.anios}/${this.cuatrimestre}`).then((response) => {
+                            if(response.data.length > 0) {
+                                this.horarios = response.data;
+                                this.limpiar();
+                                this.clasificar(response.data);
+                            }else{
+                                this.errors = [];
+                                this.errors.push(`La materia seleccionada no tiene recursados para el ${this.cuatrimestre}° cuatrimestre`);
+                            }
                         });
                     }
+                },
+                clasificar: function (array) {
+                    array.forEach(element => {
+                        switch (element.dia) {
+                            case 'Lunes':
+                                this.lunes.push(element);
+                                this.lunes.sort(this.compareDate);
+                                break;
+                            case 'Martes':
+                                this.martes.push(element);
+                                this.martes.sort(this.compareDate);
+                                break;
+                            case 'Miercoles':
+                                this.miercoles.push(element);
+                                this.miercoles.sort(this.compareDate);
+                                break;
+                            case 'Jueves':
+                                this.jueves.push(element);
+                                this.jueves.sort(this.compareDate);
+                                break;
+                            case 'Viernes':
+                                this.viernes.push(element);
+                                this.viernes.sort(this.compareDate);
+                                break;
+                            case 'Savado':
+                                this.savado.push(element);
+                                this.savado.sort(this.compareDate);
+                                break;
+                            default:
+
+                                break;
+                        }
+                    })
+                },
+                limpiar: function (){
+                    this.lunes=[];this.martes=[];this.miercoles=[];this.jueves=[];this.viernes=[];this.sabado=[];
+                },
+                compareDate: function(a, b) {
+                    var retorno;
+                    a = a.horainicio;
+                    b = b.horainicio;
+                    if(a > b){
+                        retorno = 1;
+                    }else if(a == b){
+                        retorno = 0;
+                    }else{
+                        retorno = -1;
+                    }
+                    return retorno;
                 }
             }
-        })
+        });
     </script>
 </body>
 </html>
