@@ -60,6 +60,7 @@ app.use('/api',require('./routes/dictaRoute'));
 app.use('/api',require('./routes/correlativaRoute'));
 app.use('/api',require('./routes/finalRoute'));
 app.use('/administrar', require('./routes/administrarRoute'));
+app.use('/sre', require('./routes/sre'));
 app.use('/apilogin',require('./routes/usuarioRoute'));
 app.use('*', require('./middleware/httpsstatus').http404);
 
