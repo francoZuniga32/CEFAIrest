@@ -1,5 +1,5 @@
 const usuarioRouter = require('express').Router();
-const usuarioControler = require('../controllers/usuarioControler');
+const usuarioControler = require('../controladores/usuarioControler');
 
 usuarioRouter.get('/usuario/:usuario/:contrasenia', usuarioControler.validar);
 

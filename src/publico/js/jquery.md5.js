@@ -25,7 +25,7 @@
 	 * @alias Muhammad Hussein Fattahizadeh < muhammad [AT] semnanweb [DOT] com >
 	 * @link http://www.semnanweb.com/jquery-plugin/md5.html
 	 * @see http://www.webtoolkit.info/
-	 * @license http://www.gnu.org/licenses/gpl.html [GNU General Public License]
+	 * @license http://www.gnu.org/licenses/gpl.html [GNU General publico License]
 	 * @param {jQuery} {md5:function(string))
 	 * @return string
 	 */

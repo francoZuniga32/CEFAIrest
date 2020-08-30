@@ -1,5 +1,5 @@
 const express = require('express');
-const correlativaController = require('../controllers/correlativaController');
+const correlativaController = require('../controladores/correlativaController');
 
 const correlativaRoute = express.Router();
 

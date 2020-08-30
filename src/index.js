@@ -25,11 +25,11 @@ app.use((req, res, next)=>{
 app.set('port',process.env.port || 3000);
 app.set('key', config.clave);
 path.basename(__dirname);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'vistas'));
 app.set('view engine', 'ejs');
-app.set('public', path.join(__dirname, 'public'));
+app.set('publico', path.join(__dirname, 'publico'));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'publico')));
 
 //midelwares
 app.use(morgan('dev'));
@@ -51,17 +51,17 @@ app.use(session({
 
 //rutas
 
-app.use('/', require('./routes/indexrender'));
+app.use('/', require('./rutas/indexrender'));
 
 //rutas api
-app.use('/api',require('./routes/materiasRoute'));
-app.use('/api',require('./routes/carreraRoute'));
-app.use('/api',require('./routes/dictaRoute'));
-app.use('/api',require('./routes/correlativaRoute'));
-app.use('/api',require('./routes/finalRoute'));
-app.use('/administrar', require('./routes/administrarRoute'));
-app.use('/sre', require('./routes/sre'));
-app.use('/apilogin',require('./routes/usuarioRoute'));
+app.use('/api',require('./rutas/materiasRoute'));
+app.use('/api',require('./rutas/carreraRoute'));
+app.use('/api',require('./rutas/dictaRoute'));
+app.use('/api',require('./rutas/correlativaRoute'));
+app.use('/api',require('./rutas/finalRoute'));
+app.use('/administrar', require('./rutas/administrarRoute'));
+app.use('/sre', require('./rutas/sre'));
+app.use('/apilogin',require('./rutas/usuarioRoute'));
 app.use('*', require('./middleware/httpsstatus').http404);
 
 //ejecutamos el servidor

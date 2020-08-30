@@ -1,5 +1,5 @@
 const express = require('express');
-const materiaController = require('../controllers/materiaCotroller');
+const materiaController = require('../controladores/materiaCotroller');
 
 const materiaRoute = express.Router();
 

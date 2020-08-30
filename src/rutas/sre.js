@@ -1,5 +1,5 @@
 const sreRouter = require('express').Router();
-const sreController = require('../controllers/sreController');
+const sreController = require('../controladores/sreController');
 
 sreRouter.get('/', sreController.jsonMaterias);
 

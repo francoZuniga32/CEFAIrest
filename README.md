@@ -4,6 +4,62 @@ La aplicacion del cefai es una iniciativa para poder ofrecer herramientas para l
 
 ---
 
+## Documentacion
+
+En esta parte vamos a detallar como esta estructurado el sistema, para que su integracion en cualquier otro proyecto se mas sencialla o mas rapida de hacer.
+
+### instalacion
+
+Para poder instalar el sistema en local, o en un servidor, siga los siguientes pasos:
+
+```sh
+# clonamos el repositorio en un directorio
+git clone https://github.com/francoZuniga32/CEFAIrest
+cd CEFAIrest
+# instalamos las dependencias
+npm install
+# ejecute el script de desarrollo o sino de produccion
+npm run dev
+# o
+npm start
+```
+
+De esta manera le saldran algunos fallos el primero, no cuenta con una base de datos. En el siguiente [link](bd/README.md) se explica como hacer esta parte ademas de detalles tecnicos al respecto.
+
+Luego de configurar la base de datos, puede iniciar el servidor y de esta manera podra probar el programa. Para probar el programa por primera vez, ingrese el usuario `admin@example.com` junto con la contrasela `admin` y podra testear por primera vez. (ojo en esta epata del proyecto no se encuentra una herramienta para la alta y la baja de usuario, en el link provisto sobre la bd se explica el mecanismo de encriptacion de contraseña, por lo cual cualquier cambio de momento se hace con una consulta SQL).
+
+### Arquitectura del proyecto
+
+```
+/
+|_ bd
+|_ src
+|  |_ controladores
+|  |_ middleware
+|  |_ publico
+|  |_ rutas
+|  |_ vistas
+|  |_ index.js
+|  |_ baseDeDatos.js
+|  |_ claves.json
+|_ package.json
+```
+
+`queda pendiente las traducciones` 
+
+- [**bd**](bd.README.md) : es la estrutura de la base de datos, cuenta con un sql de la estrutura inicial, ademas de la documentacion sobre la base de datos.
+- [**src**](src/READEME.md): es el archivo del proyecto en si, cuenta con la documentacion sobre el archivo de claves, index, etc'. Informacion general de las carpetas controladores, rutas, vistas, publico, middelware, etc'.
+- [**controladores**](src/controladores/README.md): se encuentran los controladores de las rutas, son los archivos encargados de hacer consultas, gestionar usuario, renderizar las vistas, etc'.
+- [**rutas**](src/rutas/README.md): se encuentran los archivos con las rutas, especificando o agrupandolas por grupos con significancia, de esta forma las ruras de materias son agrupadas en un archivo, etc'. indican que controlador usan ademas de el tipo de ruta (get, post), y que tipos de datos reciben como param.
+- [**middelware**](src/middelware/README.md): contiene archivos que gestionan las sessiones, asi como los token de la api rest. de esta forma aislamos la logica de la validacion de usuario en un solo lugar en vez de tenes que importarla en cada uno de los controladores para ver si un usuario cuenta o no con una session.
+- [**publico**](src/publico/README.md): se encuentran los recursos publicos para las vistas (estilos, scripts, etc).
+- [**vistas**](src/vitas/README.md): se encuentran las vistas que usan un templete o plantilla de vistas, como lo seria ejs, que es el que se esta usando en este momento, la cantidad de codigo incrustado de js es poco, ya que se comenzo a usar vue js en las vistas del proyecto.
+- **package.json**: es el archivo de configuracio del proyecto, si usted hiso un fork al proyecto, configure su package para que la direccion del repo sea la de su fork, de esta manera podra hacer su derivado de este proyecto.
+
+ahora solo queda probar el proyecto y seguir avanzando.
+
+---
+
 ## API REST
 
 la api rest del cefai ofrece una forma de acceder a datos sobre materias, horarios, correlativas, finales, y demas. Para que se pueden usar en las distintas aplicaciones del cefai, como gestion de horarios, correlativas, etc'.
