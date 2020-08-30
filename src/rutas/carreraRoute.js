@@ -1,5 +1,5 @@
 const express = require('express');
-const carreraController = require('../controllers/carreraCotroller');
+const carreraController = require('../controladores/carreraCotroller');
 
 const carreraRoute = express.Router();
 

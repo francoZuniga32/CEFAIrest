@@ -1,9 +1,9 @@
 const indexRouter = require('express').Router();
-const indexControler = require('../controllers/indexControler');
-const correlativasControler = require('../controllers/correlativaController');
-const dictaControler = require('../controllers/dictaController');
-const usuarioControler = require('../controllers/usuarioControler');
-const materiaController = require('../controllers/materiaCotroller');
+const indexControler = require('../controladores/indexControler');
+const correlativasControler = require('../controladores/correlativaController');
+const dictaControler = require('../controladores/dictaController');
+const usuarioControler = require('../controladores/usuarioControler');
+const materiaController = require('../controladores/materiaCotroller');
 
 indexRouter.get('/', indexControler.render);
 indexRouter.get('/horarios', indexControler.horarios);
@@ -15,6 +15,5 @@ indexRouter.get('/horarios/consulta/:dia/:hora/:cuatrimestre', dictaControler.di
 indexRouter.get('/login', indexControler.login);
 indexRouter.post('/loginvalidate', usuarioControler.validarLogin);
 
-indexRouter.get('/json/materias/:idcarrera/:anio', materiaController.json);
 
 module.exports = indexRouter;

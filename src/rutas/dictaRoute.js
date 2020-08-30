@@ -1,5 +1,5 @@
 const express = require('express');
-const dictaController = require('../controllers/dictaController');
+const dictaController = require('../controladores/dictaController');
 
 const dictaRoute = express.Router();
 

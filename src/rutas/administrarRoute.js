@@ -1,9 +1,9 @@
 const administrarRoute = require("express").Router();
-const administrarControler = require('../controllers/administrarControler');
-const carrerasControler = require('../controllers/carreraCotroller');
-const materiaController = require('../controllers/materiaCotroller');
-const correlativaController = require('../controllers/correlativaController');
-const dictaController = require('../controllers/dictaController');
+const administrarControler = require('../controladores/administrarControler');
+const carrerasControler = require('../controladores/carreraCotroller');
+const materiaController = require('../controladores/materiaCotroller');
+const correlativaController = require('../controladores/correlativaController');
+const dictaController = require('../controladores/dictaController');
 
 //midelware
 administrarRoute.use('/', require('../middleware/user').midelware);

@@ -3,7 +3,7 @@ const pool = require('../database');
 const key = require('../config.json');
 const jwt = require('jsonwebtoken');
 const md5 = require('md5');
-const usuarioControler = require('../controllers/usuarioControler');
+const usuarioControler = require('../controladores/usuarioControler');
 
 token.validar = async (req, res, next)=>{
     var token = req.headers['access-token'];
