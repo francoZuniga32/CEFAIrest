@@ -18,6 +18,8 @@ git clone https://github.com/francoZuniga32/CEFAIrest
 cd CEFAIrest
 # instalamos las dependencias
 npm install
+# configuramos el acceso a la base de datos
+npm config
 # ejecute el script de desarrollo o sino de produccion
 npm run dev
 # o

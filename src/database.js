@@ -1,8 +1,11 @@
 const mysql = require('mysql');
 const util = require('util');
-const { database } = require('./kays');
+const fs = require('fs');
+const path = require('path');
 
-const pool = mysql.createPool(database);
+const database = JSON.parse(fs.readFileSync(path.join(__dirname, 'claves.json')).toString());
+
+const pool = mysql.createPool(database.database);
 
 pool.getConnection((err, conn)=>{
     if(err){

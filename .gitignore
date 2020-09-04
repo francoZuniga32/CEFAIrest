@@ -1,2 +1,3 @@
-#ignoramos los cambios en el log
+# ignoramos los cambios en el log
 src/app.log
+# ignoramos el sistema de mantenimiento pero se dejara a opcion del usuario

@@ -32,16 +32,7 @@ app.set('publico', path.join(__dirname, 'publico'));
 app.use(express.static(path.join(__dirname, 'publico')));
 
 //midelwares
-app.use(morgan('dev'));
-
-const mysqlConnecion = myconnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    port: '3306',
-    database: 'correlativas'
-}, 'single');
-app.use(mysqlConnecion);
+app.use(morgan('combined'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api',require('./middleware/token').validar);
