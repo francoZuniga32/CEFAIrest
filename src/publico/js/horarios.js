@@ -4,7 +4,7 @@ var app = new Vue({
         horarios: [],
         dia: "",
         hora: "",
-        cuatrimestre: 2
+        cuatrimestre: 1
     },
     mounted: function() {
         this.load();
