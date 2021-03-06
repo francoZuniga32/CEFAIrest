@@ -8,7 +8,7 @@ const session = require('express-session');
 const url=require('url');
 const jwt = require('jsonwebtoken');
 
-const config = require('./config.json');
+const config = require('./database.json');
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.use((req, res, next)=>{
 
 //configuraciones
 app.set('port',process.env.port || 3000);
-app.set('key', config.clave);
+app.set('key', 123);
 path.basename(__dirname);
 app.set('views', path.join(__dirname, 'vistas'));
 app.set('view engine', 'ejs');
