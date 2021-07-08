@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | cefai</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="cefai"><meta property="twitter:description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="cefai-app">CEFAI app</h1><p>La aplicacion del cefai es una iniciativa para poder ofrecer herramientas para los estudiantes. Mostrar cosas de interes , utilidad y generar lazos entre los estudiantes y la univercidad. </p>
+<hr>
+<h2 id="documentacion">Documentacion</h2><p>En esta parte vamos a detallar como esta estructurado el sistema, para que su integracion en cualquier otro proyecto se mas sencialla o mas rapida de hacer.</p>
+<h3 id="instalacion">instalacion</h3><p>Para poder instalar el sistema en local, o en un servidor, siga los siguientes pasos:</p>
+<pre><code class="lang-sh"><code class="source-code prettyprint"># clonamos el repositorio en un directorio
+git clone https://github.com/francoZuniga32/CEFAIrest
+cd CEFAIrest
+# instalamos las dependencias
+npm install
+# configuramos el acceso a la base de datos
+npm config
+# ejecute el script de desarrollo o sino de produccion
+npm run dev
+# o
+npm start</code>
+</code></pre>
+<p>De esta manera le saldran algunos fallos el primero, no cuenta con una base de datos. En el siguiente <a href="bd/README.md">link</a> se explica como hacer esta parte ademas de detalles tecnicos al respecto.</p>
+<p>Luego de configurar la base de datos, puede iniciar el servidor y de esta manera podra probar el programa. Para probar el programa por primera vez, ingrese el usuario <a href="mailto:`admin@example.com">`admin@example.com</a><code>junto con la contrasela</code>admin` y podra testear por primera vez. (ojo en esta epata del proyecto no se encuentra una herramienta para la alta y la baja de usuario, en el link provisto sobre la bd se explica el mecanismo de encriptacion de contrase&#xF1;a, por lo cual cualquier cambio de momento se hace con una consulta SQL).</p>
+<h3 id="arquitectura-del-proyecto">Arquitectura del proyecto</h3><pre><code><code class="source-code prettyprint">/
+|_ bd
+|_ src
+|  |_ controladores
+|  |_ middleware
+|  |_ publico
+|  |_ rutas
+|  |_ vistas
+|  |_ index.js
+|  |_ baseDeDatos.js
+|  |_ claves.json
+|_ package.json</code>
+</code></pre><p><code>queda pendiente las traducciones</code> </p>
+<ul>
+<li><a href="bd.README.md"><strong>bd</strong></a> : es la estrutura de la base de datos, cuenta con un sql de la estrutura inicial, ademas de la documentacion sobre la base de datos.</li>
+<li><a href="src/READEME.md"><strong>src</strong></a>: es el archivo del proyecto en si, cuenta con la documentacion sobre el archivo de claves, index, etc&apos;. Informacion general de las carpetas controladores, rutas, vistas, publico, middelware, etc&apos;.</li>
+<li><a href="src/controladores/README.md"><strong>controladores</strong></a>: se encuentran los controladores de las rutas, son los archivos encargados de hacer consultas, gestionar usuario, renderizar las vistas, etc&apos;.</li>
+<li><a href="src/rutas/README.md"><strong>rutas</strong></a>: se encuentran los archivos con las rutas, especificando o agrupandolas por grupos con significancia, de esta forma las ruras de materias son agrupadas en un archivo, etc&apos;. indican que controlador usan ademas de el tipo de ruta (get, post), y que tipos de datos reciben como param.</li>
+<li><a href="src/middelware/README.md"><strong>middelware</strong></a>: contiene archivos que gestionan las sessiones, asi como los token de la api rest. de esta forma aislamos la logica de la validacion de usuario en un solo lugar en vez de tenes que importarla en cada uno de los controladores para ver si un usuario cuenta o no con una session.</li>
+<li><a href="src/publico/README.md"><strong>publico</strong></a>: se encuentran los recursos publicos para las vistas (estilos, scripts, etc).</li>
+<li><a href="src/vitas/README.md"><strong>vistas</strong></a>: se encuentran las vistas que usan un templete o plantilla de vistas, como lo seria ejs, que es el que se esta usando en este momento, la cantidad de codigo incrustado de js es poco, ya que se comenzo a usar vue js en las vistas del proyecto.</li>
+<li><strong>package.json</strong>: es el archivo de configuracio del proyecto, si usted hiso un fork al proyecto, configure su package para que la direccion del repo sea la de su fork, de esta manera podra hacer su derivado de este proyecto.</li>
+</ul>
+<p>ahora solo queda probar el proyecto y seguir avanzando.</p>
+<hr>
+<h2 id="api-rest">API REST</h2><p>la api rest del cefai ofrece una forma de acceder a datos sobre materias, horarios, correlativas, finales, y demas. Para que se pueden usar en las distintas aplicaciones del cefai, como gestion de horarios, correlativas, etc&apos;.</p>
+<h3 id="autenticaci&#xF3;n">Autenticaci&#xF3;n</h3><p>Primero deber&#xE1; solicitar un usuario, informando el por que lo solicita y con qu&#xE9; objetivo lo requiere (aplicaci&#xF3;n, investigaci&#xF3;n, etc). una vez hecho esto podr&#xE1; consultar su token usando la siguiente ruta:</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/apilogin/usuario/:usuario/:contrasenia</td>
+<td>se identifica al usuario con :usuario y :contrasenia, si el usuario esta en la base de datos, vamos a generarles un token para poder usar la aplicacion rest.</td>
+</tr>
+</tbody>
+</table>
+<p>Las rutas a continuaci&#xF3;n tendr&#xE1;n que hacer uso del token suministrado mediante un header de una consulta http, el cual se tendr&#xE1; que llamar &#x201C;access-token&#x201D;. Una vez verificado el token usted podr&#xE1; obtener los datos de su consulta.</p>
+<h3 id="consultas">Consultas</h3><p>las siguientes rutas se encuentran bajo la ruta inicial /api </p>
+<h4 id="carreras">Carreras</h4><p>Datos sobre las carreras que se dictan.</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/carrera</td>
+<td>Retorna datos sobre todas las carreras actuales (idCarrera, nombre, plan, duracion)</td>
+</tr>
+<tr>
+<td>/carrera/id/:id</td>
+<td>Donde :id es el id de la carrera a listar retorna los mismos datos que la anterior</td>
+</tr>
+<tr>
+<td>/carrera/nombre/:nombre</td>
+<td>Donde :nombre es el nombre de la carrera a listar retorna los mismos datos que la anterior</td>
+</tr>
+<tr>
+<td>/carrera/plan/:plan</td>
+<td>Donde :plan es el plan de la carrera a listar retorna los mismos datos que la anterior</td>
+</tr>
+<tr>
+<td>/carrera/duracion/:duracion</td>
+<td>Donde :duracion es la duracion de la carrera a listar retorna los mismos datos que la anterior</td>
+</tr>
+<tr>
+<td>/carrera/duracionmenor/:duracion</td>
+<td>Listar los datos de la carreras con menor duracion que :duracion</td>
+</tr>
+<tr>
+<td>/carrera/duracionmayor/:duracion</td>
+<td>Lista los datos de las carreras con mayor duracion que :duracion</td>
+</tr>
+<tr>
+<td>/carrera/buscar/:buscar</td>
+<td>Lista los datos de las carraras cuyo nombre o plan concidan con :buscar</td>
+</tr>
+</tbody>
+</table>
+<h4 id="materias">Materias</h4><p>Datos sobre las materias.</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/materia</td>
+<td>Lista todas las carreras</td>
+</tr>
+<tr>
+<td>/materia/id/:id</td>
+<td>Lista la informacion de la materia cuyo id concida con :id</td>
+</tr>
+<tr>
+<td>/materia/nombre/:nombre</td>
+<td>Lista las materias cuyo nombre coincida con :nombre</td>
+</tr>
+<tr>
+<td>/materia/anio/:anio</td>
+<td>Lista las materias cuyo a&#xF1;io coincida con :anio</td>
+</tr>
+<tr>
+<td>/materia/cuatrimestre/:cuatrimestre</td>
+<td>Lista las materias cuyo cuatrimestre concida con :cuatrimestre</td>
+</tr>
+<tr>
+<td>/materia/cuatrimestreanio/:cuatrimestre/:anio</td>
+<td>Lista las materias cuyo cuatrimestre conincida con :cuatrimestre y a&#xF1;o concida con :anio</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dicta">Dicta</h4><p>Datos sobre los horarios de dictado de las materias</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/dicta</td>
+<td>Lista todos los horarios de dictado</td>
+</tr>
+<tr>
+<td>/dicta/idmateria/:idmateria</td>
+<td>Lista todos los horarios de dictado de la materia cuyo id es :id</td>
+</tr>
+<tr>
+<td>/dicta/dia/:dia</td>
+<td>Lista todos los horarios de dictado cuyo dia es :dia</td>
+</tr>
+<tr>
+<td>/dicta/estado/:estado</td>
+<td>Lista todos los horarios de dictado cuyo estado sea :estado (parcial, cancelado, normal)</td>
+</tr>
+<tr>
+<td>/dicta/cuatrimestre/:cuatrimestre</td>
+<td>Lista todos los horarios de dictado cuyo cuatrimestre sea :cuatrimestre</td>
+</tr>
+<tr>
+<td>/dicta/hora/:hora</td>
+<td>Lista todos los horarios de dictado cuya hora es :hora</td>
+</tr>
+<tr>
+<td>/dicta/horamenor/:hora</td>
+<td>Lista todos los horarios de dictado cuya hora es menor a :hora</td>
+</tr>
+<tr>
+<td>/dicta/horamayor/:hora</td>
+<td>Lista todos los horarios de dictado cuya hora es mayor a :hora</td>
+</tr>
+</tbody>
+</table>
+<h4 id="correlativas">Correlativas</h4><p><code>Actualmente en mantenimiento</code> lista la informacion sobre las correlativas de las materias.</p>
+<table>
+<thead>
+<tr>
+<th>Rutas</th>
+<th>Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/correlativa</td>
+<td>Lista todas las correlativas</td>
+</tr>
+<tr>
+<td>/correlativa/:idcarrera/:idmateria</td>
+<td>Listas las materias necesarias para cursar la materia cuyo id es :idmateria, y las disponibles para cursar la materia cuyo id es :idmateria, de la carrera :idcarrera</td>
+</tr>
+<tr>
+<td>/correlativa/necesaria/:necesaria</td>
+<td>Lista las materias necesarias para cursar la materia cuyo id es :id</td>
+</tr>
+<tr>
+<td>/correlativa/disponible/:disponible</td>
+<td>Lista las materias disponibles para cuersar la materia cuyo id es :id</td>
+</tr>
+<tr>
+<td>/correlativa/carrera/:idcarrera</td>
+<td>Lista las correlativas de las materias</td>
+</tr>
+<tr>
+<td>/correlativa/carrera/disponible/:disponible/:idcarrera</td>
+<td></td>
+</tr>
+<tr>
+<td>/correlativa/carrera/necesaria/:necesaria/:idcarrera</td>
+<td></td>
+</tr>
+<tr>
+<td>/correlativa/graf/</td>
+</tr>
+</tbody>
+</table>
+<h4 id="finales">Finales</h4><p>Estas rutas retornan algo similar al anterior. El formato de los finales son :necesarias y :disponibles, donde :necesaria es el id de la materia cuyo final es necesario para cursar la materia cuyo id es :disponible</p>
+<table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/final</td>
+<td>Retorna todos los finales en el formato necesario y disponible</td>
+</tr>
+<tr>
+<td>/final/necesaria/:necesaria</td>
+<td>Retorna los finales de las materias que necesiten el final de la materia cuyo id coincide con :necesaria.</td>
+</tr>
+<tr>
+<td>/final/disponible/:disponible</td>
+<td>Retorna los finales de las materias cuyo id coincide con :diponible</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

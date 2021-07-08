@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/publico/js/filter.js | cefai</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="cefai"><meta property="twitter:description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/publico/js/filter.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var horarios = [
+    {
+        idMateria: 18,
+        aula: &apos;16&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Teor&#xED;a &apos;,
+        horainicio: &apos;19:00:00&apos;,
+        horafin: &apos;18:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Modelos y Sistemas de Informacion&apos;,
+        nombrecarrera: &apos;Licenciatura en Ciencias de la Computaci&#xF3;n&apos;
+    },
+    {
+        idMateria: 18,
+        aula: &apos;16&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Teor&#xED;a &apos;,
+        horainicio: &apos;19:00:00&apos;,
+        horafin: &apos;21:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Modelos y Sistemas de Informacion&apos;,
+        nombrecarrera: &apos;Licenciatura en Ciencias de la Computaci&#xF3;n&apos;
+    },
+    {
+        idMateria: 18,
+        aula: &apos;16&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Teor&#xED;a &apos;,
+        horainicio: &apos;19:00:00&apos;,
+        horafin: &apos;21:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Modelos y Sistemas de Informacion&apos;,
+        nombrecarrera: &apos;Licenciatura en Sistemas de Informaci&#xF3;n&apos;
+    },
+    {
+        idMateria: 98,
+        aula: &apos;Aula Inform&#xE1;tica Biblioteca&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Unico&apos;,
+        horainicio: &apos;15:00:00&apos;,
+        horafin: &apos;21:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Programacion Web Avanzada&apos;,
+        nombrecarrera: &apos;Tecnicatura Universitaria en Desarrollo Web&apos;
+    },
+    {
+        idMateria: 71,
+        aula: &apos;Aula 13.1&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Unico&apos;,
+        horainicio: &apos;17:00:00&apos;,
+        horafin: &apos;21:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Planificacion y Control de Proyectos&apos;,
+        nombrecarrera: &apos;Licenciatura en Sistemas de Informaci&#xF3;n&apos;
+    },
+    {
+        idMateria: 18,
+        aula: &apos;16&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Teor&#xED;a &apos;,
+        horainicio: &apos;19:00:00&apos;,
+        horafin: &apos;21:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Modelos y Sistemas de Informacion&apos;,
+        nombrecarrera: &apos;Profesorado en Inform&#xE1;tica&apos;
+    },
+    {
+        idMateria: 6,
+        aula: &apos;Laboratorio III&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Unico&apos;,
+        horainicio: &apos;18:00:00&apos;,
+        horafin: &apos;22:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Redes de Datos&apos;,
+        nombrecarrera: &apos;Tecnicatura Universitaria en Administraci&#xF3;n de Sistemas y Software Libre&apos;
+    },
+    {
+        idMateria: 18,
+        aula: &apos;16&apos;,
+        dia: &apos;Lunes&apos;,
+        modulo: &apos;Teor&#xED;a &apos;,
+        horainicio: &apos;19:00:00&apos;,
+        horafin: &apos;21:00:00&apos;,
+        cuatrimestre: 1,
+        estado: &apos;normal&apos;,
+        nombremateria: &apos;Modelos y Sistemas de Informacion&apos;,
+        nombrecarrera: &apos;Profesorado en Inform&#xE1;tica&apos;
+    }
+];
+
+console.log(horarios);
+
+console.log(&quot;-------------------------------------------------------&quot;);
+
+var horarios2 = horarios.filter((horario) =&gt; {
+    var date = new Date();
+    var hora = horario.horafin.split(&apos;:&apos;);
+    console.log(hora);
+    console.log(date.getHours()+&quot;:&quot;+date.getMinutes());
+    var retorno = true;
+
+    if(parseInt(hora[0]) &lt; date.getHours()){
+        retorno = false;
+    }else if(parseInt(hora[1]) &lt; date.getMinutes()){
+        retorno = false;
+    }
+
+    return retorno;
+});
+
+console.log(horarios);
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,2799 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/controladores/administrarControler.js",
+    "content": "const administrarControler = {};\n\nadministrarControler.home = (req, res)=>{\n    res.render(\"administrar\");\n};\n\nadministrarControler.carreras = (req, res)=>{\n    res.render(\"administrar/carreras\");\n};\n\nadministrarControler.materias = (req, res)=>{\n    res.render(\"administrar/materias\");\n};\n\nadministrarControler.correlativas = (req, res)=>{\n    res.render(\"administrar/correlativas\");\n};\n\nadministrarControler.horarios = (req, res)=>{\n    res.render(\"administrar/horarios\");\n};\n\n\nmodule.exports = administrarControler;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/administrarControler.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "administrarControler",
+    "memberof": "src/controladores/administrarControler.js",
+    "static": true,
+    "longname": "src/controladores/administrarControler.js~administrarControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/administrarControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/controladores/carreraCotroller.js",
+    "content": "const carreraCotroller = {};\nconst pool = require('../database');\n\ncarreraCotroller.all = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera\", (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.id = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE id = ? \",[req.params.id], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.nombre = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE id = ? \",[req.params.nombre], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.plan = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE plan = ? \",[req.params.plan], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.duracion = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE duracion = ? \",[req.params.duracion], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.duracionmenor = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE duracion <= ? \",[req.params.duracion], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.duracionmayor = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE duracion >= ? \",[req.params.duracion], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\ncarreraCotroller.buscar = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM carrera WHERE nombre LIKE ? OR plan LIKE ? \",['%'+req.params.buscar+'%', '%'+req.params.buscar+'%'], (err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nmodule.exports = carreraCotroller;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/carreraCotroller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "carreraCotroller",
+    "memberof": "src/controladores/carreraCotroller.js",
+    "static": true,
+    "longname": "src/controladores/carreraCotroller.js~carreraCotroller",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/carreraCotroller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/carreraCotroller.js",
+    "static": true,
+    "longname": "src/controladores/carreraCotroller.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/carreraCotroller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/controladores/correlativaController.js",
+    "content": "const correlativaController = {};\nconst pool = require('../database');\nconst { json } = require('body-parser');\n\ncorrelativaController.all = (req, res)=>{\n    pool.query(\"SELECT * FROM correlativa \",(err, correlativa)=>{\n        if(err){\n            res.json(err);\n        }\n        res.json(correlativa);\n    });\n};\n\ncorrelativaController.complete = async (req, res) => {\n    var consultaNecesaria = \"SELECT DISTINCT materia.nombre as nombreNecesaria, correlativa.necesaria FROM correlativa, materia WHERE materia.idMateria = correlativa.necesaria\"\n    var consultaDisponibles = \"SELECT DISTINCT materia.nombre as nombreDisponible FROM correlativa, materia WHERE materia.idMateria = correlativa.disponible AND correlativa.necesaria = ?\";\n    var consultaFinales = \"SELECT DISTINCT carrera.idCarrera FROM carrera ,imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?\";\n\n    var correlativas = await pool.query(consultaNecesaria);\n\n    for (let i = 0; i < correlativas.length; i++) {\n        var element = correlativas[i];\n        element.nombreDisponible = await pool.query(consultaDisponibles, [element.necesaria]);\n        element.carreras = await pool.query(consultaFinales, [element.necesaria]);\n    }\n\n    res.json(correlativas);\n}\n\ncorrelativaController.necesaria = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM correlativa WHERE correlativa.necesaria = ? \",[req.params.necesaria], (err, correlativa)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(correlativa);\n        });\n    })\n};\n\ncorrelativaController.disponible = (req, res)=>{\n    pool.query(\"SELECT * FROM correlativa WHERE correlativa.disponible = ? \", [req.params.disponible],(err, correlativa)=>{\n        if(err){\n            res.json(err);\n        }\n        res.json(correlativa);\n    });\n};\n\ncorrelativaController.carrera = (req, res)=>{\n    pool.query(\"SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ? \", [req.params.idcarrera],(err, correlativa)=>{\n        if(err){\n            res.json(err);\n        }\n        res.json(correlativa);\n    });\n};\n\ncorrelativaController.carreranecesaria = (req, res)=>{\n    pool.query(\"SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ?  AND correlativa.necesaria = ?\", [req.params.idcarrera, req.params.necesaria],(err, correlativa)=>{\n        if(err){\n            res.json(err);\n        }\n        res.json(correlativa);\n    });\n};\n\ncorrelativaController.carreradisponible = (req, res)=>{\n    pool.query(\"SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = ? AND correlativa.disponible = ?\", [req.params.idcarrera, req.params.disponible],(err, correlativa)=>{\n        if(err){\n            res.json(err);\n        }\n        res.json(correlativa);\n    });\n};\n\ncorrelativaController.correlativamateria = async (req, res) => {\n    var consultaNecesarias = \"SELECT DISTINCT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.necesaria AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.disponible = ?\"\n    var consultaDisponibles = \"SELECT DISTINCT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.disponible AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.necesaria = ?\";\n    var consultaFinales = \"SELECT DISTINCT materia.nombre FROM materia, final WHERE materia.idMateria = final.necesaria AND final.disponible = ?\";\n    var idcarrera = req.params.idcarrera;\n    var idmateria = req.params.idmateria;\n    var retorno = {};\n\n    const necesarias = await pool.query(consultaNecesarias, [idcarrera, idmateria]);\n    for (let i = 0; i < necesarias.length; i++) {\n        const element = necesarias[i];\n        var finales =  await pool.query(consultaFinales, [element.idMateria]);\n        element.finales = finales;\n    }\n\n    const disponibles = await pool.query(consultaDisponibles, [idcarrera, idmateria]);\n    for (let j = 0; j < disponibles.length; j++) {\n        const element = disponibles[j];\n        var finales = await pool.query(consultaFinales, [element.idMateria]);\n        element.finales = finales;\n    }\n\n    retorno.necesarias = necesarias;\n    retorno.disponibles = disponibles;\n    res.json(retorno);\n};\n\ncorrelativaController.graf = async (req, res)=>{\n    var data = [];\n    materias = await pool.query(\"SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = '2' \");\n    materias.forEach(element => {\n        data.push({ from : element['necesaria'], to: element['disponible']});\n    });\n    res.json(data);\n};\n\nmodule.exports = correlativaController;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/correlativaController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "correlativaController",
+    "memberof": "src/controladores/correlativaController.js",
+    "static": true,
+    "longname": "src/controladores/correlativaController.js~correlativaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/correlativaController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/correlativaController.js",
+    "static": true,
+    "longname": "src/controladores/correlativaController.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/correlativaController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "json",
+    "memberof": "src/controladores/correlativaController.js",
+    "static": true,
+    "longname": "src/controladores/correlativaController.js~json",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/correlativaController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "file",
+    "name": "src/controladores/dictaController.js",
+    "content": "const dictaController = {};\nconst pool = require('../database');\nconst { id } = require('./materiaCotroller');\n\ndictaController.all = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta, materia WHERE materia.idMateria = dicta.idMateria\", (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.idmateria = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.idMateria = ?\", [req.params.idmateria], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.dia = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta WHERE dia = ? \", [req.params.dia], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.cuatrimestre = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta WHERE cuatrimestre = ? \", [req.params.cuatrimestre], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.estado = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta WHERE estado = ?\", [req.params.estado], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.hora = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta WHERE hora = ?\", [req.params.estado], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.horamenor = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta WHERE hora <= ? \", [req.params.hora], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.horamayor = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM dicta WHERE hora >= ? \", [req.params.hora], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\ndictaController.materiaCuatrimestre = (req, res) => {\n    var idmateria = req.params.idmateria;\n    var cuatrimestre = req.params.cuatrimestre;\n    var consulta = \"SELECT * FROM dicta, materia WHERE dicta.idMateria = materia.idMateria AND dicta.idMateria = ? AND dicta.cuatrimestre = ? \";\n\n    pool.query(consulta, [idmateria, cuatrimestre], (err, materias) => {\n        if (err) {\n            console.log(err);\n        }\n        res.json(materias);\n    });\n};\n\ndictaController.diaHora = async (req, res) => {\n    var dia = req.params.dia;\n    var horainicio = req.params.hora;\n    var cuatrimestre = req.params.cuatrimestre;\n\n    var consulta = \"SELECT dicta.*, materia.nombre as nombremateria FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.dia = ? AND dicta.horafin > ? AND dicta.cuatrimestre = ? ORDER BY horainicio ASC\";\n    var consultaFinales = \"SELECT DISTINCT imparte.idCarrera FROM imparte WHERE imparte.idMateria = ? \";\n\n    var horario = await pool.query(consulta, [dia, horainicio, cuatrimestre]);\n\n    for (let i = 0; i < horario.length; i++) {\n        const element = horario[i];\n        element.carreras = await pool.query(consultaFinales, [element.idMateria]);\n    }\n\n    res.json(horario);\n}\n\ndictaController.administrar = async (req, res) => {\n    var consultaDicta = \"SELECT DISTINCT * FROM dicta, materia WHERE dicta.idMateria = materia.idMateria\";\n    var consultaFinales = \"SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?\";\n\n    var dicta = await pool.query(consultaDicta);\n\n    for (let i = 0; i < dicta.length; i++) {\n        var element = dicta[i];\n        element.carreras = await pool.query(consultaFinales, [element.idMateria]);\n    }\n\n    res.json(dicta);\n}\n\ndictaController.carrera = async (req, res) => {\n    var consulta = \"SELECT DISTINCT dicta.*  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ?\";\n    var consultaFinales = \"SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?\";\n    var idcarrera = req.params.idcarrera;\n\n    var dicta = await pool.query(consulta, [idcarrera]);\n\n    for (let i = 0; i < dicta.length; i++) {\n        var element = dicta[i];\n        element.carreras = await pool.query(consultaFinales, [element.idMateria]);\n    }\n\n    res.json(dicta);\n};\n\ndictaController.diaCarrera = async (req, res) => {\n    var consulta = \"SELECT DISTINCT dicta.* , materia.nombre  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ? AND dicta.dia = ?\";\n    var consultaFinales = \"SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?\";\n    var idcarrera = req.params.idcarrera;\n    var dia = req.params.dia;\n\n    var dicta = await pool.query(consulta, [idcarrera, dia]);\n    for (let i = 0; i < dicta.length; i++) {\n        var element = dicta[i];\n        element.carrera = await pool.query(consultaFinales, [element.idMateria]);\n    }\n\n    res.json(dicta);\n};\n\ndictaController.anioCarrera = async (req, res) => {\n    var consulta = \"SELECT DISTINCT dicta.*, materia.nombre  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ? AND materia.ano = ? AND dicta.cuatrimestre = ?\";\n    var consultaFinales = \"SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?\";\n    var idcarrera = req.params.idcarrera;\n    var anio = req.params.anio;\n    var cuatrimestre = req.params.cuatrimestre;\n\n    var dicta = await pool.query(consulta, [idcarrera, anio, cuatrimestre]);\n    for (let i = 0; i < dicta.length; i++) {\n        var element = dicta[i];\n        element.carrera = await pool.query(consultaFinales, [element.idMateria]);\n    }\n\n    res.json(dicta);\n}\n\ndictaController.renderEdit = (req, res) => {\n    var consulta = \"SELECT * FROM `dicta` WHERE idMateria = ? AND dia = ? AND modulo = ? AND horainicio = ?\";\n    var idmateria = req.params.idmateria;\n    var dia = req.params.dia;\n    var modulo = req.params.modulo;\n    var horainicio = req.params.horainicio;\n\n    pool.query(consulta, [idmateria, dia, modulo, horainicio], (err, dicta) => {\n        console.log(dicta);\n        res.render(\"administrar/editarHorario\", { data: dicta[0] });\n    });\n}\n\ndictaController.edit = (req, res) => {\n    var consulta = \"UPDATE `dicta` SET `idMateria`=?,`aula`=?,`dia`=?,`modulo`=?,`horainicio`=?,`horafin`=?,`cuatrimestre`=?,`estado`=? WHERE idMateria = ? AND aula = ? AND dia = ? AND modulo = ? AND horainicio = ? AND horafin = ? AND cuatrimestre = ? AND estado = ?\"\n\n    var idMateriaOrginal = req.body.idMateriaOrginal;\n    var aulaOriginal = req.body.aulaOriginal;\n    var diaOriginal = req.body.diaOriginal;\n    var moduloOriginal = req.body.moduloOriginal;\n    var horafinOriginal = req.body.horafinOriginal;\n    var horainicioOriginal = req.body.horainicioOriginal;\n    var cuatrimestreOriginal = req.body.cuatrimestreOriginal;\n    var estadoOriginal = req.body.estadoOriginal;\n\n    var idMateria = req.body.idMateria;\n    var aula = req.body.aula;\n    var dia = req.body.dia;\n    var modulo = req.body.modulo;\n    var horafin = req.body.horafin;\n    var horainicio = req.body.horainicio;\n    var cuatrimestre = req.body.cuatrimestre;\n    var estado = req.body.estado;\n\n    console.log(idMateriaOrginal, aulaOriginal, diaOriginal, moduloOriginal, horainicioOriginal, horafinOriginal, cuatrimestreOriginal, estadoOriginal);\n\n    pool.query(consulta, [idMateriaOrginal, aula, dia, modulo, horainicio, horafin, cuatrimestre, estado, idMateriaOrginal, aulaOriginal, diaOriginal, moduloOriginal, horainicioOriginal, horafinOriginal, cuatrimestreOriginal, estadoOriginal], (err, materias)=>{\n        if(err){\n            console.log(err);\n        }\n        res.redirect(`/administrar/horarios/horario/edit/${idMateriaOrginal}/${dia}/${modulo}/${horainicio}`);\n    })\n}\n\n\nmodule.exports = dictaController;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/dictaController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "dictaController",
+    "memberof": "src/controladores/dictaController.js",
+    "static": true,
+    "longname": "src/controladores/dictaController.js~dictaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/dictaController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/dictaController.js",
+    "static": true,
+    "longname": "src/controladores/dictaController.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/dictaController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "id",
+    "memberof": "src/controladores/dictaController.js",
+    "static": true,
+    "longname": "src/controladores/dictaController.js~id",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/dictaController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/controladores/finalController.js",
+    "content": "const finalController = {};\nconst pool = require('../database');\n\nfinalController.all = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM final \",(err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nfinalController.necesaria = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM final WHERE final.necesaria = ?\", (req.params.necesaria),(err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nfinalController.disponible = (req, res)=>{\n    req.getConnection((err, conn)=>{\n        conn.query(\"SELECT * FROM final WHERE final.disponible = ?\", (req.params.disponible),(err, materias)=>{\n            if(err){\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nmodule.exports = finalController;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/finalController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "finalController",
+    "memberof": "src/controladores/finalController.js",
+    "static": true,
+    "longname": "src/controladores/finalController.js~finalController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/finalController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/finalController.js",
+    "static": true,
+    "longname": "src/controladores/finalController.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/finalController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "file",
+    "name": "src/controladores/indexControler.js",
+    "content": "const indexControler = {};\n\nindexControler.render = (req, res)=>{\n    res.render('index');\n};\n\nindexControler.horarios = (req, res)=>{\n    res.render('horarios');\n};\n\nindexControler.correlativas = (req, res)=>{\n    res.render('correlativas');\n};\n\nindexControler.login = (req, res)=>{\n    res.render('login');\n}\n\nindexControler.misemana = (req, res)=>{\n    res.render('misemana');\n}\n\nmodule.exports = indexControler;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/indexControler.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 65,
+    "kind": "variable",
+    "name": "indexControler",
+    "memberof": "src/controladores/indexControler.js",
+    "static": true,
+    "longname": "src/controladores/indexControler.js~indexControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/indexControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/controladores/materiaCotroller.js",
+    "content": "const materiaController = {};\nconst pool = require('../database');\n\nmateriaController.complete = async (req, res)=>{\n    var consultaMaterias = \"SELECT DISTINCT * FROM materia\";\n    var consultaCarreras = \"SELECT DISTINCT carrera.idCarrera FROM imparte, carrera WHERE imparte.idCarrera = carrera.idCarrera AND imparte.idMateria = ?\";\n    \n    var materias = await pool.query(consultaMaterias);\n\n    for (let i = 0; i < materias.length; i++) {\n        const element = materias[i];\n        element.carreras = await pool.query(consultaCarreras, [element.idMateria]);\n    }\n\n    res.json(materias);\n};\n\nmateriaController.all = (req, res) => {\n    pool.query(\"SELECT * FROM materia \", (err, materias) => {\n        if (err) {\n            res.json(err);\n        }\n        res.json(materias);\n    });\n}\n\nmateriaController.id = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM materia WHERE idMateria = ?\", [req.params.id], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n}\n\nmateriaController.nombre = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM materia WHERE nombre LIKE ? \", ['%' + req.params.nombre + '%'], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n}\n\nmateriaController.anio = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM materia WHERE ano = ? \", [req.params.anio], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nmateriaController.cuatrimestre = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM materia WHERE cuatrimestre = ? \", [req.params.cuatrimestre], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nmateriaController.cuatrimestreanio = (req, res) => {\n    req.getConnection((err, conn) => {\n        conn.query(\"SELECT * FROM materia WHERE cuatrimestre = ? AND ano = ?\", [req.params.cuatrimestre, req.params.anio], (err, materias) => {\n            if (err) {\n                res.json(err);\n            }\n            res.json(materias);\n        });\n    });\n};\n\nmateriaController.carrera = async (req, res) => {\n    var consulta = \"SELECT DISTINCT materia.* FROM materia, imparte WHERE materia.idMateria = imparte.idMateria AND imparte.idCarrera = ?\";\n    var idcarrera = req.params.idcarrera;\n    var consultaCarreras = \"SELECT DISTINCT carrera.idCarrera FROM imparte, carrera WHERE imparte.idCarrera = carrera.idCarrera AND imparte.idMateria = ?\";\n    \n    var materias = await pool.query(consulta, [idcarrera]);\n\n    for (let i = 0; i < materias.length; i++) {\n        const element = materias[i];\n        element.carreras = await pool.query(consultaCarreras, [element.idMateria]);\n    }\n\n    res.json(materias);\n}\n\nmateriaController.carreraAnio = (req, res)=>{\n    var consulta = \"SELECT DISTINCT materia.* FROM materia, imparte WHERE imparte.idMateria = materia.idMateria AND imparte.idCarrera = ? AND materia.ano = ?\";\n    var idcarrera = req.params.idcarrera;\n    var anio = req.params.anio;\n\n    pool.query(consulta, [idcarrera,anio], (err, materias)=>{\n        if(err){\n            console.log(err);\n        }\n        res.json(materias);\n    });\n};\n\nmateriaController.json = (req, res)=>{\n    var consulta = \"SELECT materia.idMateria, materia.nombre, materia.cuatrimestre FROM `materia`, imparte WHERE materia.idMateria = imparte.idMateria AND imparte.idCarrera = '3' AND materia.ano = '5'\";\n    var idcarrera = req.params.idcarrera;\n    var anio = req.body.anio;\n\n    pool.query(consulta, [idcarrera, anio], (err, materias)=>{\n        if(err){\n            console.log(err);\n        }\n        console.log(materias);\n        res.json(materias);\n    });\n}\n\nmodule.exports = materiaController;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/materiaCotroller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "materiaController",
+    "memberof": "src/controladores/materiaCotroller.js",
+    "static": true,
+    "longname": "src/controladores/materiaCotroller.js~materiaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/materiaCotroller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/materiaCotroller.js",
+    "static": true,
+    "longname": "src/controladores/materiaCotroller.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/materiaCotroller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/controladores/sreController.js",
+    "content": "const sreController = {};\nconst pool = require('../database');\n\nsreController.jsonMaterias = async (req, res)=>{\n    var consultaCarreras = \"SELECT DISTINCT * FROM carrera\";\n    var consutaMaterias = \"SELECT DISTINCT materia.* FROM materia, imparte WHERE imparte.idMateria = materia.idMateria AND imparte.idCarrera = ? AND materia.ano = ? ORDER BY materia.cuatrimestre ASC\";\n    var json = {};\n    var carreras = await pool.query(consultaCarreras);\n    json.carreras = carreras;\n    //ahora creamos la estructura de las materias\n    var materias = [];\n\n    for (let i = 0; i < carreras.length; i++) {\n        const carrera = carreras[i];\n        var materiasCarrera = [];\n        for(var j = 1; j <= carrera.duracion; j++){\n            var materiasAnio = [];\n            var materiasAnio = await pool.query(consutaMaterias,[carrera.idCarrera, j]);\n            materiasCarrera.push(materiasAnio);\n        }\n        materias.push(materiasCarrera);\n    }\n\n    json.materias = materias;\n    res.json(json);\n}\n\nmodule.exports = sreController;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/sreController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "sreController",
+    "memberof": "src/controladores/sreController.js",
+    "static": true,
+    "longname": "src/controladores/sreController.js~sreController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/sreController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/sreController.js",
+    "static": true,
+    "longname": "src/controladores/sreController.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/sreController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/controladores/usuarioControler.js",
+    "content": "const usuarioControler = {};\nconst pool = require('../database');\nconst jwt = require('jsonwebtoken');\nconst key = require('../config.json');\nconst md5 = require('md5');\n\nusuarioControler.validar = (req, res) => {\n    var usuario = req.params.usuario;\n    var contrasenia = md5(req.params.contrasenia);\n    var consulta = \"SELECT * FROM usuario WHERE usuario.usuario = ? AND usuario.pass = ?\";\n\n    pool.query(consulta, [usuario, contrasenia], (err, usuario) => {\n        if(err){\n            res.json(err);\n        }\n        console.log(usuario.length);\n        if (usuario.length > 0 && usuario != null) {\n            var token = jwt.sign({\"token\":usuario[0].token}, key.clave);\n            console.log(token);\n            res.json({\"token\":token});\n        }else{\n            res.json({\"mensaje\": \"el usuario no es valido o la contraseña es incorrecta\"});\n        }\n    });\n};\n\nusuarioControler.validarLogin = (req, res) => {\n    var usuario = req.body.usuario;\n    var contrasenia = req.body.contrasenia;\n    var consulta = \"SELECT * FROM `usuario` WHERE usuario = ? AND pass = ?\";\n\n    pool.query(consulta, [usuario, contrasenia], (err, usuario)=>{\n        if(err){\n            console.log(err);\n        }\n        if(usuario.length > 0){\n            req.session.user = {\n                \"nombre\" : usuario[0].usuario,\n                \"tipo\" : usuario[0].tipo\n            };\n            console.log(req.session.user);\n            res.redirect(\"/administrar/\");\n        }else{\n            res.redirect(\"/login\");\n        }\n    });\n}\n\nmodule.exports = usuarioControler;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/controladores/usuarioControler.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "usuarioControler",
+    "memberof": "src/controladores/usuarioControler.js",
+    "static": true,
+    "longname": "src/controladores/usuarioControler.js~usuarioControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/usuarioControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/controladores/usuarioControler.js",
+    "static": true,
+    "longname": "src/controladores/usuarioControler.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/usuarioControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "src/controladores/usuarioControler.js",
+    "static": true,
+    "longname": "src/controladores/usuarioControler.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/usuarioControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "key",
+    "memberof": "src/controladores/usuarioControler.js",
+    "static": true,
+    "longname": "src/controladores/usuarioControler.js~key",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/usuarioControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "md5",
+    "memberof": "src/controladores/usuarioControler.js",
+    "static": true,
+    "longname": "src/controladores/usuarioControler.js~md5",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/controladores/usuarioControler.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/database.js",
+    "content": "const mysql = require('mysql');\nconst util = require('util');\nconst fs = require('fs');\nconst path = require('path');\n\nconst database = JSON.parse(fs.readFileSync(path.join(__dirname, 'claves.json')).toString());\n\nconst pool = mysql.createPool(database.database);\n\npool.getConnection((err, conn)=>{\n    if(err){\n        if(err.code === 'PROTOCOL_CONNECTION_LOST'){\n            console.error(\"LA CONECCION CON LA BASE DE DATOS FUE CERRADA!!\");\n        }\n        if(err.code === 'ER_COUNT_ERROR'){\n            console.error(\"\");\n        }\n        if(err.code === 'ECONNREFUSED'){\n            console.error(\"LA CONECCION CON LA BASE DE DATOS FUE RECHAZADA\");\n        }\n    }\n    if(conn){\n        conn.release();\n        console.log('la base de datos fue conectada!!');\n        return;\n    }\n});\n\n//ahora las cueris pueden usar promesas\npool.query = util.promisify(pool.query);\n\nmodule.exports = pool;\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/database.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "mysql",
+    "memberof": "src/database.js",
+    "static": true,
+    "longname": "src/database.js~mysql",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/database.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "util",
+    "memberof": "src/database.js",
+    "static": true,
+    "longname": "src/database.js~util",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/database.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "src/database.js",
+    "static": true,
+    "longname": "src/database.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/database.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "src/database.js",
+    "static": true,
+    "longname": "src/database.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/database.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "variable",
+    "name": "database",
+    "memberof": "src/database.js",
+    "static": true,
+    "longname": "src/database.js~database",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/database.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/database.js",
+    "static": true,
+    "longname": "src/database.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/database.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "const express = require('express');\nconst path = require('path');\nconst morgan = require('morgan');\nconst mysql = require('mysql');\nconst myconnection = require('express-myconnection');\nconst bodyParser = require('body-parser');\nconst session = require('express-session');\nconst url=require('url');\nconst jwt = require('jsonwebtoken');\n\nconst config = require('./database.json');\n\nconst app = express();\n\n//cabezeras cors\napp.use((req, res, next)=>{\n    res.header('Access-Control-Allow-Origin', '*');\n    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');\n    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');\n    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');\n    next();\n});\n\n//configuraciones\napp.set('port',process.env.port || 3000);\napp.set('key', 123);\npath.basename(__dirname);\napp.set('views', path.join(__dirname, 'vistas'));\napp.set('view engine', 'ejs');\napp.set('publico', path.join(__dirname, 'publico'));\n\napp.use(express.static(path.join(__dirname, 'publico')));\n\n//midelwares\napp.use(morgan('combined'));\napp.use(bodyParser.urlencoded({ extended: true }));\napp.use(bodyParser.json());\napp.use('/api',require('./middleware/token').validar);\napp.use(session({\n    secret: 'asdasdasdasdasd'\n}));\n\n//rutas\n\napp.use('/', require('./rutas/indexrender'));\n\n//rutas api\napp.use('/api',require('./rutas/materiasRoute'));\napp.use('/api',require('./rutas/carreraRoute'));\napp.use('/api',require('./rutas/dictaRoute'));\napp.use('/api',require('./rutas/correlativaRoute'));\napp.use('/api',require('./rutas/finalRoute'));\napp.use('/administrar', require('./rutas/administrarRoute'));\napp.use('/sre', require('./rutas/sre'));\napp.use('/apilogin',require('./rutas/usuarioRoute'));\napp.use('*', require('./middleware/httpsstatus').http404);\n\n//ejecutamos el servidor\napp.listen(app.get('port'), ()=>{\n    console.log(\"Servidor alojado en el puerto: \"+app.get('port'));\n});\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "morgan",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~morgan",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "mysql",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~mysql",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "myconnection",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~myconnection",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "variable",
+    "name": "bodyParser",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~bodyParser",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "session",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~session",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "url",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~url",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/index.js",
+    "static": true,
+    "longname": "src/index.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/middleware/404.js",
+    "content": "const error404 = {};\n\nerror404.rute = (req, res, next)=>{\n    if(res.status){\n\n    }\n}\n\nmodule.exports = error404;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/middleware/404.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "error404",
+    "memberof": "src/middleware/404.js",
+    "static": true,
+    "longname": "src/middleware/404.js~error404",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/404.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/middleware/httpsstatus.js",
+    "content": "const httpstatus = {};\n\nhttpstatus.http404 = (req, res, next)=>{\n    //error 404 http code\n    console.log(res.status);\n    res.status(404).json(\"Not found.\");\n    next();\n};\n\nmodule.exports = httpstatus;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/middleware/httpsstatus.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "variable",
+    "name": "httpstatus",
+    "memberof": "src/middleware/httpsstatus.js",
+    "static": true,
+    "longname": "src/middleware/httpsstatus.js~httpstatus",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/httpsstatus.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/middleware/token.js",
+    "content": "const token = {};\nconst pool = require('../database');\nconst key = require('../config.json');\nconst jwt = require('jsonwebtoken');\nconst md5 = require('md5');\nconst usuarioControler = require('../controladores/usuarioControler');\n\ntoken.validar = async (req, res, next)=>{\n    var token = req.headers['access-token'];\n    var consulta = \"SELECT * FROM usuario WHERE usuario.token = ?\";\n    //1. validamos si el access-token, en caso contrario retornamos un error\n    if(token != null || token != \"\"){\n        //2. desiframos el token provisto por el usuario\n        try {\n            var decoded = jwt.verify(token, key.clave);\n            var token = decoded.token;\n            var usaurio = await pool.query(consulta, [token]);\n            console.log(usaurio);\n            //3. comparamos si el token decifrado pertenecen a un usuario\n            if(usaurio.length > 0){\n                //mas adelante llevaremos refgistros de quienes hacen uso de la aplicacion\n                console.log(\"TOKEN VALIDO!!\");\n                next();\n            }else{\n                res.json({\"Error\":\"El token provisto en header no es un token aceptado\"});\n            }\n\n        } catch(err) {\n            res.json(err);\n        }\n        \n    }else{\n        res.json({\"Error\":\"token no provista en header: access-token\"});\n    }\n};\n\nmodule.exports = token;\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/middleware/token.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "variable",
+    "name": "token",
+    "memberof": "src/middleware/token.js",
+    "static": true,
+    "longname": "src/middleware/token.js~token",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/token.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "variable",
+    "name": "pool",
+    "memberof": "src/middleware/token.js",
+    "static": true,
+    "longname": "src/middleware/token.js~pool",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/token.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "key",
+    "memberof": "src/middleware/token.js",
+    "static": true,
+    "longname": "src/middleware/token.js~key",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/token.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "src/middleware/token.js",
+    "static": true,
+    "longname": "src/middleware/token.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/token.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "md5",
+    "memberof": "src/middleware/token.js",
+    "static": true,
+    "longname": "src/middleware/token.js~md5",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/token.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "usuarioControler",
+    "memberof": "src/middleware/token.js",
+    "static": true,
+    "longname": "src/middleware/token.js~usuarioControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/token.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "file",
+    "name": "src/middleware/user.js",
+    "content": "const user = {};\n\nuser.midelware = (req, res, next)=>{\n    if(!req.session.user){\n        console.log(\"no esta loguedo\");\n        res.redirect(\"/login\");\n    }\n    next();\n};\n\nmodule.exports = user;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/middleware/user.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 109,
+    "kind": "variable",
+    "name": "user",
+    "memberof": "src/middleware/user.js",
+    "static": true,
+    "longname": "src/middleware/user.js~user",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/middleware/user.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "file",
+    "name": "src/publico/js/component.js",
+    "content": "Vue.component('materiacard',{\n    props: ['materia'],\n    template: `<div class=\"card\">\n                <h6 class=\"card-header\">{{ materia.nombre }}</h6>\n                <div class=\"card-body\">\n                    <p class=\"card-text\">{{ materia.horainicio.substring(0,5) }} - {{ materia.horafin.substring(0,5) }}</p>\n                </div>\n                <div class=\"card-footer text-muted\">\n                    {{ materia.modulo }}\n                </div>\n            </div>`\n});\n\nVue.component('selectmateria', {\n    props: ['carreras', 'materias', 'anios'],\n    template:``\n});",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/component.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 111,
+    "kind": "file",
+    "name": "src/publico/js/componentadmin.js",
+    "content": "Vue.component('materiacardadmin',{\n    props: ['materia', 'url'],\n    template: `<div class=\"card\">\n                <a role=\"button\" v-bind:href=\"url\" class=\"btn btn-link d-flex justify-content-end\">\n                    <span class=\"material-icons\">\n                        create\n                    </span>\n                </a>\n                <h6 class=\"card-header\">\n                    {{ materia.nombre }}\n                </h6>\n                <div class=\"card-body\">\n                    <p class=\"card-text\">{{ materia.horainicio.substring(0,5) }} - {{ materia.horafin.substring(0,5) }}</p>\n                </div>\n                <div class=\"card-footer text-muted\">\n                    {{ materia.modulo }}\n                </div>\n            </div>`\n});",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/componentadmin.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 112,
+    "kind": "file",
+    "name": "src/publico/js/correlativas.js",
+    "content": "var datos = data;\n\nvar app2 = new Vue({\n    el: '#app2',\n    data: {\n        necesarias: null,\n        disponibles: null,\n        display: false\n    }\n});\n\nvar app = new Vue({\n    el: '#app',\n    data: {\n        datos: datos,\n        carreras: datos.carreras,\n        duracion: 0,\n        materias: {},\n        anios: false,\n        materias: false,\n        info: null,\n        carrerasValue: \"-\",\n        aniosValue: \"-\",\n        materiasValue: \"-\"\n    },\n    methods: {\n        cargarAnios: function () {\n            this.materias = false;\n            this.anios = false;\n            this.duracion = 0;\n\n            var idcarrera = this.carrerasValue;\n            this.aniosValue = \"-\";\n\n            this.duracion = this.carreras[parseInt(idcarrera) - 1].duracion;\n            this.anios = true;\n        },\n        cargarMaterias: function () {\n            var idcarrera = this.carrerasValue;\n            var anio = this.aniosValue;\n            this.materiasValue = \"-\";\n\n            this.materias = datos.materias[parseInt(idcarrera) - 1][parseInt(anio) - 1];\n        },\n        consultar: function () {\n            var idcarrera = this.carrerasValue;\n            var idmateria = this.materiasValue;\n            //llamada a la funcion para poder trar los datos\n            app2.display = false;\n            app2.necesarias = null;\n            app2.disponibles = null;\n            axios.get(`/correlativas/consulta/${idcarrera}/${idmateria}`).then((response) => {\n                app2.necesarias = response.data.necesarias;\n                app2.disponibles = response.data.disponibles;\n            });\n            app2.display = true;\n        }\n    }\n});",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/correlativas.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "datos",
+    "memberof": "src/publico/js/correlativas.js",
+    "static": true,
+    "longname": "src/publico/js/correlativas.js~datos",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/correlativas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "variable",
+    "name": "app2",
+    "memberof": "src/publico/js/correlativas.js",
+    "static": true,
+    "longname": "src/publico/js/correlativas.js~app2",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/correlativas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/publico/js/correlativas.js",
+    "static": true,
+    "longname": "src/publico/js/correlativas.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/correlativas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "src/publico/js/data.js",
+    "content": "var data =\n{\n    \"carreras\": [\n        {\n            \"idCarrera\": 1,\n            \"nombre\": \"Profesorado en Informática\",\n            \"plan\": \"1185/13\",\n            \"duracion\": 4\n        },\n        {\n            \"idCarrera\": 2,\n            \"nombre\": \"Licenciatura en Ciencias de la Computación\",\n            \"plan\": \"1112/13\",\n            \"duracion\": 5\n        },\n        {\n            \"idCarrera\": 3,\n            \"nombre\": \"Licenciatura en Sistemas de Información\",\n            \"plan\": \"1420/2013\",\n            \"duracion\": 5\n        },\n        {\n            \"idCarrera\": 4,\n            \"nombre\": \"Tecnicatura Universitaria en Desarrollo Web\",\n            \"plan\": \"0885/2012\",\n            \"duracion\": 3\n        },\n        {\n            \"idCarrera\": 5,\n            \"nombre\": \"Tecnicatura Universitaria en Administración de Sistemas y Software Libre\",\n            \"plan\": \"0895/2012 \",\n            \"duracion\": 3\n        }\n    ],\n    \"materias\": [\n        [\n            [\n                {\n                    \"idMateria\": 102,\n                    \"nombre\": \"Pedagogía\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 16,\n                    \"nombre\": \"Elementos de Algebra\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 17,\n                    \"nombre\": \"Resolucion de Problemas y Algoritmos\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 18,\n                    \"nombre\": \"Modelos y Sistemas de Informacion\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 19,\n                    \"nombre\": \"Introduccion a la Computacion\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 103,\n                    \"nombre\": \"Psicología I\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 20,\n                    \"nombre\": \"Desarrollo de Algoritmos\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 22,\n                    \"nombre\": \"Elementos de Teoria de la Computacion\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 23,\n                    \"nombre\": \"Modelado de Datos\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 104,\n                    \"nombre\": \"Didáctica General\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 24,\n                    \"nombre\": \"Cálculo Diferencial e Integral\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 25,\n                    \"nombre\": \"Programacion Orientada a Objetos\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 26,\n                    \"nombre\": \"Estructuras de Datos\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 27,\n                    \"nombre\": \"Teoria de la Computacion I\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 28,\n                    \"nombre\": \"Inglés Técnico I\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 30,\n                    \"nombre\": \"Programacion Concurrente\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 31,\n                    \"nombre\": \"Teoria de la Computacion II\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 32,\n                    \"nombre\": \"Arquitecturas y Organizacion de Computadoras I\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 33,\n                    \"nombre\": \"Ingenieria de Requerimientos\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 34,\n                    \"nombre\": \"Inglés Técnico II\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 39,\n                    \"nombre\": \"Arquitecturas de Software\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n\n                {\n                    \"idMateria\": 106,\n                    \"nombre\": \"Tecnologías de la Información y Comunicación en la Educación\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 107,\n                    \"nombre\": \"Psicología II\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 105,\n                    \"nombre\": \"Métodos Computacionales para el Cálculo\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 108,\n                    \"nombre\": \"Laboratorio de Tecnologías de la Información y Comunicación en la Educación\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 43,\n                    \"nombre\": \"Redes de Computadoras I\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 115,\n                    \"nombre\": \"Diseño de Sistemas Informáticos para\\r\\nEducación\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 109,\n                    \"nombre\": \"Probabilidad y Estadística\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 110,\n                    \"nombre\": \"Laboratorio de Sistemas Informáticos para Educación\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 111,\n                    \"nombre\": \"Didáctica Específica\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 112,\n                    \"nombre\": \"Política Educacional Argentina\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 113,\n                    \"nombre\": \"Tópicos Avanzados en Ciencias de la Computación\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 114,\n                    \"nombre\": \"Residencia\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 61,\n                    \"nombre\": \"Aspectos Profesionales y Sociales\",\n                    \"ano\": 4,\n                    \"cuatrimestre\": 2\n                }\n            ]\n        ],\n        [\n            [\n                {\n                    \"idMateria\": 16,\n                    \"nombre\": \"Elementos de Algebra\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 17,\n                    \"nombre\": \"Resolucion de Problemas y Algoritmos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 18,\n                    \"nombre\": \"Modelos y Sistemas de Informacion\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 19,\n                    \"nombre\": \"Introduccion a la Computacion\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 20,\n                    \"nombre\": \"Desarrollo de Algoritmos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 21,\n                    \"nombre\": \"Elementos de Algebra Lineal\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 22,\n                    \"nombre\": \"Elementos de Teoria de la Computacion\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 23,\n                    \"nombre\": \"Modelado de Datos\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 24,\n                    \"nombre\": \"Cálculo Diferencial e Integral\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 25,\n                    \"nombre\": \"Programacion Orientada a Objetos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 26,\n                    \"nombre\": \"Estructuras de Datos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 27,\n                    \"nombre\": \"Teoria de la Computacion I\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 28,\n                    \"nombre\": \"Inglés Técnico I\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 29,\n                    \"nombre\": \"Métodos Computacionales para el Cálculo\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 30,\n                    \"nombre\": \"Programacion Concurrente\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 31,\n                    \"nombre\": \"Teoria de la Computacion II\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 32,\n                    \"nombre\": \"Arquitecturas y Organizacion de Computadoras I\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 33,\n                    \"nombre\": \"Ingenieria de Requerimientos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 34,\n                    \"nombre\": \"Inglés Técnico II\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 35,\n                    \"nombre\": \"Probabilidad y Estadistica\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 36,\n                    \"nombre\": \"Principios de Lenguajes de Programacion\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 37,\n                    \"nombre\": \"Sistemas Operativos I\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 38,\n                    \"nombre\": \"Diseño de Bases de Datos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 39,\n                    \"nombre\": \"Arquitecturas de Software\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 40,\n                    \"nombre\": \"Análisis de Algoritmos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 41,\n                    \"nombre\": \"Laboratorio de Programacion\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 42,\n                    \"nombre\": \"Lógica para Ciencias de la Computacion\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 43,\n                    \"nombre\": \"Redes de Computadoras I\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 44,\n                    \"nombre\": \"Gestion de Proyectos de Desarrollo Software\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 45,\n                    \"nombre\": \"Gestion de Bases de Datos\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 51,\n                    \"nombre\": \"Sistemas Paralelos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 55,\n                    \"nombre\": \"Lenguajes Declarativos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 56,\n                    \"nombre\": \"Complejidad Computacional\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 57,\n                    \"nombre\": \"Especificacion de Software\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 52,\n                    \"nombre\": \"Inteligencia Artificial LicCien \",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 58,\n                    \"nombre\": \"Diseño de Algoritmos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 59,\n                    \"nombre\": \"Conceptos Avanzados de Lenguajes de Programacion\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 60,\n                    \"nombre\": \"Especificación con Métodos Formales\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 61,\n                    \"nombre\": \"Aspectos Profesionales y Sociales\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 53,\n                    \"nombre\": \"Sistemas Inteligentes\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 54,\n                    \"nombre\": \"Laboratorio de Programacion Distribuida\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 62,\n                    \"nombre\": \"Agentes Inteligentes para la Web\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 63,\n                    \"nombre\": \"Diseño de Compiladores e Interpretes\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 64,\n                    \"nombre\": \"Electiva I\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 65,\n                    \"nombre\": \"Trabajo de Tesis\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 66,\n                    \"nombre\": \"Laboratorio de Compiladores e Intérpretes\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 67,\n                    \"nombre\": \"Laboratorio de Inteligencia Artificial\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 68,\n                    \"nombre\": \"Tecnicas para Minería de Datos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 69,\n                    \"nombre\": \"Electiva II Según Electiva\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 70,\n                    \"nombre\": \"Trabajo de Tesis\",\n                    \"cuatrimestre\": 2\n                }\n            ]\n        ],\n        [\n            [\n                {\n                    \"idMateria\": 16,\n                    \"nombre\": \"Elementos de Algebra\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 17,\n                    \"nombre\": \"Resolucion de Problemas y Algoritmos\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 18,\n                    \"nombre\": \"Modelos y Sistemas de Informacion\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 19,\n                    \"nombre\": \"Introduccion a la Computacion\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 20,\n                    \"nombre\": \"Desarrollo de Algoritmos\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 21,\n                    \"nombre\": \"Elementos de Algebra Lineal\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 22,\n                    \"nombre\": \"Elementos de Teoria de la Computacion\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 23,\n                    \"nombre\": \"Modelado de Datos\",\n                    \"ano\": 1,\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 24,\n                    \"nombre\": \"Cálculo Diferencial e Integral\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 25,\n                    \"nombre\": \"Programacion Orientada a Objetos\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 26,\n                    \"nombre\": \"Estructuras de Datos\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 27,\n                    \"nombre\": \"Teoria de la Computacion I\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 28,\n                    \"nombre\": \"Inglés Técnico I\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 29,\n                    \"nombre\": \"Métodos Computacionales para el Cálculo\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 30,\n                    \"nombre\": \"Programacion Concurrente\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 31,\n                    \"nombre\": \"Teoria de la Computacion II\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 32,\n                    \"nombre\": \"Arquitecturas y Organizacion de Computadoras I\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 33,\n                    \"nombre\": \"Ingenieria de Requerimientos\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 34,\n                    \"nombre\": \"Inglés Técnico II\",\n                    \"ano\": 2,\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 35,\n                    \"nombre\": \"Probabilidad y Estadistica\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 36,\n                    \"nombre\": \"Principios de Lenguajes de Programacion\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 37,\n                    \"nombre\": \"Sistemas Operativos I\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 38,\n                    \"nombre\": \"Diseño de Bases de Datos\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 39,\n                    \"nombre\": \"Arquitecturas de Software\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 40,\n                    \"nombre\": \"Análisis de Algoritmos\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 41,\n                    \"nombre\": \"Laboratorio de Programacion\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 42,\n                    \"nombre\": \"Lógica para Ciencias de la Computacion\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 43,\n                    \"nombre\": \"Redes de Computadoras I\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 44,\n                    \"nombre\": \"Gestion de Proyectos de Desarrollo Software\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 45,\n                    \"nombre\": \"Gestion de Bases de Datos\",\n                    \"ano\": 3,\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 51,\n                    \"nombre\": \"Sistemas Paralelos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 52,\n                    \"nombre\": \"Inteligencia Artificial LicCien \",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 71,\n                    \"nombre\": \"Planificacion y Control de Proyectos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 72,\n                    \"nombre\": \"Sistemas de Informacion I\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 73,\n                    \"nombre\": \"Modelado de Procesos de Negocios\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 74,\n                    \"nombre\": \"Especificacion de Requerimientos\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 75,\n                    \"nombre\": \"Especificacion de Diseño de Software\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 76,\n                    \"nombre\": \"Deposito y Mineria de Datos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 77,\n                    \"nombre\": \"Sistema de Informacion II\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 78,\n                    \"nombre\": \"Laboratorio de Bases de Datos\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 53,\n                    \"nombre\": \"Sistemas Inteligentes\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 54,\n                    \"nombre\": \"Laboratorio de Programacion Distribuida\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 79,\n                    \"nombre\": \"Auditoria de Sistemas de Informacion\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 80,\n                    \"nombre\": \"Verificacion y Validacion de Software\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 81,\n                    \"nombre\": \"Electiva I\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 82,\n                    \"nombre\": \"Trabajo Tesis I LicSis\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 83,\n                    \"nombre\": \"Sistemas de Informacion para la Web\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 84,\n                    \"nombre\": \"Aspectos Profecionales y Sociales\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 85,\n                    \"nombre\": \"Reingenieria de Software y Procesos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 86,\n                    \"nombre\": \"Construccion y Validacion de Software\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 87,\n                    \"nombre\": \"Electiva II\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 88,\n                    \"nombre\": \"Trabajo Tesis II LicSis\",\n                    \"cuatrimestre\": 2\n                }\n            ]\n        ],\n        [\n            [\n                {\n                    \"idMateria\": 89,\n                    \"nombre\": \"Matematica General\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 90,\n                    \"nombre\": \"Introduccion a la Programacion\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 91,\n                    \"nombre\": \"Ingles Tecnico\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 92,\n                    \"nombre\": \"Programacion Estatica y Laboratorio Web\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 93,\n                    \"nombre\": \"Introduccion a la Programacion Orientada a Objetos\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 94,\n                    \"nombre\": \"Conceptos de Bases de Datos\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 95,\n                    \"nombre\": \"Programacion Web Dinamica\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 96,\n                    \"nombre\": \"Arquitectura y Seguridad de Computadoras\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 97,\n                    \"nombre\": \"Diseno Grafico\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 98,\n                    \"nombre\": \"Programacion Web Avanzada\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 99,\n                    \"nombre\": \"Analisis, Diseño y Documentacion de Sistemas\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 100,\n                    \"nombre\": \"Framework e Interoperabilidad\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 101,\n                    \"nombre\": \"Trabajo Final Tecnicatura en Desarrollo Web\",\n                    \"cuatrimestre\": 1\n                }\n            ]\n        ],\n        [\n            [\n                {\n                    \"idMateria\": 1,\n                    \"nombre\": \"Introduccion a la Computacion\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 2,\n                    \"nombre\": \"Matematica General\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 3,\n                    \"nombre\": \"Ingles Tecnico\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 4,\n                    \"nombre\": \"Introduccion a la Programacion\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 5,\n                    \"nombre\": \"Introduccion a la Administracion de Sistemas\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 6,\n                    \"nombre\": \"Redes de Datos\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 7,\n                    \"nombre\": \"Software Libre\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 8,\n                    \"nombre\": \"Taller de Hardware y Software\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 9,\n                    \"nombre\": \"Administracion de Sistemas\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 10,\n                    \"nombre\": \"Administracion de Servicios\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 11,\n                    \"nombre\": \"Sistemas de Informacion\",\n                    \"cuatrimestre\": 2\n                },\n                {\n                    \"idMateria\": 12,\n                    \"nombre\": \"Automatizacion y Scrpting\",\n                    \"cuatrimestre\": 2\n                }\n            ],\n            [\n                {\n                    \"idMateria\": 13,\n                    \"nombre\": \"Administracion de Sistemas Avanzada\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 14,\n                    \"nombre\": \"Aplicaciones Libres\",\n                    \"cuatrimestre\": 1\n                },\n                {\n                    \"idMateria\": 15,\n                    \"nombre\": \"Electiva\",\n                    \"cuatrimestre\": 1\n                }\n            ]\n        ]\n    ]\n};",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/data.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "variable",
+    "name": "data",
+    "memberof": "src/publico/js/data.js",
+    "static": true,
+    "longname": "src/publico/js/data.js~data",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/data.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"carreras\": *, \"materias\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "file",
+    "name": "src/publico/js/filter.js",
+    "content": "var horarios = [\n    {\n        idMateria: 18,\n        aula: '16',\n        dia: 'Lunes',\n        modulo: 'Teoría ',\n        horainicio: '19:00:00',\n        horafin: '18:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Modelos y Sistemas de Informacion',\n        nombrecarrera: 'Licenciatura en Ciencias de la Computación'\n    },\n    {\n        idMateria: 18,\n        aula: '16',\n        dia: 'Lunes',\n        modulo: 'Teoría ',\n        horainicio: '19:00:00',\n        horafin: '21:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Modelos y Sistemas de Informacion',\n        nombrecarrera: 'Licenciatura en Ciencias de la Computación'\n    },\n    {\n        idMateria: 18,\n        aula: '16',\n        dia: 'Lunes',\n        modulo: 'Teoría ',\n        horainicio: '19:00:00',\n        horafin: '21:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Modelos y Sistemas de Informacion',\n        nombrecarrera: 'Licenciatura en Sistemas de Información'\n    },\n    {\n        idMateria: 98,\n        aula: 'Aula Informática Biblioteca',\n        dia: 'Lunes',\n        modulo: 'Unico',\n        horainicio: '15:00:00',\n        horafin: '21:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Programacion Web Avanzada',\n        nombrecarrera: 'Tecnicatura Universitaria en Desarrollo Web'\n    },\n    {\n        idMateria: 71,\n        aula: 'Aula 13.1',\n        dia: 'Lunes',\n        modulo: 'Unico',\n        horainicio: '17:00:00',\n        horafin: '21:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Planificacion y Control de Proyectos',\n        nombrecarrera: 'Licenciatura en Sistemas de Información'\n    },\n    {\n        idMateria: 18,\n        aula: '16',\n        dia: 'Lunes',\n        modulo: 'Teoría ',\n        horainicio: '19:00:00',\n        horafin: '21:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Modelos y Sistemas de Informacion',\n        nombrecarrera: 'Profesorado en Informática'\n    },\n    {\n        idMateria: 6,\n        aula: 'Laboratorio III',\n        dia: 'Lunes',\n        modulo: 'Unico',\n        horainicio: '18:00:00',\n        horafin: '22:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Redes de Datos',\n        nombrecarrera: 'Tecnicatura Universitaria en Administración de Sistemas y Software Libre'\n    },\n    {\n        idMateria: 18,\n        aula: '16',\n        dia: 'Lunes',\n        modulo: 'Teoría ',\n        horainicio: '19:00:00',\n        horafin: '21:00:00',\n        cuatrimestre: 1,\n        estado: 'normal',\n        nombremateria: 'Modelos y Sistemas de Informacion',\n        nombrecarrera: 'Profesorado en Informática'\n    }\n];\n\nconsole.log(horarios);\n\nconsole.log(\"-------------------------------------------------------\");\n\nvar horarios2 = horarios.filter((horario) => {\n    var date = new Date();\n    var hora = horario.horafin.split(':');\n    console.log(hora);\n    console.log(date.getHours()+\":\"+date.getMinutes());\n    var retorno = true;\n\n    if(parseInt(hora[0]) < date.getHours()){\n        retorno = false;\n    }else if(parseInt(hora[1]) < date.getMinutes()){\n        retorno = false;\n    }\n\n    return retorno;\n});\n\nconsole.log(horarios);\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/filter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 119,
+    "kind": "variable",
+    "name": "horarios",
+    "memberof": "src/publico/js/filter.js",
+    "static": true,
+    "longname": "src/publico/js/filter.js~horarios",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/filter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "horarios2",
+    "memberof": "src/publico/js/filter.js",
+    "static": true,
+    "longname": "src/publico/js/filter.js~horarios2",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/filter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 104,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "file",
+    "name": "src/publico/js/horarios.js",
+    "content": "var app = new Vue({\n    el: '#app',\n    data:{\n        horarios: [],\n        dia: \"\",\n        hora: \"\",\n        cuatrimestre: 1\n    },\n    mounted: function() {\n        this.load();\n    },\n    methods: {\n        load: function(){\n        this.dia = this.numberToDate(new Date().getDay());\n        this.hora = this.timeParse(new Date);\n        console.log(this.dia+\" \"+this.hora);\n        axios.get(`/horarios/consulta/${this.dia}/${this.hora}/${this.cuatrimestre}`).then((response) => {\n            this.horarios = response.data;\n            this.horarios.forEach(element => {\n                    var date2 = this.timeParse(new Date);\n                    if(this.comparedToHours(element.horainicio, date2) >= 0 && this.comparedToHours(element.horafin, date2) < 0){\n                        element.color = \"verde\";\n                        console.log(\"verde\");\n                    }else{\n                        element.color = \"null\";\n                        console.log(\"null\");\n                    }\n                });\n            });\n        },\n        numberToDate: function(number) {\n            switch (number) {\n                case 0:\n                    return \"domingo\";\n                    break;\n                case 1:    \n                    return \"lunes\";\n                    break;\n                case 2:\n                    return \"martes\";\n                    break;\n                case 3:\n                    return \"miercoles\";\n                    break;\n                case 4:\n                    return \"jueves\";\n                    break;\n                case 5:\n                    return \"viernes\";\n                    break;\n                case 6:\n                    return \"sabado\";\n                    break;\n                default:\n                    break;\n            }\n        },\n        timeParse: function (time){\n            return this.timeNumberParse(time.getHours()) + \":\" + this.timeNumberParse(time.getMinutes()) + \":00\";\n        },\n        timeNumberParse: function (numberTime){\n            var retorno = numberTime;\n            if(retorno < 10){\n                retorno = \"0\" + retorno;\n            }\n            return retorno;\n        },\n        comparedToHours: function (hours1, hours2){\n            var retorno = 0;\n            var hours1 = hours1.split(\":\");\n            var hours2 = hours2.split(\":\");\n\n            var date1 = new Date();\n            date1.setHours(hours1[0]);\n            date1.setMinutes(hours1[1]);\n\n            var date2 = new Date();\n            date2.setHours(hours2[0]);\n            date2.setMinutes(hours2[1]);\n\n            if(date1 < date2){\n                retorno = 1;\n            }else if(date1 > date2){\n                retorno = -1;\n            }\n            return retorno;\n        }\n    }\n});\n\nvar reloj = new Vue({\n    el: '#reloj',\n    data:{\n        hora: \"\",\n        dia: ''\n    }, \n    mounted: function() {\n        this.hora = app.timeParse(new Date);\n        console.log(this.hora);\n        this.dia = app.numberToDate(new Date().getDay());\n        setInterval(this.load(), 1000);\n    },\n    methods:{\n        load: function(){\n            var fecha = new Date();\n            var minutos = fecha.getMinutes();\n\n            console.log(minutos);\n            if(minutos == 0 || minutos == 30){\n                app.load();\n            }\n\n            this.hora = app.timeParse(new Date);\n        }\n    }\n});\nsetInterval(reloj.load, 30000);\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/horarios.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/publico/js/horarios.js",
+    "static": true,
+    "longname": "src/publico/js/horarios.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/horarios.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "reloj",
+    "memberof": "src/publico/js/horarios.js",
+    "static": true,
+    "longname": "src/publico/js/horarios.js~reloj",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/horarios.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 91,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "file",
+    "name": "src/publico/js/jquery.md5.js",
+    "content": "/**\n\t * jQuery MD5 hash algorithm function\n\t * \n\t * \t<code>\n\t * \t\tCalculate the md5 hash of a String \n\t * \t\tString $.md5 ( String str )\n\t * \t</code>\n\t * \n\t * Calculates the MD5 hash of str using the Â» RSA Data Security, Inc. MD5 Message-Digest Algorithm, and returns that hash. \n\t * MD5 (Message-Digest algorithm 5) is a widely-used cryptographic hash function with a 128-bit hash value. MD5 has been employed in a wide variety of security applications, and is also commonly used to check the integrity of data. The generated hash is also non-reversable. Data cannot be retrieved from the message digest, the digest uniquely identifies the data.\n\t * MD5 was developed by Professor Ronald L. Rivest in 1994. Its 128 bit (16 byte) message digest makes it a faster implementation than SHA-1.\n\t * This script is used to process a variable length message into a fixed-length output of 128 bits using the MD5 algorithm. It is fully compatible with UTF-8 encoding. It is very useful when u want to transfer encrypted passwords over the internet. If you plan using UTF-8 encoding in your project don't forget to set the page encoding to UTF-8 (Content-Type meta tag). \n\t * This function orginally get from the WebToolkit and rewrite for using as the jQuery plugin.\n\t * \n\t * Example\n\t * \tCode\n\t * \t\t<code>\n\t * \t\t\t$.md5(\"I'm Persian.\"); \n\t * \t\t</code>\n\t * \tResult\n\t * \t\t<code>\n\t * \t\t\t\"b8c901d0f02223f9761016cfff9d68df\"\n\t * \t\t</code>\n\t * \n\t * @alias Muhammad Hussein Fattahizadeh < muhammad [AT] semnanweb [DOT] com >\n\t * @link http://www.semnanweb.com/jquery-plugin/md5.html\n\t * @see http://www.webtoolkit.info/\n\t * @license http://www.gnu.org/licenses/gpl.html [GNU General publico License]\n\t * @param {jQuery} {md5:function(string))\n\t * @return string\n\t */\n\t\n\t(function($){\n\t\t\n\t\tvar rotateLeft = function(lValue, iShiftBits) {\n\t\t\treturn (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits));\n\t\t}\n\t\t\n\t\tvar addUnsigned = function(lX, lY) {\n\t\t\tvar lX4, lY4, lX8, lY8, lResult;\n\t\t\tlX8 = (lX & 0x80000000);\n\t\t\tlY8 = (lY & 0x80000000);\n\t\t\tlX4 = (lX & 0x40000000);\n\t\t\tlY4 = (lY & 0x40000000);\n\t\t\tlResult = (lX & 0x3FFFFFFF) + (lY & 0x3FFFFFFF);\n\t\t\tif (lX4 & lY4) return (lResult ^ 0x80000000 ^ lX8 ^ lY8);\n\t\t\tif (lX4 | lY4) {\n\t\t\t\tif (lResult & 0x40000000) return (lResult ^ 0xC0000000 ^ lX8 ^ lY8);\n\t\t\t\telse return (lResult ^ 0x40000000 ^ lX8 ^ lY8);\n\t\t\t} else {\n\t\t\t\treturn (lResult ^ lX8 ^ lY8);\n\t\t\t}\n\t\t}\n\t\t\n\t\tvar F = function(x, y, z) {\n\t\t\treturn (x & y) | ((~ x) & z);\n\t\t}\n\t\t\n\t\tvar G = function(x, y, z) {\n\t\t\treturn (x & z) | (y & (~ z));\n\t\t}\n\t\t\n\t\tvar H = function(x, y, z) {\n\t\t\treturn (x ^ y ^ z);\n\t\t}\n\t\t\n\t\tvar I = function(x, y, z) {\n\t\t\treturn (y ^ (x | (~ z)));\n\t\t}\n\t\t\n\t\tvar FF = function(a, b, c, d, x, s, ac) {\n\t\t\ta = addUnsigned(a, addUnsigned(addUnsigned(F(b, c, d), x), ac));\n\t\t\treturn addUnsigned(rotateLeft(a, s), b);\n\t\t};\n\t\t\n\t\tvar GG = function(a, b, c, d, x, s, ac) {\n\t\t\ta = addUnsigned(a, addUnsigned(addUnsigned(G(b, c, d), x), ac));\n\t\t\treturn addUnsigned(rotateLeft(a, s), b);\n\t\t};\n\t\t\n\t\tvar HH = function(a, b, c, d, x, s, ac) {\n\t\t\ta = addUnsigned(a, addUnsigned(addUnsigned(H(b, c, d), x), ac));\n\t\t\treturn addUnsigned(rotateLeft(a, s), b);\n\t\t};\n\t\t\n\t\tvar II = function(a, b, c, d, x, s, ac) {\n\t\t\ta = addUnsigned(a, addUnsigned(addUnsigned(I(b, c, d), x), ac));\n\t\t\treturn addUnsigned(rotateLeft(a, s), b);\n\t\t};\n\t\t\n\t\tvar convertToWordArray = function(string) {\n\t\t\tvar lWordCount;\n\t\t\tvar lMessageLength = string.length;\n\t\t\tvar lNumberOfWordsTempOne = lMessageLength + 8;\n\t\t\tvar lNumberOfWordsTempTwo = (lNumberOfWordsTempOne - (lNumberOfWordsTempOne % 64)) / 64;\n\t\t\tvar lNumberOfWords = (lNumberOfWordsTempTwo + 1) * 16;\n\t\t\tvar lWordArray = Array(lNumberOfWords - 1);\n\t\t\tvar lBytePosition = 0;\n\t\t\tvar lByteCount = 0;\n\t\t\twhile (lByteCount < lMessageLength) {\n\t\t\t\tlWordCount = (lByteCount - (lByteCount % 4)) / 4;\n\t\t\t\tlBytePosition = (lByteCount % 4) * 8;\n\t\t\t\tlWordArray[lWordCount] = (lWordArray[lWordCount] | (string.charCodeAt(lByteCount) << lBytePosition));\n\t\t\t\tlByteCount++;\n\t\t\t}\n\t\t\tlWordCount = (lByteCount - (lByteCount % 4)) / 4;\n\t\t\tlBytePosition = (lByteCount % 4) * 8;\n\t\t\tlWordArray[lWordCount] = lWordArray[lWordCount] | (0x80 << lBytePosition);\n\t\t\tlWordArray[lNumberOfWords - 2] = lMessageLength << 3;\n\t\t\tlWordArray[lNumberOfWords - 1] = lMessageLength >>> 29;\n\t\t\treturn lWordArray;\n\t\t};\n\t\t\n\t\tvar wordToHex = function(lValue) {\n\t\t\tvar WordToHexValue = \"\", WordToHexValueTemp = \"\", lByte, lCount;\n\t\t\tfor (lCount = 0; lCount <= 3; lCount++) {\n\t\t\t\tlByte = (lValue >>> (lCount * 8)) & 255;\n\t\t\t\tWordToHexValueTemp = \"0\" + lByte.toString(16);\n\t\t\t\tWordToHexValue = WordToHexValue + WordToHexValueTemp.substr(WordToHexValueTemp.length - 2, 2);\n\t\t\t}\n\t\t\treturn WordToHexValue;\n\t\t};\n\t\t\n\t\tvar uTF8Encode = function(string) {\n\t\t\tstring = string.replace(/\\x0d\\x0a/g, \"\\x0a\");\n\t\t\tvar output = \"\";\n\t\t\tfor (var n = 0; n < string.length; n++) {\n\t\t\t\tvar c = string.charCodeAt(n);\n\t\t\t\tif (c < 128) {\n\t\t\t\t\toutput += String.fromCharCode(c);\n\t\t\t\t} else if ((c > 127) && (c < 2048)) {\n\t\t\t\t\toutput += String.fromCharCode((c >> 6) | 192);\n\t\t\t\t\toutput += String.fromCharCode((c & 63) | 128);\n\t\t\t\t} else {\n\t\t\t\t\toutput += String.fromCharCode((c >> 12) | 224);\n\t\t\t\t\toutput += String.fromCharCode(((c >> 6) & 63) | 128);\n\t\t\t\t\toutput += String.fromCharCode((c & 63) | 128);\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn output;\n\t\t};\n\t\t\n\t\t$.extend({\n\t\t\tmd5: function(string) {\n\t\t\t\tvar x = Array();\n\t\t\t\tvar k, AA, BB, CC, DD, a, b, c, d;\n\t\t\t\tvar S11=7, S12=12, S13=17, S14=22;\n\t\t\t\tvar S21=5, S22=9 , S23=14, S24=20;\n\t\t\t\tvar S31=4, S32=11, S33=16, S34=23;\n\t\t\t\tvar S41=6, S42=10, S43=15, S44=21;\n\t\t\t\tstring = uTF8Encode(string);\n\t\t\t\tx = convertToWordArray(string);\n\t\t\t\ta = 0x67452301; b = 0xEFCDAB89; c = 0x98BADCFE; d = 0x10325476;\n\t\t\t\tfor (k = 0; k < x.length; k += 16) {\n\t\t\t\t\tAA = a; BB = b; CC = c; DD = d;\n\t\t\t\t\ta = FF(a, b, c, d, x[k+0],  S11, 0xD76AA478);\n\t\t\t\t\td = FF(d, a, b, c, x[k+1],  S12, 0xE8C7B756);\n\t\t\t\t\tc = FF(c, d, a, b, x[k+2],  S13, 0x242070DB);\n\t\t\t\t\tb = FF(b, c, d, a, x[k+3],  S14, 0xC1BDCEEE);\n\t\t\t\t\ta = FF(a, b, c, d, x[k+4],  S11, 0xF57C0FAF);\n\t\t\t\t\td = FF(d, a, b, c, x[k+5],  S12, 0x4787C62A);\n\t\t\t\t\tc = FF(c, d, a, b, x[k+6],  S13, 0xA8304613);\n\t\t\t\t\tb = FF(b, c, d, a, x[k+7],  S14, 0xFD469501);\n\t\t\t\t\ta = FF(a, b, c, d, x[k+8],  S11, 0x698098D8);\n\t\t\t\t\td = FF(d, a, b, c, x[k+9],  S12, 0x8B44F7AF);\n\t\t\t\t\tc = FF(c, d, a, b, x[k+10], S13, 0xFFFF5BB1);\n\t\t\t\t\tb = FF(b, c, d, a, x[k+11], S14, 0x895CD7BE);\n\t\t\t\t\ta = FF(a, b, c, d, x[k+12], S11, 0x6B901122);\n\t\t\t\t\td = FF(d, a, b, c, x[k+13], S12, 0xFD987193);\n\t\t\t\t\tc = FF(c, d, a, b, x[k+14], S13, 0xA679438E);\n\t\t\t\t\tb = FF(b, c, d, a, x[k+15], S14, 0x49B40821);\n\t\t\t\t\ta = GG(a, b, c, d, x[k+1],  S21, 0xF61E2562);\n\t\t\t\t\td = GG(d, a, b, c, x[k+6],  S22, 0xC040B340);\n\t\t\t\t\tc = GG(c, d, a, b, x[k+11], S23, 0x265E5A51);\n\t\t\t\t\tb = GG(b, c, d, a, x[k+0],  S24, 0xE9B6C7AA);\n\t\t\t\t\ta = GG(a, b, c, d, x[k+5],  S21, 0xD62F105D);\n\t\t\t\t\td = GG(d, a, b, c, x[k+10], S22, 0x2441453);\n\t\t\t\t\tc = GG(c, d, a, b, x[k+15], S23, 0xD8A1E681);\n\t\t\t\t\tb = GG(b, c, d, a, x[k+4],  S24, 0xE7D3FBC8);\n\t\t\t\t\ta = GG(a, b, c, d, x[k+9],  S21, 0x21E1CDE6);\n\t\t\t\t\td = GG(d, a, b, c, x[k+14], S22, 0xC33707D6);\n\t\t\t\t\tc = GG(c, d, a, b, x[k+3],  S23, 0xF4D50D87);\n\t\t\t\t\tb = GG(b, c, d, a, x[k+8],  S24, 0x455A14ED);\n\t\t\t\t\ta = GG(a, b, c, d, x[k+13], S21, 0xA9E3E905);\n\t\t\t\t\td = GG(d, a, b, c, x[k+2],  S22, 0xFCEFA3F8);\n\t\t\t\t\tc = GG(c, d, a, b, x[k+7],  S23, 0x676F02D9);\n\t\t\t\t\tb = GG(b, c, d, a, x[k+12], S24, 0x8D2A4C8A);\n\t\t\t\t\ta = HH(a, b, c, d, x[k+5],  S31, 0xFFFA3942);\n\t\t\t\t\td = HH(d, a, b, c, x[k+8],  S32, 0x8771F681);\n\t\t\t\t\tc = HH(c, d, a, b, x[k+11], S33, 0x6D9D6122);\n\t\t\t\t\tb = HH(b, c, d, a, x[k+14], S34, 0xFDE5380C);\n\t\t\t\t\ta = HH(a, b, c, d, x[k+1],  S31, 0xA4BEEA44);\n\t\t\t\t\td = HH(d, a, b, c, x[k+4],  S32, 0x4BDECFA9);\n\t\t\t\t\tc = HH(c, d, a, b, x[k+7],  S33, 0xF6BB4B60);\n\t\t\t\t\tb = HH(b, c, d, a, x[k+10], S34, 0xBEBFBC70);\n\t\t\t\t\ta = HH(a, b, c, d, x[k+13], S31, 0x289B7EC6);\n\t\t\t\t\td = HH(d, a, b, c, x[k+0],  S32, 0xEAA127FA);\n\t\t\t\t\tc = HH(c, d, a, b, x[k+3],  S33, 0xD4EF3085);\n\t\t\t\t\tb = HH(b, c, d, a, x[k+6],  S34, 0x4881D05);\n\t\t\t\t\ta = HH(a, b, c, d, x[k+9],  S31, 0xD9D4D039);\n\t\t\t\t\td = HH(d, a, b, c, x[k+12], S32, 0xE6DB99E5);\n\t\t\t\t\tc = HH(c, d, a, b, x[k+15], S33, 0x1FA27CF8);\n\t\t\t\t\tb = HH(b, c, d, a, x[k+2],  S34, 0xC4AC5665);\n\t\t\t\t\ta = II(a, b, c, d, x[k+0],  S41, 0xF4292244);\n\t\t\t\t\td = II(d, a, b, c, x[k+7],  S42, 0x432AFF97);\n\t\t\t\t\tc = II(c, d, a, b, x[k+14], S43, 0xAB9423A7);\n\t\t\t\t\tb = II(b, c, d, a, x[k+5],  S44, 0xFC93A039);\n\t\t\t\t\ta = II(a, b, c, d, x[k+12], S41, 0x655B59C3);\n\t\t\t\t\td = II(d, a, b, c, x[k+3],  S42, 0x8F0CCC92);\n\t\t\t\t\tc = II(c, d, a, b, x[k+10], S43, 0xFFEFF47D);\n\t\t\t\t\tb = II(b, c, d, a, x[k+1],  S44, 0x85845DD1);\n\t\t\t\t\ta = II(a, b, c, d, x[k+8],  S41, 0x6FA87E4F);\n\t\t\t\t\td = II(d, a, b, c, x[k+15], S42, 0xFE2CE6E0);\n\t\t\t\t\tc = II(c, d, a, b, x[k+6],  S43, 0xA3014314);\n\t\t\t\t\tb = II(b, c, d, a, x[k+13], S44, 0x4E0811A1);\n\t\t\t\t\ta = II(a, b, c, d, x[k+4],  S41, 0xF7537E82);\n\t\t\t\t\td = II(d, a, b, c, x[k+11], S42, 0xBD3AF235);\n\t\t\t\t\tc = II(c, d, a, b, x[k+2],  S43, 0x2AD7D2BB);\n\t\t\t\t\tb = II(b, c, d, a, x[k+9],  S44, 0xEB86D391);\n\t\t\t\t\ta = addUnsigned(a, AA);\n\t\t\t\t\tb = addUnsigned(b, BB);\n\t\t\t\t\tc = addUnsigned(c, CC);\n\t\t\t\t\td = addUnsigned(d, DD);\n\t\t\t\t}\n\t\t\t\tvar tempValue = wordToHex(a) + wordToHex(b) + wordToHex(c) + wordToHex(d);\n\t\t\t\treturn tempValue.toLowerCase();\n\t\t\t}\n\t\t});\n\t})(jQuery);",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/jquery.md5.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 125,
+    "kind": "file",
+    "name": "src/publico/js/misemana.js",
+    "content": "\nvar app = new Vue({\n    el: '#app',\n    data: {\n        datos: data,\n        carreras: data.carreras,\n        duracion: 0,\n        materias: {},\n        anios: false,\n        materias: false,\n        add: false,\n        carrerasValue: \"-\",\n        aniosValue: \"-\",\n        materiasValue: \"-\",\n        desabilitado: [],\n        info: null,\n        horario: [],\n        cuatrimestre: 2,\n        lunes: [], martes: [], miercoles: [], jueves: [], viernes: [], sabado: [],\n        errors: []\n    },\n    methods: {\n        cargarAnios: function () {\n            this.materias = false;\n            this.anios = false;\n            this.duracion = 0;\n            this.aniosValue = \"-\";\n\n            var idcarrera = this.carrerasValue;\n            this.duracion = this.carreras[parseInt(idcarrera) - 1].duracion;\n            this.anios = true;\n        },\n        cargarMaterias: function () {\n            var idcarrera = this.carrerasValue;\n            var anio = this.aniosValue;\n            this.materiasValue = \"-\";\n\n            this.materias = data.materias[parseInt(idcarrera) - 1][parseInt(anio) - 1];\n        },\n        addDisplay: function (){\n            this.add = true;\n        },\n        consultar: function () {\n            var idmateria = this.materiasValue;\n            //llamada a la funcion para poder trar los datos\n            if(!this.desabilitado.includes(idmateria)){\n                if(idmateria != \"-\"){\n                    this.desabilitado.push(idmateria);\n                    axios.get(`/horarios/horarios/materia/${idmateria}/${this.cuatrimestre}`).then((response) => {\n                        if(response.data.length > 0) {\n                            response.data.forEach(element => {\n                                this.horario.push(element);\n                            })\n                            this.errors = [];\n                            this.clasificar(response.data);\n                        }else{\n                            this.errors = [];\n                            this.errors.push(`La materia seleccionada no tiene recursados para el ${this.cuatrimestre}° cuatrimestre`);\n                        }\n                    });\n                }else{\n                    this.errors.push(`la materia seleccionada no es una materia valida, intente con otra opcion`);\n                }\n            }\n        },\n        clasificar: function (array) {\n            array.forEach(element => {\n                switch (element.dia) {\n                    case 'Lunes':\n                        this.lunes.push(element);\n                        this.lunes.sort(this.compareDate);\n                        break;\n                    case 'Martes':\n                        this.martes.push(element);\n                        this.martes.sort(this.compareDate);\n                        break;\n                    case 'Miercoles':\n                        this.miercoles.push(element);\n                        this.miercoles.sort(this.compareDate);\n                        break;\n                    case 'Jueves':\n                        this.jueves.push(element);\n                        this.jueves.sort(this.compareDate);\n                        break;\n                    case 'Viernes':\n                        this.viernes.push(element);\n                        this.viernes.sort(this.compareDate);\n                        break;\n                    case 'Savado':\n                        this.savado.push(element);\n                        this.savado.sort(this.compareDate);\n                        break;\n                    default:\n\n                        break;\n                }\n            })\n        },\n        compareDate: function(a, b) {\n            var retorno;\n            a = a.horainicio;\n            b = b.horainicio;\n            if(a > b){\n                retorno = 1;\n            }else if(a == b){\n                retorno = 0;\n            }else{\n                retorno = -1;\n            }\n            return retorno;\n        }\n    }\n});",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/js/misemana.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 126,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/publico/js/misemana.js",
+    "static": true,
+    "longname": "src/publico/js/misemana.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/js/misemana.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "file",
+    "name": "src/publico/vendor/Hover-master/Gruntfile.js",
+    "content": "module.exports = function(grunt) {\n\n    grunt.initConfig({\n        pkg: grunt.file.readJSON('package.json'),\n\n        version: {\n            json: {\n              src: ['package.json']\n            },\n\n            css: {\n              options: {\n                prefix: 'Version[:=]\\\\s*'\n              },\n              src: ['css/hover.css', 'scss/hover.scss', 'less/hover.less']\n            }\n\n        },\n\n        sass: {\n          dist: {\n            options: {\n              style: 'expanded'\n            },\n            files: {\n              'css/hover.css': 'scss/hover.scss'\n            }\n          }\n        },\n\n        less: {\n            dist: {\n                options: {\n                    style: 'expanded'\n                },\n                files: {\n                    'css/hover.css': 'less/hover.less'\n                }\n            }\n        },\n\n        cssmin: {\n          combine: {\n            files: {\n              'css/hover-min.css': ['css/hover.css']\n            }\n          }\n        },\n\n\n        watch: {\n          options: {\n            livereload: true,\n          },\n\n          reload: {\n            files: ['*.html', 'css/*.css'],\n            options: {\n                spawn: false\n            }\n          },\n\n          scss: {\n            files: ['scss/**/*.scss'],\n            tasks: ['sass', 'cssmin'],\n            options: {\n              spawn: false\n            }\n          },\n\n          less: {\n            files: ['less/**/*.less'],\n            tasks: ['less', 'cssmin'],\n            options: {\n              spawn: false\n            }\n          },\n\n          version: {\n            files: ['package.json'],\n            tasks: ['version'],\n            options: {\n                spawn: false\n            }\n          }\n        },\n\n        connect: {\n          server: {\n            options: {\n              livereload: true,\n              hostname: '0.0.0.0',\n              port: 8000,\n              base: './'\n            }\n          }\n        },\n\n    });\n\n    require('load-grunt-tasks')(grunt);\n\n    grunt.registerTask('default', ['connect', 'watch']);\n};\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/publico/vendor/Hover-master/Gruntfile.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 128,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "src/publico/vendor/Hover-master/Gruntfile.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/publico/vendor/Hover-master/Gruntfile.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/publico/vendor/Hover-master/Gruntfile.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "grunt",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "file",
+    "name": "src/rutas/administrarRoute.js",
+    "content": "const administrarRoute = require(\"express\").Router();\nconst administrarControler = require('../controladores/administrarControler');\nconst carrerasControler = require('../controladores/carreraCotroller');\nconst materiaController = require('../controladores/materiaCotroller');\nconst correlativaController = require('../controladores/correlativaController');\nconst dictaController = require('../controladores/dictaController');\n\n//midelware\nadministrarRoute.use('/', require('../middleware/user').midelware);\n//rutas principales de administracion\nadministrarRoute.get('/', administrarControler.home);\nadministrarRoute.get('/carreras', administrarControler.carreras);\nadministrarRoute.get('/materias', administrarControler.materias);\nadministrarRoute.get('/correlativas', administrarControler.correlativas);\nadministrarRoute.get('/horarios', administrarControler.horarios);\n\n//rutas consultas iniciales\nadministrarRoute.get('/carreras/carreras', carrerasControler.all);\nadministrarRoute.get('/materias/materias', materiaController.complete);\nadministrarRoute.get('/correlativas/correlativas', correlativaController.complete);\n\n//rutas filtros\nadministrarRoute.get('/materias/materias/carrera/:idcarrera', materiaController.carrera);\n\n//horarios\nadministrarRoute.get('/horarios/horarios/carreraaniocuatrimestre/:idcarrera/:anio/:cuatrimestre', dictaController.anioCarrera);\nadministrarRoute.get('/horarios/horario/edit/:idmateria/:dia/:modulo/:horainicio', dictaController.renderEdit);\n\nadministrarRoute.post('/horarios/horario/edit/', dictaController.edit);\nmodule.exports = administrarRoute;\n",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/administrarRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 130,
+    "kind": "variable",
+    "name": "administrarRoute",
+    "memberof": "src/rutas/administrarRoute.js",
+    "static": true,
+    "longname": "src/rutas/administrarRoute.js~administrarRoute",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/administrarRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "variable",
+    "name": "administrarControler",
+    "memberof": "src/rutas/administrarRoute.js",
+    "static": true,
+    "longname": "src/rutas/administrarRoute.js~administrarControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/administrarRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "variable",
+    "name": "carrerasControler",
+    "memberof": "src/rutas/administrarRoute.js",
+    "static": true,
+    "longname": "src/rutas/administrarRoute.js~carrerasControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/administrarRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "materiaController",
+    "memberof": "src/rutas/administrarRoute.js",
+    "static": true,
+    "longname": "src/rutas/administrarRoute.js~materiaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/administrarRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "correlativaController",
+    "memberof": "src/rutas/administrarRoute.js",
+    "static": true,
+    "longname": "src/rutas/administrarRoute.js~correlativaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/administrarRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "dictaController",
+    "memberof": "src/rutas/administrarRoute.js",
+    "static": true,
+    "longname": "src/rutas/administrarRoute.js~dictaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/administrarRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "file",
+    "name": "src/rutas/carreraRoute.js",
+    "content": "const express = require('express');\nconst carreraController = require('../controladores/carreraCotroller');\n\nconst carreraRoute = express.Router();\n\n//peticiones get\n\ncarreraRoute.get('/carrera', carreraController.all);\n\ncarreraRoute.get('/carrera/id/:id', carreraController.id);\n\ncarreraRoute.get('/carrera/nombre/:nombre', carreraController.nombre);\n\ncarreraRoute.get('/carrera/plan/:plan', carreraController.plan);\n\ncarreraRoute.get('/carrera/duracion/:duracion', carreraController.duracion);\n\ncarreraRoute.get('/carrera/duracionmenor/:duracion', carreraController.duracionmenor);\n\ncarreraRoute.get('/carrera/duracionmayor/:duracion', carreraController.duracionmayor);\n\ncarreraRoute.get('/carrera/buscar/:buscar', carreraController.buscar);\n\n//peticiones \n\nmodule.exports = carreraRoute;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/carreraRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/rutas/carreraRoute.js",
+    "static": true,
+    "longname": "src/rutas/carreraRoute.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/carreraRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "variable",
+    "name": "carreraController",
+    "memberof": "src/rutas/carreraRoute.js",
+    "static": true,
+    "longname": "src/rutas/carreraRoute.js~carreraController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/carreraRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "variable",
+    "name": "carreraRoute",
+    "memberof": "src/rutas/carreraRoute.js",
+    "static": true,
+    "longname": "src/rutas/carreraRoute.js~carreraRoute",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/carreraRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "file",
+    "name": "src/rutas/correlativaRoute.js",
+    "content": "const express = require('express');\nconst correlativaController = require('../controladores/correlativaController');\n\nconst correlativaRoute = express.Router();\n\ncorrelativaRoute.get('/correlativa', correlativaController.all);\ncorrelativaRoute.get('/correlativa/necesaria/:necesaria', correlativaController.necesaria);\ncorrelativaRoute.get('/correlativa/disponible/:disponible', correlativaController.disponible);\ncorrelativaRoute.get('/correlativa/carrera/:idcarrera', correlativaController.carrera);\ncorrelativaRoute.get('/correlativa/carrera/disponible/:disponible/:idcarrera', correlativaController.carreradisponible);\ncorrelativaRoute.get('/correlativa/carrera/necesaria/:necesaria/:idcarrera', correlativaController.carreranecesaria);\ncorrelativaRoute.get('/correlativa/:idcarrera/:idmateria', correlativaController.correlativamateria);\ncorrelativaRoute.get('/correlativa/graf/', correlativaController.graf);\n\nmodule.exports = correlativaRoute;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/correlativaRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 141,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/rutas/correlativaRoute.js",
+    "static": true,
+    "longname": "src/rutas/correlativaRoute.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/correlativaRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "variable",
+    "name": "correlativaController",
+    "memberof": "src/rutas/correlativaRoute.js",
+    "static": true,
+    "longname": "src/rutas/correlativaRoute.js~correlativaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/correlativaRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "variable",
+    "name": "correlativaRoute",
+    "memberof": "src/rutas/correlativaRoute.js",
+    "static": true,
+    "longname": "src/rutas/correlativaRoute.js~correlativaRoute",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/correlativaRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "file",
+    "name": "src/rutas/dictaRoute.js",
+    "content": "const express = require('express');\nconst dictaController = require('../controladores/dictaController');\n\nconst dictaRoute = express.Router();\n\ndictaRoute.get('/dicta', dictaController.all);\n\ndictaRoute.get('/dicta/idmateria/:idmateria', dictaController.idmateria);\n\ndictaRoute.get('/dicta/dia/:dia', dictaController.dia);\n\ndictaRoute.get('/dicta/estado/:estado', dictaController.estado);\n\ndictaRoute.get('/dicta/cuatrimestre/:cuatrimestre', dictaController.cuatrimestre);\n\ndictaRoute.get('/dicta/hora/:hora', dictaController.hora);\n\ndictaRoute.get('/dicta/horamenor/:hora', dictaController.horamenor);\n\ndictaRoute.get('/dicta/horamayor/:hora', dictaController.horamayor);\n\nmodule.exports = dictaRoute",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/dictaRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/rutas/dictaRoute.js",
+    "static": true,
+    "longname": "src/rutas/dictaRoute.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/dictaRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "variable",
+    "name": "dictaController",
+    "memberof": "src/rutas/dictaRoute.js",
+    "static": true,
+    "longname": "src/rutas/dictaRoute.js~dictaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/dictaRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "variable",
+    "name": "dictaRoute",
+    "memberof": "src/rutas/dictaRoute.js",
+    "static": true,
+    "longname": "src/rutas/dictaRoute.js~dictaRoute",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/dictaRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/rutas/finalRoute.js",
+    "content": "const express = require('express');\nconst finalRoute = express.Router();\nconst finalController = require('../controladores/finalController');\n\nfinalRoute.get('/final', finalController.all);\nfinalRoute.get('/final/necesaria/:necesaria', finalController.necesaria);\nfinalRoute.get('/final/disponible/:disponible', finalController.disponible);\n\nmodule.exports = finalRoute;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/finalRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/rutas/finalRoute.js",
+    "static": true,
+    "longname": "src/rutas/finalRoute.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/finalRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "finalRoute",
+    "memberof": "src/rutas/finalRoute.js",
+    "static": true,
+    "longname": "src/rutas/finalRoute.js~finalRoute",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/finalRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "finalController",
+    "memberof": "src/rutas/finalRoute.js",
+    "static": true,
+    "longname": "src/rutas/finalRoute.js~finalController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/finalRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "file",
+    "name": "src/rutas/indexrender.js",
+    "content": "const indexRouter = require('express').Router();\nconst indexControler = require('../controladores/indexControler');\nconst correlativasControler = require('../controladores/correlativaController');\nconst dictaControler = require('../controladores/dictaController');\nconst usuarioControler = require('../controladores/usuarioControler');\nconst materiaController = require('../controladores/materiaCotroller');\n\nindexRouter.get('/', indexControler.render);\nindexRouter.get('/horarios', indexControler.horarios);\nindexRouter.get('/correlativas', indexControler.correlativas);\nindexRouter.get('/horarios/misemana', indexControler.misemana);\nindexRouter.get('/horarios/horarios/materia/:idmateria/:cuatrimestre', dictaControler.materiaCuatrimestre)\nindexRouter.get('/correlativas/consulta/:idcarrera/:idmateria', correlativasControler.correlativamateria);\nindexRouter.get('/horarios/consulta/:dia/:hora/:cuatrimestre', dictaControler.diaHora);\nindexRouter.get('/login', indexControler.login);\nindexRouter.post('/loginvalidate', usuarioControler.validarLogin);\n\n\nmodule.exports = indexRouter;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/indexrender.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 153,
+    "kind": "variable",
+    "name": "indexRouter",
+    "memberof": "src/rutas/indexrender.js",
+    "static": true,
+    "longname": "src/rutas/indexrender.js~indexRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/indexrender.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "indexControler",
+    "memberof": "src/rutas/indexrender.js",
+    "static": true,
+    "longname": "src/rutas/indexrender.js~indexControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/indexrender.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "variable",
+    "name": "correlativasControler",
+    "memberof": "src/rutas/indexrender.js",
+    "static": true,
+    "longname": "src/rutas/indexrender.js~correlativasControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/indexrender.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "variable",
+    "name": "dictaControler",
+    "memberof": "src/rutas/indexrender.js",
+    "static": true,
+    "longname": "src/rutas/indexrender.js~dictaControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/indexrender.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "variable",
+    "name": "usuarioControler",
+    "memberof": "src/rutas/indexrender.js",
+    "static": true,
+    "longname": "src/rutas/indexrender.js~usuarioControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/indexrender.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "variable",
+    "name": "materiaController",
+    "memberof": "src/rutas/indexrender.js",
+    "static": true,
+    "longname": "src/rutas/indexrender.js~materiaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/indexrender.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "file",
+    "name": "src/rutas/materiasRoute.js",
+    "content": "const express = require('express');\nconst materiaController = require('../controladores/materiaCotroller');\n\nconst materiaRoute = express.Router();\n\nmateriaRoute.get('/materia', materiaController.all);\nmateriaRoute.get('/materia/id/:id', materiaController.id);\nmateriaRoute.get('/materia/nombre/:nombre', materiaController.nombre);\nmateriaRoute.get('/materia/anio/:anio', materiaController.anio);\nmateriaRoute.get('/materia/cuatrimestre/:cuatrimestre', materiaController.cuatrimestre);\nmateriaRoute.get('/materia/cuatrimestreanio/:cuatrimestre/:anio', materiaController.cuatrimestreanio);\nmateriaRoute.get('/materia/carreraanio/:idcarrera/:anio', materiaController.carreraAnio);\n\n\n\nmodule.exports = materiaRoute;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/materiasRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 160,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/rutas/materiasRoute.js",
+    "static": true,
+    "longname": "src/rutas/materiasRoute.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/materiasRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "variable",
+    "name": "materiaController",
+    "memberof": "src/rutas/materiasRoute.js",
+    "static": true,
+    "longname": "src/rutas/materiasRoute.js~materiaController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/materiasRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "variable",
+    "name": "materiaRoute",
+    "memberof": "src/rutas/materiasRoute.js",
+    "static": true,
+    "longname": "src/rutas/materiasRoute.js~materiaRoute",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/materiasRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "file",
+    "name": "src/rutas/sre.js",
+    "content": "const sreRouter = require('express').Router();\nconst sreController = require('../controladores/sreController');\n\nsreRouter.get('/', sreController.jsonMaterias);\n\nmodule.exports =sreRouter;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/sre.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 164,
+    "kind": "variable",
+    "name": "sreRouter",
+    "memberof": "src/rutas/sre.js",
+    "static": true,
+    "longname": "src/rutas/sre.js~sreRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/sre.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "sreController",
+    "memberof": "src/rutas/sre.js",
+    "static": true,
+    "longname": "src/rutas/sre.js~sreController",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/sre.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "file",
+    "name": "src/rutas/usuarioRoute.js",
+    "content": "const usuarioRouter = require('express').Router();\nconst usuarioControler = require('../controladores/usuarioControler');\n\nusuarioRouter.get('/usuario/:usuario/:contrasenia', usuarioControler.validar);\n\nmodule.exports = usuarioRouter;",
+    "static": true,
+    "longname": "/home/franco/CEFAIrest/src/rutas/usuarioRoute.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 167,
+    "kind": "variable",
+    "name": "usuarioRouter",
+    "memberof": "src/rutas/usuarioRoute.js",
+    "static": true,
+    "longname": "src/rutas/usuarioRoute.js~usuarioRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/usuarioRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "variable",
+    "name": "usuarioControler",
+    "memberof": "src/rutas/usuarioRoute.js",
+    "static": true,
+    "longname": "src/rutas/usuarioRoute.js~usuarioControler",
+    "access": "public",
+    "export": false,
+    "importPath": "cefai/src/rutas/usuarioRoute.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# CEFAI app\n\nLa aplicacion del cefai es una iniciativa para poder ofrecer herramientas para los estudiantes. Mostrar cosas de interes , utilidad y generar lazos entre los estudiantes y la univercidad. \n\n---\n\n## Documentacion\n\nEn esta parte vamos a detallar como esta estructurado el sistema, para que su integracion en cualquier otro proyecto se mas sencialla o mas rapida de hacer.\n\n### instalacion\n\nPara poder instalar el sistema en local, o en un servidor, siga los siguientes pasos:\n\n```sh\n# clonamos el repositorio en un directorio\ngit clone https://github.com/francoZuniga32/CEFAIrest\ncd CEFAIrest\n# instalamos las dependencias\nnpm install\n# configuramos el acceso a la base de datos\nnpm config\n# ejecute el script de desarrollo o sino de produccion\nnpm run dev\n# o\nnpm start\n```\n\nDe esta manera le saldran algunos fallos el primero, no cuenta con una base de datos. En el siguiente [link](bd/README.md) se explica como hacer esta parte ademas de detalles tecnicos al respecto.\n\nLuego de configurar la base de datos, puede iniciar el servidor y de esta manera podra probar el programa. Para probar el programa por primera vez, ingrese el usuario `admin@example.com` junto con la contrasela `admin` y podra testear por primera vez. (ojo en esta epata del proyecto no se encuentra una herramienta para la alta y la baja de usuario, en el link provisto sobre la bd se explica el mecanismo de encriptacion de contraseña, por lo cual cualquier cambio de momento se hace con una consulta SQL).\n\n### Arquitectura del proyecto\n\n```\n/\n|_ bd\n|_ src\n|  |_ controladores\n|  |_ middleware\n|  |_ publico\n|  |_ rutas\n|  |_ vistas\n|  |_ index.js\n|  |_ baseDeDatos.js\n|  |_ claves.json\n|_ package.json\n```\n\n`queda pendiente las traducciones` \n\n- [**bd**](bd.README.md) : es la estrutura de la base de datos, cuenta con un sql de la estrutura inicial, ademas de la documentacion sobre la base de datos.\n- [**src**](src/READEME.md): es el archivo del proyecto en si, cuenta con la documentacion sobre el archivo de claves, index, etc'. Informacion general de las carpetas controladores, rutas, vistas, publico, middelware, etc'.\n- [**controladores**](src/controladores/README.md): se encuentran los controladores de las rutas, son los archivos encargados de hacer consultas, gestionar usuario, renderizar las vistas, etc'.\n- [**rutas**](src/rutas/README.md): se encuentran los archivos con las rutas, especificando o agrupandolas por grupos con significancia, de esta forma las ruras de materias son agrupadas en un archivo, etc'. indican que controlador usan ademas de el tipo de ruta (get, post), y que tipos de datos reciben como param.\n- [**middelware**](src/middelware/README.md): contiene archivos que gestionan las sessiones, asi como los token de la api rest. de esta forma aislamos la logica de la validacion de usuario en un solo lugar en vez de tenes que importarla en cada uno de los controladores para ver si un usuario cuenta o no con una session.\n- [**publico**](src/publico/README.md): se encuentran los recursos publicos para las vistas (estilos, scripts, etc).\n- [**vistas**](src/vitas/README.md): se encuentran las vistas que usan un templete o plantilla de vistas, como lo seria ejs, que es el que se esta usando en este momento, la cantidad de codigo incrustado de js es poco, ya que se comenzo a usar vue js en las vistas del proyecto.\n- **package.json**: es el archivo de configuracio del proyecto, si usted hiso un fork al proyecto, configure su package para que la direccion del repo sea la de su fork, de esta manera podra hacer su derivado de este proyecto.\n\nahora solo queda probar el proyecto y seguir avanzando.\n\n---\n\n## API REST\n\nla api rest del cefai ofrece una forma de acceder a datos sobre materias, horarios, correlativas, finales, y demas. Para que se pueden usar en las distintas aplicaciones del cefai, como gestion de horarios, correlativas, etc'.\n\n### Autenticación\n\nPrimero deberá solicitar un usuario, informando el por que lo solicita y con qué objetivo lo requiere (aplicación, investigación, etc). una vez hecho esto podrá consultar su token usando la siguiente ruta:\n\n| Ruta                                    | Descripcion                                                  |\n| --------------------------------------- | ------------------------------------------------------------ |\n| /apilogin/usuario/:usuario/:contrasenia | se identifica al usuario con :usuario y :contrasenia, si el usuario esta en la base de datos, vamos a generarles un token para poder usar la aplicacion rest. |\n\nLas rutas a continuación tendrán que hacer uso del token suministrado mediante un header de una consulta http, el cual se tendrá que llamar “access-token”. Una vez verificado el token usted podrá obtener los datos de su consulta.\n\n### Consultas\n\nlas siguientes rutas se encuentran bajo la ruta inicial /api \n\n#### Carreras  \n\nDatos sobre las carreras que se dictan.\n\n| Ruta                             | Descripcion                                                  |\n| -------------------------------- | ------------------------------------------------------------ |\n| /carrera                         | Retorna datos sobre todas las carreras actuales (idCarrera, nombre, plan, duracion) |\n| /carrera/id/:id                  | Donde :id es el id de la carrera a listar retorna los mismos datos que la anterior |\n| /carrera/nombre/:nombre          | Donde :nombre es el nombre de la carrera a listar retorna los mismos datos que la anterior |\n| /carrera/plan/:plan              | Donde :plan es el plan de la carrera a listar retorna los mismos datos que la anterior |\n| /carrera/duracion/:duracion      | Donde :duracion es la duracion de la carrera a listar retorna los mismos datos que la anterior |\n| /carrera/duracionmenor/:duracion | Listar los datos de la carreras con menor duracion que :duracion |\n| /carrera/duracionmayor/:duracion | Lista los datos de las carreras con mayor duracion que :duracion |\n| /carrera/buscar/:buscar          | Lista los datos de las carraras cuyo nombre o plan concidan con :buscar |\n\n#### Materias\n\nDatos sobre las materias.\n\n| Ruta                                          | Descripcion                                                  |\n| --------------------------------------------- | ------------------------------------------------------------ |\n| /materia                                      | Lista todas las carreras                                     |\n| /materia/id/:id                               | Lista la informacion de la materia cuyo id concida con :id   |\n| /materia/nombre/:nombre                       | Lista las materias cuyo nombre coincida con :nombre          |\n| /materia/anio/:anio                           | Lista las materias cuyo añio coincida con :anio              |\n| /materia/cuatrimestre/:cuatrimestre           | Lista las materias cuyo cuatrimestre concida con :cuatrimestre |\n| /materia/cuatrimestreanio/:cuatrimestre/:anio | Lista las materias cuyo cuatrimestre conincida con :cuatrimestre y año concida con :anio |\n\n#### Dicta\n\nDatos sobre los horarios de dictado de las materias\n\n| Ruta                              | Descripcion                                                  |\n| --------------------------------- | ------------------------------------------------------------ |\n| /dicta                            | Lista todos los horarios de dictado                          |\n| /dicta/idmateria/:idmateria       | Lista todos los horarios de dictado de la materia cuyo id es :id |\n| /dicta/dia/:dia                   | Lista todos los horarios de dictado cuyo dia es :dia         |\n| /dicta/estado/:estado             | Lista todos los horarios de dictado cuyo estado sea :estado (parcial, cancelado, normal) |\n| /dicta/cuatrimestre/:cuatrimestre | Lista todos los horarios de dictado cuyo cuatrimestre sea :cuatrimestre |\n| /dicta/hora/:hora                 | Lista todos los horarios de dictado cuya hora es :hora       |\n| /dicta/horamenor/:hora            | Lista todos los horarios de dictado cuya hora es menor a :hora |\n| /dicta/horamayor/:hora            | Lista todos los horarios de dictado cuya hora es mayor a :hora |\n\n#### Correlativas\n\n`Actualmente en mantenimiento` lista la informacion sobre las correlativas de las materias.\n\n| Rutas                                                  | Descripcion                                                  |\n| ------------------------------------------------------ | ------------------------------------------------------------ |\n| /correlativa                                           | Lista todas las correlativas                                 |\n| /correlativa/:idcarrera/:idmateria                     | Listas las materias necesarias para cursar la materia cuyo id es :idmateria, y las disponibles para cursar la materia cuyo id es :idmateria, de la carrera :idcarrera |\n| /correlativa/necesaria/:necesaria                      | Lista las materias necesarias para cursar la materia cuyo id es :id |\n| /correlativa/disponible/:disponible                    | Lista las materias disponibles para cuersar la materia cuyo id es :id |\n| /correlativa/carrera/:idcarrera                        | Lista las correlativas de las materias                       |\n| /correlativa/carrera/disponible/:disponible/:idcarrera |                                                              |\n| /correlativa/carrera/necesaria/:necesaria/:idcarrera   |                                                              |\n| /correlativa/graf/                                     |                                                              |\n\n#### Finales\n\nEstas rutas retornan algo similar al anterior. El formato de los finales son :necesarias y :disponibles, donde :necesaria es el id de la materia cuyo final es necesario para cursar la materia cuyo id es :disponible\n\n| Ruta                          | Descripcion                                                  |\n| ----------------------------- | ------------------------------------------------------------ |\n| /final                        | Retorna todos los finales en el formato necesario y disponible |\n| /final/necesaria/:necesaria   | Retorna los finales de las materias que necesiten el final de la materia cuyo id coincide con :necesaria. |\n| /final/disponible/:disponible | Retorna los finales de las materias cuyo id coincide con :diponible |\n",
+    "longname": "/home/franco/CEFAIrest/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"cefai\",\n  \"version\": \"0.0.1\",\n  \"description\": \"aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)\",\n  \"main\": \"src/index.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"dev\": \"nodemon src/index.js\",\n    \"start\": \"pm2 start src/index.js\"\n  },\n  \"keywords\": [\n    \"CEFAI\",\n    \"node\",\n    \"REST\",\n    \"node-cefai\",\n    \"js\"\n  ],\n  \"author\": \"pan32\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"body-parser\": \"^1.19.0\",\n    \"ejs\": \"^3.0.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"express\": \"^4.17.1\",\n    \"express-myconnection\": \"^1.0.4\",\n    \"express-session\": \"^1.17.1\",\n    \"jsonwebtoken\": \"^8.5.1\",\n    \"md5\": \"^2.2.1\",\n    \"morgan\": \"^1.9.1\",\n    \"mysql\": \"^2.17.1\",\n    \"nodemon\": \"^2.0.2\"\n  }\n}\n",
+    "longname": "/home/franco/CEFAIrest/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controladores/dictaController.js | cefai</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="cefai"><meta property="twitter:description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controladores/dictaController.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const dictaController = {};
+const pool = require(&apos;../database&apos;);
+const { id } = require(&apos;./materiaCotroller&apos;);
+
+dictaController.all = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta, materia WHERE materia.idMateria = dicta.idMateria&quot;, (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.idmateria = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.idMateria = ?&quot;, [req.params.idmateria], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.dia = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta WHERE dia = ? &quot;, [req.params.dia], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.cuatrimestre = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta WHERE cuatrimestre = ? &quot;, [req.params.cuatrimestre], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.estado = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta WHERE estado = ?&quot;, [req.params.estado], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.hora = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta WHERE hora = ?&quot;, [req.params.estado], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.horamenor = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta WHERE hora &lt;= ? &quot;, [req.params.hora], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.horamayor = (req, res) =&gt; {
+    req.getConnection((err, conn) =&gt; {
+        conn.query(&quot;SELECT * FROM dicta WHERE hora &gt;= ? &quot;, [req.params.hora], (err, materias) =&gt; {
+            if (err) {
+                res.json(err);
+            }
+            res.json(materias);
+        });
+    });
+};
+
+dictaController.materiaCuatrimestre = (req, res) =&gt; {
+    var idmateria = req.params.idmateria;
+    var cuatrimestre = req.params.cuatrimestre;
+    var consulta = &quot;SELECT * FROM dicta, materia WHERE dicta.idMateria = materia.idMateria AND dicta.idMateria = ? AND dicta.cuatrimestre = ? &quot;;
+
+    pool.query(consulta, [idmateria, cuatrimestre], (err, materias) =&gt; {
+        if (err) {
+            console.log(err);
+        }
+        res.json(materias);
+    });
+};
+
+dictaController.diaHora = async (req, res) =&gt; {
+    var dia = req.params.dia;
+    var horainicio = req.params.hora;
+    var cuatrimestre = req.params.cuatrimestre;
+
+    var consulta = &quot;SELECT dicta.*, materia.nombre as nombremateria FROM dicta, materia WHERE materia.idMateria = dicta.idMateria AND dicta.dia = ? AND dicta.horafin &gt; ? AND dicta.cuatrimestre = ? ORDER BY horainicio ASC&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT imparte.idCarrera FROM imparte WHERE imparte.idMateria = ? &quot;;
+
+    var horario = await pool.query(consulta, [dia, horainicio, cuatrimestre]);
+
+    for (let i = 0; i &lt; horario.length; i++) {
+        const element = horario[i];
+        element.carreras = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(horario);
+}
+
+dictaController.administrar = async (req, res) =&gt; {
+    var consultaDicta = &quot;SELECT DISTINCT * FROM dicta, materia WHERE dicta.idMateria = materia.idMateria&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?&quot;;
+
+    var dicta = await pool.query(consultaDicta);
+
+    for (let i = 0; i &lt; dicta.length; i++) {
+        var element = dicta[i];
+        element.carreras = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(dicta);
+}
+
+dictaController.carrera = async (req, res) =&gt; {
+    var consulta = &quot;SELECT DISTINCT dicta.*  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ?&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?&quot;;
+    var idcarrera = req.params.idcarrera;
+
+    var dicta = await pool.query(consulta, [idcarrera]);
+
+    for (let i = 0; i &lt; dicta.length; i++) {
+        var element = dicta[i];
+        element.carreras = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(dicta);
+};
+
+dictaController.diaCarrera = async (req, res) =&gt; {
+    var consulta = &quot;SELECT DISTINCT dicta.* , materia.nombre  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ? AND dicta.dia = ?&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?&quot;;
+    var idcarrera = req.params.idcarrera;
+    var dia = req.params.dia;
+
+    var dicta = await pool.query(consulta, [idcarrera, dia]);
+    for (let i = 0; i &lt; dicta.length; i++) {
+        var element = dicta[i];
+        element.carrera = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(dicta);
+};
+
+dictaController.anioCarrera = async (req, res) =&gt; {
+    var consulta = &quot;SELECT DISTINCT dicta.*, materia.nombre  FROM dicta, imparte , materia WHERE dicta.idMateria = imparte.idMateria AND dicta.idMateria = materia.idMateria AND imparte.idCarrera = ? AND materia.ano = ? AND dicta.cuatrimestre = ?&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT carrera.idCarrera FROM carrera, imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?&quot;;
+    var idcarrera = req.params.idcarrera;
+    var anio = req.params.anio;
+    var cuatrimestre = req.params.cuatrimestre;
+
+    var dicta = await pool.query(consulta, [idcarrera, anio, cuatrimestre]);
+    for (let i = 0; i &lt; dicta.length; i++) {
+        var element = dicta[i];
+        element.carrera = await pool.query(consultaFinales, [element.idMateria]);
+    }
+
+    res.json(dicta);
+}
+
+dictaController.renderEdit = (req, res) =&gt; {
+    var consulta = &quot;SELECT * FROM `dicta` WHERE idMateria = ? AND dia = ? AND modulo = ? AND horainicio = ?&quot;;
+    var idmateria = req.params.idmateria;
+    var dia = req.params.dia;
+    var modulo = req.params.modulo;
+    var horainicio = req.params.horainicio;
+
+    pool.query(consulta, [idmateria, dia, modulo, horainicio], (err, dicta) =&gt; {
+        console.log(dicta);
+        res.render(&quot;administrar/editarHorario&quot;, { data: dicta[0] });
+    });
+}
+
+dictaController.edit = (req, res) =&gt; {
+    var consulta = &quot;UPDATE `dicta` SET `idMateria`=?,`aula`=?,`dia`=?,`modulo`=?,`horainicio`=?,`horafin`=?,`cuatrimestre`=?,`estado`=? WHERE idMateria = ? AND aula = ? AND dia = ? AND modulo = ? AND horainicio = ? AND horafin = ? AND cuatrimestre = ? AND estado = ?&quot;
+
+    var idMateriaOrginal = req.body.idMateriaOrginal;
+    var aulaOriginal = req.body.aulaOriginal;
+    var diaOriginal = req.body.diaOriginal;
+    var moduloOriginal = req.body.moduloOriginal;
+    var horafinOriginal = req.body.horafinOriginal;
+    var horainicioOriginal = req.body.horainicioOriginal;
+    var cuatrimestreOriginal = req.body.cuatrimestreOriginal;
+    var estadoOriginal = req.body.estadoOriginal;
+
+    var idMateria = req.body.idMateria;
+    var aula = req.body.aula;
+    var dia = req.body.dia;
+    var modulo = req.body.modulo;
+    var horafin = req.body.horafin;
+    var horainicio = req.body.horainicio;
+    var cuatrimestre = req.body.cuatrimestre;
+    var estado = req.body.estado;
+
+    console.log(idMateriaOrginal, aulaOriginal, diaOriginal, moduloOriginal, horainicioOriginal, horafinOriginal, cuatrimestreOriginal, estadoOriginal);
+
+    pool.query(consulta, [idMateriaOrginal, aula, dia, modulo, horainicio, horafin, cuatrimestre, estado, idMateriaOrginal, aulaOriginal, diaOriginal, moduloOriginal, horainicioOriginal, horafinOriginal, cuatrimestreOriginal, estadoOriginal], (err, materias)=&gt;{
+        if(err){
+            console.log(err);
+        }
+        res.redirect(`/administrar/horarios/horario/edit/${idMateriaOrginal}/${dia}/${modulo}/${horainicio}`);
+    })
+}
+
+
+module.exports = dictaController;</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

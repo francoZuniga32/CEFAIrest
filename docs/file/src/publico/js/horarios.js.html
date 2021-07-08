@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/publico/js/horarios.js | cefai</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="cefai"><meta property="twitter:description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/publico/js/horarios.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var app = new Vue({
+    el: &apos;#app&apos;,
+    data:{
+        horarios: [],
+        dia: &quot;&quot;,
+        hora: &quot;&quot;,
+        cuatrimestre: 1
+    },
+    mounted: function() {
+        this.load();
+    },
+    methods: {
+        load: function(){
+        this.dia = this.numberToDate(new Date().getDay());
+        this.hora = this.timeParse(new Date);
+        console.log(this.dia+&quot; &quot;+this.hora);
+        axios.get(`/horarios/consulta/${this.dia}/${this.hora}/${this.cuatrimestre}`).then((response) =&gt; {
+            this.horarios = response.data;
+            this.horarios.forEach(element =&gt; {
+                    var date2 = this.timeParse(new Date);
+                    if(this.comparedToHours(element.horainicio, date2) &gt;= 0 &amp;&amp; this.comparedToHours(element.horafin, date2) &lt; 0){
+                        element.color = &quot;verde&quot;;
+                        console.log(&quot;verde&quot;);
+                    }else{
+                        element.color = &quot;null&quot;;
+                        console.log(&quot;null&quot;);
+                    }
+                });
+            });
+        },
+        numberToDate: function(number) {
+            switch (number) {
+                case 0:
+                    return &quot;domingo&quot;;
+                    break;
+                case 1:    
+                    return &quot;lunes&quot;;
+                    break;
+                case 2:
+                    return &quot;martes&quot;;
+                    break;
+                case 3:
+                    return &quot;miercoles&quot;;
+                    break;
+                case 4:
+                    return &quot;jueves&quot;;
+                    break;
+                case 5:
+                    return &quot;viernes&quot;;
+                    break;
+                case 6:
+                    return &quot;sabado&quot;;
+                    break;
+                default:
+                    break;
+            }
+        },
+        timeParse: function (time){
+            return this.timeNumberParse(time.getHours()) + &quot;:&quot; + this.timeNumberParse(time.getMinutes()) + &quot;:00&quot;;
+        },
+        timeNumberParse: function (numberTime){
+            var retorno = numberTime;
+            if(retorno &lt; 10){
+                retorno = &quot;0&quot; + retorno;
+            }
+            return retorno;
+        },
+        comparedToHours: function (hours1, hours2){
+            var retorno = 0;
+            var hours1 = hours1.split(&quot;:&quot;);
+            var hours2 = hours2.split(&quot;:&quot;);
+
+            var date1 = new Date();
+            date1.setHours(hours1[0]);
+            date1.setMinutes(hours1[1]);
+
+            var date2 = new Date();
+            date2.setHours(hours2[0]);
+            date2.setMinutes(hours2[1]);
+
+            if(date1 &lt; date2){
+                retorno = 1;
+            }else if(date1 &gt; date2){
+                retorno = -1;
+            }
+            return retorno;
+        }
+    }
+});
+
+var reloj = new Vue({
+    el: &apos;#reloj&apos;,
+    data:{
+        hora: &quot;&quot;,
+        dia: &apos;&apos;
+    }, 
+    mounted: function() {
+        this.hora = app.timeParse(new Date);
+        console.log(this.hora);
+        this.dia = app.numberToDate(new Date().getDay());
+        setInterval(this.load(), 1000);
+    },
+    methods:{
+        load: function(){
+            var fecha = new Date();
+            var minutos = fecha.getMinutes();
+
+            console.log(minutos);
+            if(minutos == 0 || minutos == 30){
+                app.load();
+            }
+
+            this.hora = app.timeParse(new Date);
+        }
+    }
+});
+setInterval(reloj.load, 30000);
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

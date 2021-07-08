@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/controladores/correlativaController.js | cefai</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="cefai"><meta property="twitter:description" content="aplicacion REST y web de CEFAI(centro de estudiantes facultad de informatica)"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/controladores/correlativaController.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const correlativaController = {};
+const pool = require(&apos;../database&apos;);
+const { json } = require(&apos;body-parser&apos;);
+
+correlativaController.all = (req, res)=&gt;{
+    pool.query(&quot;SELECT * FROM correlativa &quot;,(err, correlativa)=&gt;{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
+    });
+};
+
+correlativaController.complete = async (req, res) =&gt; {
+    var consultaNecesaria = &quot;SELECT DISTINCT materia.nombre as nombreNecesaria, correlativa.necesaria FROM correlativa, materia WHERE materia.idMateria = correlativa.necesaria&quot;
+    var consultaDisponibles = &quot;SELECT DISTINCT materia.nombre as nombreDisponible FROM correlativa, materia WHERE materia.idMateria = correlativa.disponible AND correlativa.necesaria = ?&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT carrera.idCarrera FROM carrera ,imparte WHERE carrera.idCarrera = imparte.idCarrera AND imparte.idMateria = ?&quot;;
+
+    var correlativas = await pool.query(consultaNecesaria);
+
+    for (let i = 0; i &lt; correlativas.length; i++) {
+        var element = correlativas[i];
+        element.nombreDisponible = await pool.query(consultaDisponibles, [element.necesaria]);
+        element.carreras = await pool.query(consultaFinales, [element.necesaria]);
+    }
+
+    res.json(correlativas);
+}
+
+correlativaController.necesaria = (req, res)=&gt;{
+    req.getConnection((err, conn)=&gt;{
+        conn.query(&quot;SELECT * FROM correlativa WHERE correlativa.necesaria = ? &quot;,[req.params.necesaria], (err, correlativa)=&gt;{
+            if(err){
+                res.json(err);
+            }
+            res.json(correlativa);
+        });
+    })
+};
+
+correlativaController.disponible = (req, res)=&gt;{
+    pool.query(&quot;SELECT * FROM correlativa WHERE correlativa.disponible = ? &quot;, [req.params.disponible],(err, correlativa)=&gt;{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
+    });
+};
+
+correlativaController.carrera = (req, res)=&gt;{
+    pool.query(&quot;SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ? &quot;, [req.params.idcarrera],(err, correlativa)=&gt;{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
+    });
+};
+
+correlativaController.carreranecesaria = (req, res)=&gt;{
+    pool.query(&quot;SELECT * FROM correlativa, imparte, materia WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible = materia.idMateria AND imparte.idCarrera = ?  AND correlativa.necesaria = ?&quot;, [req.params.idcarrera, req.params.necesaria],(err, correlativa)=&gt;{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
+    });
+};
+
+correlativaController.carreradisponible = (req, res)=&gt;{
+    pool.query(&quot;SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = ? AND correlativa.disponible = ?&quot;, [req.params.idcarrera, req.params.disponible],(err, correlativa)=&gt;{
+        if(err){
+            res.json(err);
+        }
+        res.json(correlativa);
+    });
+};
+
+correlativaController.correlativamateria = async (req, res) =&gt; {
+    var consultaNecesarias = &quot;SELECT DISTINCT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.necesaria AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.disponible = ?&quot;
+    var consultaDisponibles = &quot;SELECT DISTINCT materia.idMateria, materia.nombre, materia.cuatrimestre, materia.ano FROM materia, imparte, correlativa WHERE materia.idMateria = correlativa.disponible AND materia.idMateria = imparte.idMateria AND imparte.idCarrera = ? AND correlativa.necesaria = ?&quot;;
+    var consultaFinales = &quot;SELECT DISTINCT materia.nombre FROM materia, final WHERE materia.idMateria = final.necesaria AND final.disponible = ?&quot;;
+    var idcarrera = req.params.idcarrera;
+    var idmateria = req.params.idmateria;
+    var retorno = {};
+
+    const necesarias = await pool.query(consultaNecesarias, [idcarrera, idmateria]);
+    for (let i = 0; i &lt; necesarias.length; i++) {
+        const element = necesarias[i];
+        var finales =  await pool.query(consultaFinales, [element.idMateria]);
+        element.finales = finales;
+    }
+
+    const disponibles = await pool.query(consultaDisponibles, [idcarrera, idmateria]);
+    for (let j = 0; j &lt; disponibles.length; j++) {
+        const element = disponibles[j];
+        var finales = await pool.query(consultaFinales, [element.idMateria]);
+        element.finales = finales;
+    }
+
+    retorno.necesarias = necesarias;
+    retorno.disponibles = disponibles;
+    res.json(retorno);
+};
+
+correlativaController.graf = async (req, res)=&gt;{
+    var data = [];
+    materias = await pool.query(&quot;SELECT correlativa.necesaria, correlativa.disponible FROM correlativa, imparte WHERE correlativa.necesaria = imparte.idMateria AND correlativa.disponible AND imparte.idCarrera = &apos;2&apos; &quot;);
+    materias.forEach(element =&gt; {
+        data.push({ from : element[&apos;necesaria&apos;], to: element[&apos;disponible&apos;]});
+    });
+    res.json(data);
+};
+
+module.exports = correlativaController;</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
