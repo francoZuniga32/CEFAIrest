@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Document</title>
     <%- include('component/util/header') %> 
 </head>
@@ -21,7 +21,7 @@
                     </div>
                     <div class="mb-3">
                         <p v-if="error.length">
-                            <b>Por favor, corrija el(los) siguiente(s) error(es):</b>
+                            <b>Por favor,corrija el(los) siguiente(s) error(es):</b>
                             <ul>
                               <li v-for="err in error">{{ err }}</li>
                             </ul>
@@ -36,12 +36,12 @@
     </div>
     <script>
         var form = new Vue({
-            el: '#form',
+            el: '#form',          
             data: {
-                error: [],
-                usuario: null,
+                error: [],          
+                usuario: null,          
                 contrasenia: null
-            },
+            },          
             methods:{
                 validar: function(e){
                     if (this.usuario && this.contrasenia) {
@@ -64,9 +64,9 @@
                     }
 
                     e.preventDefault();
-                },
+                },          
                 validEmail: function (email) {
-                    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    var re = /^(([^<>()\[\]\\.,          ;:\s@"]+(\.[^<>()\[\]\\.,          ;:\s@"]+)*)|(".+"))@((\[[0-9]{1,          3}\.[0-9]{1,          3}\.[0-9]{1,          3}\.[0-9]{1,          3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,          }))$/;
                     return re.test(email);
                 }
             }

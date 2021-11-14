@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Editar Horario</title>
     <%- include('../component/util/header') %>
     <script src="https://cdn.jsdelivr.net/npm/timepicker@1.13.0/jquery.timepicker.min.js"></script>
@@ -82,26 +82,26 @@
         $('#horafin').timepicker({ 'timeFormat': 'H:i:s' });
         // Time Picker Initialization
         var root = new Vue({
-            el: '#root',
+            el: '#root',          
             data: {
-                idMateriaOrginal: "",
-                aulaOriginal: "",
-                diaOriginal: "",
-                moduloOriginal: "",
-                horainicioOriginal: "",
-                horafinOriginal: "",
-                cuatrimestreOriginal: "",
-                estadoOriginal: "",
-                idmateria: "",
-                aula: "",
-                dia: "",
-                modulo: "",
-                horainicio: "",
-                horafin: "",
-                cuatrimestre: "",
-                estado: "",
-                enviar: false,
-            },
+                idMateriaOrginal: "",          
+                aulaOriginal: "",          
+                diaOriginal: "",          
+                moduloOriginal: "",          
+                horainicioOriginal: "",          
+                horafinOriginal: "",          
+                cuatrimestreOriginal: "",          
+                estadoOriginal: "",          
+                idmateria: "",          
+                aula: "",          
+                dia: "",          
+                modulo: "",          
+                horainicio: "",          
+                horafin: "",          
+                cuatrimestre: "",          
+                estado: "",          
+                enviar: false,          
+            },          
             mounted: function() {
                 this.idMateriaOrginal = "<%= data.idMateria %>";
                 this.aulaOriginal = "<%= data.aula %>";
@@ -120,7 +120,7 @@
                 this.horainicio = "<%= data.horainicio %>";
                 this.cuatrimestre = "<%= data.cuatrimestre %>";
                 this.estado = "<%= data.estado %>";
-            },
+            },          
             method:{
                 editar : function(){
                     this.enviar = true;

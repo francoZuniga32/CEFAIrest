@@ -1,2 +1,4 @@
 #ignoramos los cambios en el log
 src/app.log
+
+src/databases/config/config.json

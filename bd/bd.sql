@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `asuetos` (
-  `idAsueto` int(250) NOT NULL,
-  `fecha` date NOT NULL,
-  `horainicio` time NOT NULL,
+  `idAsueto` int(250) NOT NULL,          
+  `fecha` date NOT NULL,          
+  `horainicio` time NOT NULL,          
   `horafin` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,9 +41,9 @@ CREATE TABLE `asuetos` (
 --
 
 CREATE TABLE `carrera` (
-  `idCarrera` int(250) NOT NULL,
-  `nombre` varchar(250) NOT NULL,
-  `plan` varchar(250) NOT NULL,
+  `idCarrera` int(250) NOT NULL,          
+  `nombre` varchar(250) NOT NULL,          
+  `plan` varchar(250) NOT NULL,          
   `duracion` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -54,7 +54,7 @@ CREATE TABLE `carrera` (
 --
 
 CREATE TABLE `correlativa` (
-  `necesaria` int(250) NOT NULL,
+  `necesaria` int(250) NOT NULL,          
   `disponible` int(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -65,13 +65,13 @@ CREATE TABLE `correlativa` (
 --
 
 CREATE TABLE `dicta` (
-  `idMateria` int(250) NOT NULL,
-  `aula` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `dia` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `modulo` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `horainicio` time NOT NULL,
-  `horafin` time NOT NULL,
-  `cuatrimestre` int(250) NOT NULL,
+  `idMateria` int(250) NOT NULL,          
+  `aula` varchar(250) COLLATE utf8_spanish_ci NOT NULL,          
+  `dia` varchar(250) COLLATE utf8_spanish_ci NOT NULL,          
+  `modulo` varchar(250) COLLATE utf8_spanish_ci NOT NULL,          
+  `horainicio` time NOT NULL,          
+  `horafin` time NOT NULL,          
+  `cuatrimestre` int(250) NOT NULL,          
   `estado` varchar(250) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
@@ -82,10 +82,10 @@ CREATE TABLE `dicta` (
 --
 
 CREATE TABLE `evento` (
-  `nombre` varchar(250) NOT NULL,
-  `dia` varchar(250) NOT NULL,
-  `hora` time NOT NULL,
-  `aula` varchar(250) NOT NULL,
+  `nombre` varchar(250) NOT NULL,          
+  `dia` varchar(250) NOT NULL,          
+  `hora` time NOT NULL,          
+  `aula` varchar(250) NOT NULL,          
   `estado` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -96,7 +96,7 @@ CREATE TABLE `evento` (
 --
 
 CREATE TABLE `final` (
-  `necesaria` int(250) NOT NULL,
+  `necesaria` int(250) NOT NULL,          
   `disponible` int(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -107,7 +107,7 @@ CREATE TABLE `final` (
 --
 
 CREATE TABLE `imparte` (
-  `idCarrera` int(250) NOT NULL,
+  `idCarrera` int(250) NOT NULL,          
   `idMateria` int(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -118,9 +118,9 @@ CREATE TABLE `imparte` (
 --
 
 CREATE TABLE `materia` (
-  `idMateria` int(250) NOT NULL,
-  `nombre` varchar(250) NOT NULL,
-  `ano` int(250) NOT NULL,
+  `idMateria` int(250) NOT NULL,          
+  `nombre` varchar(250) NOT NULL,          
+  `ano` int(250) NOT NULL,          
   `cuatrimestre` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -131,9 +131,9 @@ CREATE TABLE `materia` (
 --
 
 CREATE TABLE `usuario` (
-  `usuario` varchar(250) NOT NULL,
-  `pass` varchar(250) NOT NULL,
-  `tipo` varchar(250) NOT NULL,
+  `usuario` varchar(250) NOT NULL,          
+  `pass` varchar(250) NOT NULL,          
+  `tipo` varchar(250) NOT NULL,          
   `token` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -141,8 +141,8 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`usuario`, `pass`, `tipo`, `token`) VALUES
-('admin@example.com', '21232f297a57a5a743894a0e4a801fc3', 'admin', '21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `usuario` (`usuario`,`pass`,`tipo`,`token`) VALUES
+('admin@example.com','21232f297a57a5a743894a0e4a801fc3','admin','21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Índices para tablas volcadas
@@ -158,7 +158,7 @@ ALTER TABLE `asuetos`
 -- Indices de la tabla `carrera`
 --
 ALTER TABLE `carrera`
-  ADD PRIMARY KEY (`idCarrera`),
+  ADD PRIMARY KEY (`idCarrera`),          
   ADD KEY `idCarrera` (`idCarrera`);
 
 --

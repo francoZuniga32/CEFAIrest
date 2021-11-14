@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Admiistrar</title>
     <%- include('../component/util/header') %>
 </head>
@@ -44,7 +44,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(materia, i) in materias">
+                    <tr v-for="(materia,i) in materias">
                         <th scope="row">{{ materia.idMateria }}</th>
                         <td>{{ materia.nombre }}</td>
                         <td>{{ materia.cuatrimestre }}°</td>
@@ -79,21 +79,21 @@
     </div>
     <script>
         var root = new Vue({
-            el: '#root',
+            el: '#root',          
             data:{
-                carreras: [],
-                materias: [],
-                filtroSelect: null,
+                carreras: [],          
+                materias: [],          
+                filtroSelect: null,          
                 edicion: {
-                    nombre: null,
-                    cuatrimestre: null,
-                    anio: null,
+                    nombre: null,          
+                    cuatrimestre: null,          
+                    anio: null,          
                     carrera: []
                 }
-            },
+            },          
             mounted: function() {
                 this.load();
-            },
+            },          
             methods:{
                 load: function(){
                     axios.get(`/administrar/materias/materias`).then((response) => {
@@ -103,7 +103,7 @@
                     axios.get(`/administrar/carreras/carreras`).then((response) => {
                         this.carreras = response.data;
                     });
-                },
+                },          
                 filtrar: function() {
                     
                     if(this.filtroSelect){

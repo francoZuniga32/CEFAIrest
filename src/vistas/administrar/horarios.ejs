@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Admiistrar</title>
     <%- include('../component/util/header') %>
 </head>
@@ -89,22 +89,22 @@
     <script>
 
         var app = new Vue({
-            el: '#root',
+            el: '#root',          
             data: {
-                datos: data,
-                carreras: data.carreras,
-                duracion: 0,
-                d_anios: false,
-                d_cuatrimestre: false,
-                d_add: false,
-                carrera: "-",
-                cuatrimestre: "-",
-                anios: "-",
-                info: null,
-                horario: [],
-                lunes: [], martes: [], miercoles: [], jueves: [], viernes: [], sabado: [],
+                datos: data,          
+                carreras: data.carreras,          
+                duracion: 0,          
+                d_anios: false,          
+                d_cuatrimestre: false,          
+                d_add: false,          
+                carrera: "-",          
+                cuatrimestre: "-",          
+                anios: "-",          
+                info: null,          
+                horario: [],          
+                lunes: [],martes: [],miercoles: [],jueves: [],viernes: [],sabado: [],          
                 errors: []
-            },
+            },          
             methods: {
                 cargarAnios: function () {
                     this.duracion = 0;
@@ -113,13 +113,13 @@
                     var idcarrera = this.carrera;
                     this.duracion = this.carreras[parseInt(idcarrera) - 1].duracion;
                     this.d_anios = true;
-                },
+                },          
                 cargarCuatrimestre : function (){
                     this.d_cuatrimestre = true;
-                },
+                },          
                 addDisplay: function (){
                     this.d_add = true;
-                },
+                },          
                 consultar: function () {
                     if(this.carrera != "-" && this.cuatrimestre != "-" && this.anios != "-"){
                         //llamada a la funcion para poder trar los datos
@@ -134,7 +134,7 @@
                             }
                         });
                     }
-                },
+                },          
                 clasificar: function (array) {
                     array.forEach(element => {
                         switch (element.dia) {
@@ -167,11 +167,11 @@
                                 break;
                         }
                     })
-                },
+                },          
                 limpiar: function (){
                     this.lunes=[];this.martes=[];this.miercoles=[];this.jueves=[];this.viernes=[];this.sabado=[];
-                },
-                compareDate: function(a, b) {
+                },          
+                compareDate: function(a,b) {
                     var retorno;
                     a = a.horainicio;
                     b = b.horainicio;

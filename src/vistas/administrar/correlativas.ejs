@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Admiistrar</title>
     <%- include('../component/util/header') %>
 </head>
@@ -22,7 +22,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(materia, i) in correlativas">
+                    <tr v-for="(materia,i) in correlativas">
                         <td>{{ materia.necesaria }}</td>
                         <td>{{ materia.nombreNecesaria }}</td>
                         <td>
@@ -48,13 +48,13 @@
     </div>
     <script>
         var root = new Vue({
-            el: '#root',
+            el: '#root',          
             data: {
                 correlativas: []
-            },
+            },          
             mounted: function() {
                 this.load();
-            },
+            },          
             methods:{
                 load: function(){
                     axios.get(`/administrar/correlativas/correlativas`).then((response) => {

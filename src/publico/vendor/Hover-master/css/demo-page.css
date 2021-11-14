@@ -7,7 +7,7 @@
  */
 
 /**
- * The following are default styles for the demo page,
+ * The following are default styles for the demo page,          
  * you don't need to include these on your own site.
  */
 
@@ -59,7 +59,7 @@ nav li {
 }
 
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",Helvetica,Arial,sans-serif;
   display: block;
   overflow: hidden;
   margin: 0 auto;
@@ -67,8 +67,8 @@ nav li {
   max-width: var(--width);
   border-radius: 4px;
   text-align: center;
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .1);
-  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0 0 1px hsla(0,0%,0%,.1);
+  background-color: hsl(0,0%,98%);
   font-size: var(--font-size);
   line-height: 1.5;
 }
@@ -111,7 +111,7 @@ nav li {
 .carbon-poweredby {
   display: block;
   padding: 10px var(--font-size);
-  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  background: repeating-linear-gradient(-45deg,transparent,transparent 5px,hsla(0,0%,0%,.025) 5px,hsla(0,0%,0%,.025) 10px) hsla(203,11%,95%,.4);
   text-transform: uppercase;
   letter-spacing: .5px;
   font-weight: 600;
@@ -179,9 +179,9 @@ small {
     display: block;
 }
 
-p,
+p,          
 [class^="hvr-"] {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',sans-serif;
 }
 
 [class^="hvr-"] {
@@ -192,7 +192,7 @@ p,
   text-decoration: none;
   color: #666;
   /* Prevent highlight colour when element is tapped */
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0,          0,          0,          0);
 
   /* Smooth fonts */
   -webkit-font-smoothing: antialiased;
@@ -223,7 +223,7 @@ a {
     text-decoration: none;
 }
 
-.footer a:hover,
+.footer a:hover,          
 .nav:hover {
     color: #207AD1;
 }
@@ -233,18 +233,18 @@ a {
   font-size: .8em;
 }
 
-.nav.hvr-icon-down,
+.nav.hvr-icon-down,          
 .nav.hvr-icon-forward {
   padding-right: 1.2em;
 }
 
-.nav.hvr-icon-down::before,
+.nav.hvr-icon-down::before,          
 .nav.hvr-icon-forward::before {
   right: 0;
 }
 
-.nav:hover,
-.nav:focus,
+.nav:hover,          
+.nav:focus,          
 .nav:active {
   text-decoration: none;
 }
@@ -322,12 +322,12 @@ h3 {
   border: #2098D1 solid 1px;
 }
 
-.license:focus,
+.license:focus,          
 .license:hover {
   border-color: #207AD1;
 }
 
-.license:focus .button,
+.license:focus .button,          
 .license:hover .button {
   background-color: #207AD1;
   color: white;
@@ -412,7 +412,7 @@ h3 {
   display: block;
 }
 
-.made-by ul,
+.made-by ul,          
 .made-by p {
   margin: 0;
   padding: 0;
@@ -441,7 +441,7 @@ h3 {
   transition-property: color;
 }
 
-.made-by a:focus,
+.made-by a:focus,          
 .made-by a:hover {
   color: white;
 }
@@ -505,11 +505,11 @@ h3 {
 }
 
 .ild-ident .circle-holder {
-  transform: translate(-7px, -7px);
+  transform: translate(-7px,-7px);
 }
 
 .ild-ident .circle {
-  transform: translate(7px, 7px);
+  transform: translate(7px,7px);
 }
 
 .ild-ident .active .i {
@@ -532,7 +532,7 @@ h3 {
   background: #000;
   color: #fff;
   text-decoration: none;
-  font-family: arial, sans-serif;
+  font-family: arial,sans-serif;
   text-align: center;
   font-weight: bold;
   padding: 5px 40px;
@@ -543,14 +543,14 @@ h3 {
   transition: 0.5s;
 }
 
-#forkongithub a:hover,
-#forkongithub a:focus,
+#forkongithub a:hover,          
+#forkongithub a:focus,          
 #forkongithub a:active {
   background: #2098D1;
   color: #fff;
 }
 
-#forkongithub a::before,
+#forkongithub a::before,          
 #forkongithub a::after {
   content: "";
   width: 100%;
@@ -624,7 +624,7 @@ h3 {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+    box-shadow: 4px 4px 10px rgba(0,          0,          0,          0.8);
   }
 
   .ad__preview a {
