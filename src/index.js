@@ -1,5 +1,4 @@
 const express = require("express");
-const sequelize = require("./databases/models/index");
 const bodyParser = require("body-parser");
 const path = require("path");
 const cors = require("cors");

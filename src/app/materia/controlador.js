@@ -1,11 +1,11 @@
 const controlador = {};
 const {DataTypes} = require('sequelize');
-const sequelize = require('../../databases/index');
+const sequelize = require('../../db/index');
 
-const Materia = require('../../databases/models/materia')(sequelize,DataTypes);
-const Imparte = require('../../databases/models/imparte')(sequelize,DataTypes);
-const Carrera = require('../../databases/models/carrera')(sequelize,DataTypes);
-const Correlativas = require('../../databases/models/correlativa')(sequelize,DataTypes)
+const Materia = require('../../db/models/materia')(sequelize,DataTypes);
+const Imparte = require('../../db/models/imparte')(sequelize,DataTypes);
+const Carrera = require('../../db/models/carrera')(sequelize,DataTypes);
+const Correlativas = require('../../db/models/correlativa')(sequelize,DataTypes)
 
 Materia.belongsToMany(Carrera,{through: Imparte,foreignKey: 'MateriaId'});
 Materia.belongsToMany(Materia,{as: 'Disponible',through: Correlativas,foreignKey: 'NecesariaId'});

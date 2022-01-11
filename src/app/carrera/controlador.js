@@ -1,8 +1,8 @@
 const controlador = {};
 const {DataTypes} = require('sequelize');
-const sequelize = require('../../databases/index');
+const sequelize = require('../../db/index');
 
-const Carrera = require('../../databases/models/carrera')(sequelize,DataTypes);
+const Carrera = require('../../db/models/carrera')(sequelize,DataTypes);
 
 controlador.all = async (req,res)=> {
     res.send(await Carrera.findAll());

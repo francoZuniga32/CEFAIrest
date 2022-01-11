@@ -1,9 +1,9 @@
 const controlador = {};
 const {DataTypes} = require('sequelize');
-const sequelize = require('../../databases/index');
+const sequelize = require('../../db/index');
 
-const Horarios = require('../../databases/models/horarios')(sequelize,DataTypes);
-const Materia = require('../../databases/models/materia')(sequelize,DataTypes);
+const Horarios = require('../../db/models/horarios')(sequelize,DataTypes);
+const Materia = require('../../db/models/materia')(sequelize,DataTypes);
 
 Horarios.hasOne(Materia,{foreignKey: 'id'});
 
