@@ -68,4 +68,39 @@ controlador.correlativa = async (req,res)=> {
     }))
 }
 
+controlador.create = async(req, res)=>{
+	if(req.body.nombre && req.body.anio && req.body.cuatrimestre && req.body.carreras){
+		var materia = await Materia.create({
+			nombre: req.body.nombre,
+			anio: req.body.anio, 
+			cuatrimestre: req.body.cuatrimestre
+		});
+
+		if(Array.isArray(req.body.carreras)){
+			for(var i = 0; i < req.body.carreras.length; i++){
+				await Imparte.create({
+					CarreraId: req.body.carreras[i],
+					MateriaId: materia.getDataValue('id')
+				});
+			}
+		}else if(Number.isInteger(req.body.carreras)){
+			await Imparte.create({
+				CarreraId: req.body.carreras
+			});
+		}else{
+			res.status(401).send({err: "la carreras o carreras tiene que ser un numero o un arreglo"});
+		}
+	}else{
+		res.status(401).send({err: "no se proporciono el nombre o la descripcion o el anio o la carrera"})
+	}
+}
+
+controlador.change = async(req, res)=>{
+	if(req.body.id && req.body.nombre && req.body.anio && req.body.cuatrimestre){
+
+	}else{
+
+	}
+}
+
 module.exports = controlador;

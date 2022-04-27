@@ -1,37 +1,29 @@
-const token = {};
-const pool = require('../database');
-const key = require('../config.json');
-const jwt = require('jsonwebtoken');
-const md5 = require('md5');
-const usuarioControler = require('../controladores/usuarioControler');
+const sequelize = require("../db/index");
+const { DataTypes } = require("sequelize");
+const jwt = require("jsonwebtoken");
+const Usuario = require("../db/models/usuario")(sequelize, DataTypes);
 
-token.validar = async (req, res, next)=>{
-    var token = req.headers['access-token'];
-    var consulta = "SELECT * FROM usuario WHERE usuario.token = ?";
-    //1. validamos si el access-token, en caso contrario retornamos un error
-    if(token != null || token != ""){
-        //2. desiframos el token provisto por el usuario
-        try {
-            var decoded = jwt.verify(token, key.clave);
-            var token = decoded.token;
-            var usaurio = await pool.query(consulta, [token]);
-            console.log(usaurio);
-            //3. comparamos si el token decifrado pertenecen a un usuario
-            if(usaurio.length > 0){
-                //mas adelante llevaremos refgistros de quienes hacen uso de la aplicacion
-                console.log("TOKEN VALIDO!!");
+const auth = async(req, res, next) => {
+    if (req.headers["access-token"]) {
+        console.log("pasando por el middelware");
+	try {
+            var row = await Usuario.findOne({
+                where: {
+                	id: jwt.verify(req.headers["access-token"], process.env.CLAVE).usuario.id,
+                	admin: true
+		},
+            });
+            if (row) {
                 next();
-            }else{
-                res.json({"Error":"El token provisto en header no es un token aceptado"});
+            } else {
+                res.status(203).json({ mensaje: "el usuario no esta registrado" });
             }
-
-        } catch(err) {
-            res.json(err);
+        } catch (error) {
+            res.status(401).send({ err: error });
         }
-        
-    }else{
-        res.json({"Error":"token no provista en header: access-token"});
+    } else {
+        res.status(203).send({ mensaje: "no esta provisto el token" });
     }
 };
 
-module.exports = token;
+module.exports = auth;
