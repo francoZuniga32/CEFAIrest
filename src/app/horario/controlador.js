@@ -67,6 +67,19 @@ async function getHorarios(where, anio, carrera){
 	});
 }
 
+controlador.materia = async(req, res)=>{
+	if(req.params.id){
+		res.send( await Horarios.findAll({
+			include:[{
+				model: Materia,
+				where:{
+					id: req.params.id
+				}
+			}]
+		}))
+	}
+}
+
 controlador.create = async(req, res)=>{
 	if(req.body.idMateria && req.body.aula && req.body.dia && req.body.modulo && req.body.horainicio && req.body.horafin && req.body.cuatrimestre && req.body.estado){
 		res.send(await Horarios.create({
