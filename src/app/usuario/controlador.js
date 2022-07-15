@@ -16,6 +16,8 @@ controlador.auth = async(req, res)=>{
 			}
 		});
 
+		console.log(usuario);
+
 		if( usuario != null){
 			usuario.setDataValue('token',jwt.sign({usuario: usuario}, process.env.CLAVE, { expiresIn: "3h"}));
 			res.send(usuario);

@@ -1,3 +1,5 @@
+node_modules/
+
 #ignoramos los cambios en el log
 src/app.log
 

@@ -33,6 +33,7 @@
     "mysql": "^2.17.1",
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.13",
+    "pdf-creator-node": "^2.3.4",
     "sequelize": "^6.6.5",
     "sequelize-cli": "^6.2.0"
   }

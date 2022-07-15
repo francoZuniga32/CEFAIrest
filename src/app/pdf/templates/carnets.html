@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello world!</title>
+    <style>
+        h5{
+            font-size: 3mm;
+        }
+      body {
+        width: 70mm;
+        height: 40mm;
+        font-size: 1mm;
+        padding: 0;
+        margin: 0;
+      }
+      .main{
+        display: flex;
+        flex-direction: row;
+      }
+      .main div{
+        width: 40%;
+        margin: 1mm;
+        height: auto;
+        display: flex;
+      }
+      .qr{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 10px;
+      }
+    </style>
+    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+  </head>
+  <body>
+    <table>
+        <tr>
+            <td>
+                <h5>{{ Usuario.usuario }}</h5>
+                <img src="{{File.url}}" width="50px">
+            </td>
+            <td>
+                <img alt="Código QR" id="codigo" />
+            </td>
+        </tr>
+    </table>
+    <script>
+      new QRious({
+        element: document.querySelector("#codigo"),
+        value: "{{qr}}", // La URL o el texto
+        size: 100,
+        backgroundAlpha: 0, // 0 para fondo transparente
+        foreground: "#000", // Color del QR
+        level: "L", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+      });
+    </script>
+  </body>
+</html>

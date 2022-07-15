@@ -28,6 +28,8 @@ app.use('/materias',require('./app/materia/ruta'));
 app.use('/final',require('./app/final/ruta'));
 app.use('/horarios',require('./app/horario/ruta'));
 app.use('/usuario', require('./app/usuario/ruta'));
+app.use('/carnets/', require('./app/carnets/ruta'));
+app.use('/upload', require('./app/upload/route'));
 
 //ejecutamos el servidor
 app.listen(app.get("PORT"),() => {
